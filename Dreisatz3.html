@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Dreisatz</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="../html/fusion.css">
+<link rel="stylesheet" type="text/css" href="../html/style.css">
+<link rel="stylesheet" type="text/css" href="../html/site.css"> 
+</head>
+<body style="background-color: #B9D1EA; margin: 20px; ">
+    
+            <div><style> button {position:absolute; left: 380px; }</style></div>
+            
+            <!--//Aufgabe 1-->
+            
+            <button type="button" id ="Aufgabe1" onclick="Aufgabe1()" style="position: absolute;top: 250px;" >Aufgabe 31</button>
+                <style> .Aufgabe {position:absolute; left: 500px; }</style>
+                <p id="Text01" class = "Aufgabe" style="font-size: 10pt;text-align:left;font-weight:bold;position: absolute;top: 240px;"><span style="font-family: Verdana,sans-serif; ">Ein Auto braucht für eine Strecke 6 Stunden, wenn es mit 45 km/h fährt.                                  
+                    <BR>In wie viel Stunden wird die Strecke bei einer Geschwindigkeit von 80 km/h zurückgelegt?</BR></span></p>
+                <p id="Text1" class = "Aufgabe" style="visibility:hidden; font-size: 10pt;text-align:left;font-weight:bold;position: absolute;top: 240px;"><span style="font-family: Verdana,sans-serif; ">Ein Auto braucht für eine Strecke 6 Stunden, wenn es mit 45 km/h fährt.          Ergebnis:             <input type="text" id="Eintrag1" maxlength="5" size="2"></input> h<BR>In wie viel Stunden wird die Strecke bei einer Geschwindigkeit von 80 km/h zurückgelegt?</BR></span></p>   
+                <button type="button" id ="Loesung1" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe31.pdf');" style="visibility:hidden;position: absolute;top: 250px;left:75%">Lösung</button>
+                      
+                      <script>
+                        function Aufgabe1() { document.getElementById("Text01").style.visibility="hidden";
+                        document.getElementById("Aufgabe1").disabled="true";
+                        document.getElementById("Text1").style.visibility="visible";
+                        document.getElementById("Eintrag1").focus(); 
+                        }
+                        Eintrag1.addEventListener('keydown', (event) => {
+                          if (event.key === 'Enter' && Eintrag1.value=="3,375") {alert("Richtig"); document.getElementById("Eintrag1").disabled="true"; document.getElementById("Loesung1").style.visibility="visible";   
+                             
+                           }
+                          else if (event.key === 'Enter' && Eintrag1.value!=="3,375" && Eintrag1.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag1").value="3,375";            
+                          document.getElementById("Loesung1").style.visibility="visible";
+                          document.getElementById("Eintrag1").disabled="true"; }       
+                          else if (event.key === 'Enter' && Eintrag1.value=="") {alert("Bitte eine Eingabe machen")}
+                        }) 
+                      </script>
+
+             <!--//Aufgabe 2-->       
+                        
+                        <button type="button" id ="Aufgabe2" onclick="Aufgabe2()" style="position: absolute;top: 300px;" >Aufgabe 32</button>
+                        <style> .Aufgabe {position:absolute; left: 500px; }</style>
+                        <p id="Text2" class = "Aufgabe" style="font-size: 10pt;text-align:left;font-weight:bold;position: absolute;top: 290px;"><span style="font-family: Verdana,sans-serif; ">Zwei Bagger heben einen Graben in 48 Stunden aus. Wie viel Stunden benötigen fünf Bagger? 
+                            </span></p>
+                        <button type="button" id ="Loesung2" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe32.pdf');" style="visibility:hidden; position: absolute;top: 300px;left:75%">Lösung</button>
+                
+                        <script>
+                            function Aufgabe2() { 
+                            document.getElementById("Aufgabe2").disabled="true"; document.getElementById("Loesung2").style.visibility="visible";
+                                                      }
+                          
+                        </script>
+
+            <!--//Aufgabe 3--> 
+
+                <button type="button" id ="Aufgabe3" onclick="Aufgabe3()" style="position: absolute;top: 350px;" >Aufgabe 33</button>
+                <style> .Aufgabe {position:absolute; left: 500px; }</style>
+                <p id="Text03" class = "Aufgabe" style="font-size: 10pt;text-align:left;font-weight:bold;position: absolute;top: 340px;"><span style="font-family: Verdana,sans-serif; ">Der Lebensmittelvorrat einer Raumstation reicht für 3 Besatzungsmitglieder 32 Tage.   
+                     <BR>Wie viel Tage reicht dieser Vorrat für 4 Besatzungsmitglieder? </BR></span></p>
+                <p id="Text3" class = "Aufgabe" style="visibility:hidden; font-size: 10pt;text-align:left;font-weight:bold;position: absolute;top: 340px;"><span style="font-family: Verdana,sans-serif; ">Der Lebensmittelvorrat einer Raumstation reicht für 3 Besatzungsmitglieder 32 Tage   Ergebnis:<input type="text" id="Eintrag3" maxlength="2" size="1"></input> Tage<BR>Wie viel Tage reicht dieser Vorrat für 4 Besatzungsmitglieder?  </BR></span></p>   
+                <button type="button" id ="Loesung3" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe33.pdf');" style="visibility:hidden;position: absolute;top: 350px;left:75%">Lösung</button>
+
+                    <script>
+
+                        function Aufgabe3() { document.getElementById("Text03").style.visibility="hidden";
+                        document.getElementById("Aufgabe3").disabled="true";
+                        document.getElementById("Text3").style.visibility="visible";
+                        document.getElementById("Eintrag3").focus(); 
+                        }
+                        Eintrag3.addEventListener('keydown', (event) => {
+                          if (event.key === 'Enter' && Eintrag3.value=="24") {alert("Richtig"); document.getElementById("Eintrag3").disabled="true"; document.getElementById("Loesung3").style.visibility="visible";   
+                             
+                           }
+                          else if (event.key === 'Enter' && Eintrag3.value!=="24" && Eintrag3.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag3").value="24";            
+                          document.getElementById("Loesung3").style.visibility="visible";
+                          document.getElementById("Eintrag3").disabled="true"; }       
+                          else if (event.key === 'Enter' && Eintrag3.value=="") {alert("Bitte eine Eingabe machen")}
+                        }) 
+                      </script>
+
+            <!--//Aufgabe 4-->       
+                        
+                <button type="button" id ="Aufgabe4" onclick="Aufgabe4()" style="position: absolute;top: 400px;" >Aufgabe 34</button>
+                <style> .Aufgabe {position:absolute; left: 500px; }</style>
+                <p id="Text4" class = "Aufgabe" style="font-size: 10pt;text-align:left;font-weight:bold;position: absolute;top: 390px;"><span style="font-family: Verdana,sans-serif; ">Ein Schüler teilt jede Woche 390 Prospekte aus und bekommt dafür 28,08 €. <BR>
+                    a) Ein anderer verteilt für dieselbe Firma in einem anderen Stadtteil 360 Prospekte.<BR>    
+                    Was verdient er?<BR>
+                    b) Ein weiterer verdient 18 € in der Woche. Wie viele Prospekte trägt er aus?</BR></span></p>
+                <button type="button" id ="Loesung4" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe34.pdf');" style="visibility:hidden; position: absolute;top: 400px;left:75%">Lösung</button>
+              
+                     <script>
+
+                          function Aufgabe4() { 
+                          document.getElementById("Aufgabe4").disabled="true"; document.getElementById("Loesung4").style.visibility="visible";
+                                                  }
+                     </script>
+
+            <!--//Aufgabe 5--> 
+
+                <button type="button" id ="Aufgabe5" onclick="Aufgabe5()" style="position: absolute;top: 480px;" >Aufgabe 35</button>
+                <style> .Aufgabe {position:absolute; left: 500px; }</style>
+                <p id="Text05" class = "Aufgabe" style="font-size: 10pt;text-align:left;font-weight:bold;position: absolute;top: 470px;"><span style="font-family: Verdana,sans-serif; ">Tee wird in 60 Tüten zu je 50 g verpackt.                                                
+                      <BR>  Wie viel Tüten zu je 125 g erhält man aus der gleichen Teemenge?</BR></span></p>
+                <p id="Text5" class = "Aufgabe" style="visibility:hidden; font-size: 10pt;text-align:left;font-weight:bold;position: absolute;top: 470px;"><span style="font-family: Verdana,sans-serif; ">Tee wird in 60 Tüten zu je 50 g verpackt.   Ergebnis:               <input type="text" id="Eintrag5" maxlength="2" size="1"></input> min<BR>Wie viel Tüten zu je 125 g erhält man aus der gleichen Teemenge?</BR></span></p>   
+                <button type="button" id ="Loesung5" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe35.pdf');" style="visibility:hidden;position: absolute;top: 480px;left:75%">Lösung</button>
+
+                    <script>
+
+                        function Aufgabe5() { document.getElementById("Text05").style.visibility="hidden";
+                        document.getElementById("Aufgabe5").disabled="true";
+                        document.getElementById("Text5").style.visibility="visible";
+                        document.getElementById("Eintrag5").focus(); 
+                        }
+                        Eintrag5.addEventListener('keydown', (event) => {
+                          if (event.key === 'Enter' && Eintrag5.value=="24") {alert("Richtig"); document.getElementById("Eintrag5").disabled="true"; document.getElementById("Loesung5").style.visibility="visible";   
+                             
+                           }
+                          else if (event.key === 'Enter' && Eintrag5.value!=="24" && Eintrag5.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag5").value="24";            
+                          document.getElementById("Loesung5").style.visibility="visible";
+                          document.getElementById("Eintrag5").disabled="true"; }       
+                          else if (event.key === 'Enter' && Eintrag5.value=="") {alert("Bitte eine Eingabe machen")}
+                        }) 
+                      </script>
+
+            <!--//Aufgabe 6-->       
+                        
+            <button type="button" id ="Aufgabe6" onclick="Aufgabe6()" style="position: absolute;top: 530px;" >Aufgabe 36</button>
+            <style> .Aufgabe {position:absolute; left: 500px; }</style>
+            <p id="Text6" class = "Aufgabe" style="font-size: 10pt;text-align:left;font-weight:bold;position: absolute;top: 520px;"><span style="font-family: Verdana,sans-serif; ">Einen Wald können 15 Forstarbeiter in 24 Arbeitsstunden roden. 
+                <BR>Wie viel Stunden dauert die Arbeit, wenn nur 11 Arbeiter zur Verfügung stehen?   </BR></span></p>
+            <button type="button" id ="Loesung6" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe36.pdf');" style="visibility:hidden; position: absolute;top: 530px;left:75%">Lösung</button>
+          
+                 <script>
+
+                      function Aufgabe6() { 
+                      document.getElementById("Aufgabe6").disabled="true"; document.getElementById("Loesung6").style.visibility="visible";
+                                              }
+                 </script>
+
+            <!--//Aufgabe 7--> 
+
+            <button type="button" id ="Aufgabe7" onclick="Aufgabe7()" style="position: absolute;top: 580px;" >Aufgabe 37</button>
+            <style> .Aufgabe {position:absolute; left: 500px; }</style>
+            <p id="Text07" class = "Aufgabe" style="font-size: 10pt;text-align:left;font-weight:bold;position: absolute;top: 570px;"><span style="font-family: Verdana,sans-serif; ">Eine Kiste mit 168 Weingläsern kostet 403,20 Euro. Wie viel kosten drei Dutzend Weingläser?   .    
+                 
+            <p id="Text7" class = "Aufgabe" style="visibility:hidden; font-size: 10pt;text-align:left;font-weight:bold;position: absolute;top: 570px;"><span style="font-family: Verdana,sans-serif; ">Eine Kiste mit 168 Weingläsern kostet 403,20 Euro. Wie viel kosten drei Dutzend Weingläser?   .    Ergebnis:  <input type="text" id="Eintrag7" maxlength="5" size="2"></input> €</BR></span></p>   
+            <button type="button" id ="Loesung7" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe37.pdf');" style="visibility:hidden;position: absolute;top: 580px;left:75%">Lösung</button>
+
+                <script>
+
+                    function Aufgabe7() { document.getElementById("Text07").style.visibility="hidden";
+                    document.getElementById("Aufgabe7").disabled="true";
+                    document.getElementById("Text7").style.visibility="visible";
+                    document.getElementById("Eintrag7").focus(); 
+                    }
+                    Eintrag7.addEventListener('keydown', (event) => {
+                      if (event.key === 'Enter' && Eintrag7.value=="86,40") {alert("Richtig"); document.getElementById("Eintrag7").disabled="true"; document.getElementById("Loesung7").style.visibility="visible";   
+                         
+                       }
+                      else if (event.key === 'Enter' && Eintrag7.value!=="86,40" && Eintrag7.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag7").value="86,40";            
+                      document.getElementById("Loesung7").style.visibility="visible";
+                      document.getElementById("Eintrag7").disabled="true"; }       
+                      else if (event.key === 'Enter' && Eintrag7.value=="") {alert("Bitte eine Eingabe machen")}
+                    }) 
+                  </script>
+
+            <!--//Aufgabe 8-->       
+                        
+            <button type="button" id ="Aufgabe8" onclick="Aufgabe8()" style="position: absolute;top: 630px;" >Aufgabe 38</button>
+            <style> .Aufgabe {position:absolute; left: 500px; }</style>
+            <p id="Text8" class = "Aufgabe" style="font-size: 10pt;text-align:left;font-weight:bold;position: absolute;top: 620px;"><span style="font-family: Verdana,sans-serif; ">Eine Treppenhausbeleuchtung mit 8 Glühlampen zu je 40 Watt verursacht 
+                 <BR> monatlich Stromkosten in Höhe von 2,36 Euro.<BR>Wie hoch sind die Kosten, wenn 10 Glühlampen zu je 60 Watt installiert werden? </BR></span></p>
+            <button type="button" id ="Loesung8" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe38.pdf');" style="visibility:hidden; position: absolute;top: 630px;left:75%">Lösung</button>
+          
+                 <script>
+
+                      function Aufgabe8() { 
+                      document.getElementById("Aufgabe8").disabled="true"; document.getElementById("Loesung8").style.visibility="visible";
+                                              }
+                 </script>
+
+            <!--//Aufgabe 9--> 
+
+            <button type="button" id ="Aufgabe9" onclick="Aufgabe9()" style="position: absolute;top: 700px;" >Aufgabe 39</button>
+            <style> .Aufgabe {position:absolute; left: 500px; }</style>
+            <p id="Text09" class = "Aufgabe" style="font-size: 10pt;text-align:left;font-weight:bold;position: absolute;top: 690px;"><span style="font-family: Verdana,sans-serif; ">2 Pumpen füllen in 6,5 Stunden den 1300 t fassenden Tank eines Schiffes. 
+                 <BR>In wie viel Stunden füllen 3 Pumpen einen 2100 t fassenden Tank?  </BR></span></p>
+            <p id="Text9" class = "Aufgabe" style="visibility:hidden; font-size: 10pt;text-align:left;font-weight:bold;position: absolute;top: 690px;"><span style="font-family: Verdana,sans-serif" >2 Pumpen füllen in 6,5 Stunden den 1300 t fassenden Tank eines Schiffes.   Ergebnis:            <input type="text" id="Eintrag9" maxlength="1" size="1"></input> h<BR>In wie viel Stunden füllen 3 Pumpen einen 2100 t fassenden Tank? <BR></span></p>   
+            <button type="button" id ="Loesung9" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe39.pdf');" style="visibility:hidden;position: absolute;top: 700px;left:75%">Lösung</button>
+
+                <script>
+
+                    function Aufgabe9() { document.getElementById("Text09").style.visibility="hidden";
+                    document.getElementById("Aufgabe9").disabled="true";
+                    document.getElementById("Text9").style.visibility="visible";
+                    document.getElementById("Eintrag9").focus(); 
+                    }
+                    Eintrag9.addEventListener('keydown', (event) => {
+                      if (event.key === 'Enter' && Eintrag9.value=="7") {alert("Richtig"); document.getElementById("Eintrag9").disabled="true"; document.getElementById("Loesung9").style.visibility="visible";   
+                         
+                       }
+                      else if (event.key === 'Enter' && Eintrag9.value!=="7" && Eintrag9.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag9").value="7";            
+                      document.getElementById("Loesung9").style.visibility="visible";
+                      document.getElementById("Eintrag9").disabled="true"; }       
+                      else if (event.key === 'Enter' && Eintrag9.value=="") {alert("Bitte eine Eingabe machen")}
+                    }) 
+                  </script>
+
+             <!--//Aufgabe 10-->       
+                        
+             <button type="button" id ="Aufgabe10" onclick="Aufgabe10()" style="position: absolute;top: 750px;" >Aufgabe 40</button>
+             <style> .Aufgabe {position:absolute; left: 500px; }</style>
+             <p id="Text10" class = "Aufgabe" style="font-size: 10pt;text-align:left;font-weight:bold;position: absoute;top: 740px;"><span style="font-family: Verdana,sans-serif; ">24 Arbeiter bauen in 30 Arbeitstagen 120 Maschinen zusammen.<BR> 
+                Wie viele Arbeiter braucht man, um 100 Maschinen in 40 Arbeitstagen zusammenzubauen?</BR>  </span></p>
+             <button type="button" id ="Loesung10" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe40.pdf');" style="visibility:hidden; position: absolute;top: 750px;left:75%">Lösung</button>
+           
+                  <script>
+ 
+                       function Aufgabe10() { 
+                       document.getElementById("Aufgabe10").disabled="true"; document.getElementById("Loesung10").style.visibility="visible";
+                                               }
+                  </script>
+ 
+            <button type="button" id ="mehr" onclick="window.open('Dreisatz4.html');" style=" position: absolute;top: 800px;left:75%">mehr...</button>
+            <button type="button" id ="zurück" onclick="window.open('Dreisatz2.html');" style=" position: absolute;top: 800px;left:70%">zurück</button>
+                     </body> 
