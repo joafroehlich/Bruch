@@ -9,19 +9,38 @@
 </head>
 <body style="background-color: white; margin: 20px; ">
        
-       <style> .üb {text-align:center;margin:0;}</style>
-      
-       <div class="üb"><h1 style="background-color: white; "><span style="font-family: MS,Sans-serif; ">Wie löse ich Matheaufgaben?</span></h1>
-       <img src="https://www.matheaufgaben-loesen.de/assets/images/Dreisatz.jpg"/> </div>
+</head> 
+<body><style> .Texte {
+        display: flex;flex-direction:column;justify-content:center;align-items:center;}
+        .Text1 {font-size: 24pt; background-color: white; font-family: Verdana,Sans-serif; }
+        </style>
     
-    <p style="font-size: 12pt;text-align:left;background-color: white; width:auto;margin-left: 25%;margin-top: 1%;"><span style="font-family: MS,Sans-serif; ">Hier finden Sie proportionale und antiproportionale Zuordnungen oder, in
-        anderen Worten, einfache und zusammengesetzte Dreisätze.</BR></p>
-    <p style="font-size: 12pt;text-align:left;background-color: white;width:auto;margin-left: 25%;margin-top: 1.2%;"><span style="font-family: MS,Sans-serif; ">Die Berechnung besteht jeweils aus einem Behauptungssatz, dem Schluss auf<BR>
-        die Einheit und der Berechnung der gesuchten Größe.</BR></p>
-
-        <button type="button" id ="Muster" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe9.pdf');" style="font-weight:bold;position: absolute;top: 550px;left:50%" >Musterlösung</button>
-        <button type="button" id ="Aufgaben" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz.pdf');" style="font-weight:bold;position: absolute;top: 550px;left:57%">zu den Aufgaben</button>
-        <button type="button" id ="Üb" onclick="window.open('https://joafroehlich.github.io/MaTest/Dreisatz0.html');" style="font-weight:bold;position: absolute;top: 550px;left:65%">Übungsprogramm</button>         
-
+	<div class="Texte">
+		<p class="Text1">Wie löse ich Matheaufgaben?</p>
+		<p class="Text1">Proportionale und antiproportionale Zuordnungen (Dreisatz)</br></p>
+		<p class="flex-item">3</p>
+		<p class="flex-item">4</p>
+		<p class="flex-item">5</p>
+	</div>
+	<div class="flex-container">
+		<section class="flex-item">
+			<h2>Flexbox</h2>
+			<p>Flexbox ist eine moderne und einfache Möglichkeit, responsive und fexible Layouts
+				zu erstellen, ohne feste Größenangaben und weitere CSS-Einstellungen wie <code>position</code>,
+				<code>float</code> oder <code>clear</code> nutzen zu müssen. </p>
+		</section>
+		<section class="flex-item">
+			<h2>Was kann Flexbox?</h2>
+			<p>Flexbox verzichtet auf feste Breiten, wobei sich das flexible Element an den tatsächlich
+				verfügbaren Platz anpasst, indem es die Leerräume zwischen den Elementen gleichmäßig
+				verteilt. </p>
+		</section>
+		<section class="flex-item">
+			<h2>flexibler Container</h2>
+			<p>Flexbox benötigt nur einen CSS-Regelsatz:</p> <pre><code>.flex-container {
+  display: flex;
+}</code></pre> </section>
+	</div>
+</main>
 </body>
-</html>
+
