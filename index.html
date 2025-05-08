@@ -28,10 +28,35 @@
     <p class="Text2">Klicken Sie auf eine Aufgabe Ihrer Wahl. <br>Sie sehen eine Eingabeaufforderung oder den Schalter: Lösung.</br></p></section>
 		
 		<p class="Text2">Bestätigen Sie Ihre Eingabe, <br> oder starten Sie die Lösung.</br></p>
-    
-	
+  	
 	</div>
   
+  <div><style> button {margin-left: 30em; }</style></div>
   
+  <!--//Aufgabe 1-->
+            
+  <button type="button" id ="Aufgabe1" onclick="Aufgabe1()" style="position: absolute;top: 250px;" >Aufgabe 1</button>
+  <style> .Aufgabe {position:absolute; left: 500px; }</style>
+  <p id="Text01" class = "Aufgabe" style="font-size: 10pt;text-align:left;font-weight:bold;position: absolute;top: 240px;"><span style="font-family: Verdana,sans-serif; ">Für 60 Tage Aushilfsarbeit bekommt ein Schüler 546 €. Wie viel € bekommt er für 76 Tage?</span></p>
+  <p id="Text1" class = "Aufgabe" style="visibility:hidden; font-size: 10pt;text-align:left;font-weight:bold;position: absolute;top: 240px;"><span style="font-family: Verdana,sans-serif; ">Für 60 Tage Aushilfsarbeit bekommt ein Schüler 546 €. Wie viel € bekommt er für 76 Tage?   Ergebnis: <input type="text" id="Eintrag1" maxlength="6" size="3"></input> €<BR>Tragen Sie das Ergebnis auf 2 Stellen nach dem Komma genau ein."</BR></span></p>   
+  <button type="button" id ="Loesung1" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe1.pdf');" style="visibility:hidden;position: absolute;top: 250px;left:75%">Lösung</button>
+        
+        <script>
+          function Aufgabe1() { document.getElementById("Text01").style.visibility="hidden";
+          document.getElementById("Aufgabe1").disabled="true";
+          document.getElementById("Text1").style.visibility="visible";
+          document.getElementById("Eintrag1").focus(); 
+          }
+          Eintrag1.addEventListener('keydown', (event) => {
+            if (event.key === 'Enter' && Eintrag1.value=="691,60") {alert("Richtig"); document.getElementById("Eintrag1").disabled="true"; document.getElementById("Loesung1").style.visibility="visible";   
+               
+             }
+            else if (event.key === 'Enter' && Eintrag1.value!=="691,60" && Eintrag1.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag1").value="691,60";            
+            document.getElementById("Loesung1").style.visibility="visible";
+            document.getElementById("Eintrag1").disabled="true"; }       
+            else if (event.key === 'Enter' && Eintrag1.value=="") {alert("Bitte eine Eingabe machen")}
+          }) 
+        </script>
+
 </body>
 
