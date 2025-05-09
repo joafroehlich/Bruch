@@ -41,8 +41,8 @@
             
             <button type="button" id="Aufgabe1" class ="Aufgabe" onclick="Aufgabe1()" >Aufgabe<nobr> 1</nobr></button>
                 
-                <p class = "Aufgabe" style="text-align:left;font-weight:bold;left: 31%;top: 32%;"><span style="font-family: Verdana,sans-serif; ">Für 60 Tage Aushilfsarbeit bekommt ein Schüler 546 €. Wie viel € bekommt er für 76 Tage? &nbsp &nbsp Ergebnis: <input type="text" id="Eintrag1" maxlength="7" size="4"></input> €</br></span></p>
-                   <button type="button" class ="Aufgabe" id="Loesung1" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe1.pdf');" style="visibility:hidden;">Lösung</button></div>
+                <p class = "Aufgabe" style="font-weight:bold;">Für 60 Tage Aushilfsarbeit bekommt ein Schüler 546 €. Wie viel € bekommt er für 76 Tage? &nbsp &nbsp Ergebnis: <input type="text" id="Eintrag1" maxlength="6" size="3" disabled="true"></input> €</p>
+                   <button type="button" class ="Aufgabe" id="Loesung1" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe1.pdf');" style="visibility:hidden;">Lösung</button>
                       
                       <script>
                         function Aufgabe1() { 
@@ -60,6 +60,52 @@
                           else if (event.key === 'Enter' && Eintrag1.value=="") {alert("Bitte eine Eingabe machen")}
                         }) 
                       </script></div>
+                      
+ 
+                    <!--//Aufgabe 2-->     
+                        
+<div class="Aufg">
+                    <button type="button" id ="Aufgabe2" class = "Aufgabe" onclick="Aufgabe2()" >Aufgabe<nobr> 2</nobr></button>
+                    <p class = "Aufgabe" style="font-weight:bold;">Für Waren im Wert von 16 000 € muss der Empfänger 3 200 € Zoll bezahlen. Wie viel Zoll kosten Waren von 7 000 €?</p>
+                    <button type="button" class ="Aufgabe" id ="Loesung2" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe2.pdf');" style="visibility:hidden; ">Lösung</button>
+            
+                    <script>
+                        function Aufgabe2() { 
+                        document.getElementById("Aufgabe2").disabled="true"; document.getElementById("Loesung2").style.visibility="visible";
+                                                  }
+                      
+                    </script>  
+                    
+                    </div>
+
+    <div class = "Aufg">
+      
+      <!--//Aufgabe 3--> 
+
+      <button type="button" id="Aufgabe3" class ="Aufgabe" onclick="Aufgabe3()" >Aufgabe<nobr> 3</nobr></button>
+                
+                <p class = "Aufgabe" style="font-weight:bold;">Ein Fuhrpark besteht aus 13 Fahrzeugen, die monatlich 6 175 l Benzin verbrauchen.   Ergebnis: <input type="text" id="Eintrag3" maxlength="4" size="2" disabled="true"></input> €<BR>Wie hoch ist der monatliche Verbrauch in l, wenn 2 Fahrzeuge dazu kommen?</BR></span></p>   
+                   <button type="button" class ="Aufgabe" id="Loesung3" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe3.pdf');" style="visibility:hidden;">Lösung</button>
+                      
+          <script>
+
+              function Aufgabe3() { 
+              document.getElementById("Aufgabe3").disabled= true;
+              document.getElementById("Eintrag3").disabled = false;
+              document.getElementById("Eintrag3").focus(); 
+              }
+              Eintrag3.addEventListener('keydown', (event) => {
+                if (event.key === 'Enter' && Eintrag3.value=="7125") {alert("Richtig"); document.getElementById("Eintrag3").disabled="true"; document.getElementById("Loesung3").style.visibility="visible";   
+                   
+                 }
+                else if (event.key === 'Enter' && Eintrag3.value!=="7125" && Eintrag3.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag3").value="7125";            
+                document.getElementById("Loesung3").style.visibility="visible";
+                document.getElementById("Eintrag3").disabled="true"; }       
+                else if (event.key === 'Enter' && Eintrag3.value=="") {alert("Bitte eine Eingabe machen")}
+              }) 
+          </script>
+          
+    </div>
 
 </body>
 
