@@ -20,29 +20,28 @@
 
         .Aufg {
         display: flex;flex-direction:row;justify-content:center;align-items:center;}
-        .Aufgabe { font-size: 0.8em; background-color: white; justify-content:space-betweeen;font-family: Verdana,Sans-serif;margin:0.5em; }
-      </style>
+        .Aufgabe { font-size: 0.8em;  justify-content:space-betweeen;font-family: Verdana,Sans-serif;margin:2em; font-weight:bold; }
+         input {background-color:yellow }
+         button {background-color: white}
+    </style>
     
 	<div class="ueb1">
-		<p class="Text1">Wie löse ich Matheaufgaben?</p>
 		<p class="Text1">Proportionale und antiproportionale Zuordnungen (Dreisatz)</p>
   </div>
 
   <div class="ueb2">
     <p class="Text2">Klicken Sie auf eine Aufgabe Ihrer Wahl. <br>Sie sehen eine Eingabeaufforderung oder den Schalter: Lösung.</br></p>
-		
 		<p class="Text2">Bestätigen Sie Ihre Eingabe, <br> oder starten Sie die Lösung.</br></p>
   	
 	</div>
-  
   <div class="Aufg">
             
             <!--//Aufgabe 1-->
             
-            <button type="button" id="Aufgabe1" class ="Aufgabe" onclick="Aufgabe1()" >Aufgabe<nobr> 1</nobr></button>
+            <button  id="Aufgabe1" type="button" onclick="Aufgabe1()" >Aufgabe<nobr> 1</nobr></button>
                 
-                <p class = "Aufgabe" style="font-weight:bold;">Für 60 Tage Aushilfsarbeit bekommt ein Schüler 546 €. Wie viel € bekommt er für 76 Tage? &nbsp &nbsp Ergebnis: <input type="text" id="Eintrag1" maxlength="6" size="3" disabled="true"></input> €</p>
-                   <button type="button" class ="Aufgabe" id="Loesung1" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe1.pdf');" style="visibility:hidden;">Lösung</button>
+                <p class = "Aufgabe" >Für 60 Tage Aushilfsarbeit bekommt ein Schüler 546 €. Wie viel € bekommt er für 76 Tage? &nbsp &nbsp Ergebnis: <input id="Eintrag1" maxlength="6" size="3" disabled ="true"></input> €</p>
+                   <button type="button" id="Loesung1" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe1.pdf');" style="visibility:hidden;">Lösung</button>
                       
                       <script>
                         function Aufgabe1() { 
@@ -64,10 +63,10 @@
  
                     <!--//Aufgabe 2-->     
                         
-<div class="Aufg">
-                    <button type="button" id ="Aufgabe2" class = "Aufgabe" onclick="Aufgabe2()" >Aufgabe<nobr> 2</nobr></button>
+     <div class="Aufg">
+                    <button id ="Aufgabe2" class = "Schalter" onclick="Aufgabe2()" >Aufgabe<nobr> 2</nobr></button>
                     <p class = "Aufgabe" style="font-weight:bold;">Für Waren im Wert von 16 000 € muss der Empfänger 3 200 € Zoll bezahlen. Wie viel Zoll kosten Waren von 7 000 €?</p>
-                    <button type="button" class ="Aufgabe" id ="Loesung2" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe2.pdf');" style="visibility:hidden; ">Lösung</button>
+                    <button class ="Schalter" id ="Loesung2" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe2.pdf');" style="visibility:hidden; ">Lösung</button>
             
                     <script>
                         function Aufgabe2() { 
@@ -82,10 +81,10 @@
       
       <!--//Aufgabe 3--> 
 
-      <button type="button" id="Aufgabe3" class ="Aufgabe" onclick="Aufgabe3()" >Aufgabe<nobr> 3</nobr></button>
+      <button id="Aufgabe3" type="button" onclick="Aufgabe3()" >Aufgabe<nobr> 3</nobr></button>
                 
                 <p class = "Aufgabe" style="font-weight:bold;">Ein Fuhrpark besteht aus 13 Fahrzeugen, die monatlich 6 175 l Benzin verbrauchen.   Ergebnis: <input type="text" id="Eintrag3" maxlength="4" size="2" disabled="true"></input> €<BR>Wie hoch ist der monatliche Verbrauch in l, wenn 2 Fahrzeuge dazu kommen?</BR></span></p>   
-                   <button type="button" class ="Aufgabe" id="Loesung3" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe3.pdf');" style="visibility:hidden;">Lösung</button>
+                   <button type="button" id="Loesung3" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe3.pdf');" style="visibility:hidden;">Lösung</button>
                       
           <script>
 
@@ -106,6 +105,53 @@
           </script>
           
     </div>
+
+    <!--//Aufgabe 4-->     
+                        
+    <div class="Aufg">
+
+      <button id ="Aufgabe4" class = "Aufgabe" onclick="Aufgabe4()" style= "background-color: lightgrey;">Aufgabe<nobr> 4</nobr></button>
+      <p class = "Aufgabe" style="font-weight:bold;">28 Ordner kosten 156,80 €. Wie viel kosten 34 Ordner?</p>
+      <button class ="Aufgabe" id ="Loesung4" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe4.pdf');" style="visibility:hidden; ">Lösung</button>
+
+      <script>
+          function Aufgabe4() { 
+          document.getElementById("Aufgabe4").disabled="true"; document.getElementById("Loesung4").style.visibility="visible";
+                                    }
+        
+      </script>  
+      
+      </div>
+
+      <!--//Aufgabe 5--> 
+
+      <div class="Aufg">
+
+      <button id="Aufgabe5" class ="Aufgabe" onclick="Aufgabe5()" style= "background-color: lightgrey;">Aufgabe<nobr> 5</nobr></button>
+                
+                <p class = "Aufgabe" style="font-weight:bold;">Ein Fuhrpark besteht aus 13 Fahrzeugen, die monatlich 6 175 l Benzin verbrauchen.   Ergebnis: <input type="text" id="Eintrag5" maxlength="4" size="2" disabled="true"></input> €<BR>Wie hoch ist der monatliche Verbrauch in l, wenn 2 Fahrzeuge dazu kommen?</BR></span></p>   
+                   <button class ="Aufgabe" id="Loesung5" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe5.pdf');" style="visibility:hidden;">Lösung</button>
+                      
+          <script>
+
+              function Aufgabe5() { 
+              document.getElementById("Aufgabe5").disabled= true;
+              document.getElementById("Eintrag5").disabled = false;
+              document.getElementById("Eintrag5").focus(); 
+              }
+              Eintrag5.addEventListener('keydown', (event) => {
+                if (event.key === 'Enter' && Eintrag5.value=="1470") {alert("Richtig"); document.getElementById("Eintrag5").disabled="true"; document.getElementById("Loesung5").style.visibility="visible";   
+                   
+                 }
+                else if (event.key === 'Enter' && Eintrag5.value!=="1470" && Eintrag5.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag5").value="1470";            
+                document.getElementById("Loesung5").style.visibility="visible";
+                document.getElementById("Eintrag5").disabled="true"; }       
+                else if (event.key === 'Enter' && Eintrag5.value=="") {alert("Bitte eine Eingabe machen")}
+              }) 
+          </script>
+          
+    </div>
+
 
 </body>
 
