@@ -10,7 +10,9 @@
 <body style="background-color: #B9D1EA; margin: 10px; ">
        
 </head> 
-<body><style> .ueb1 {
+<body>
+  
+    <style> .ueb1 {
         display: flex;flex-direction:column;justify-content:center;align-items:center;}
         .Text1 { font-size: 1.5em;background-color: white; font-family: Verdana,Sans-serif; }
         
@@ -33,13 +35,13 @@
   <div class="ueb2">
     <p class="Text2">Klicken Sie auf eine Aufgabe Ihrer Wahl. <br>Sie sehen eine Eingabeaufforderung oder den Schalter: Lösung.</br></p>
 		<p class="Text2">Bestätigen Sie Ihre Eingabe, <br> oder starten Sie die Lösung.</br></p>
-  	
-	</div>
+  </div>
+
   <div class="Aufg">
             
             <!--//Aufgabe 1-->
             
-            <button  id="Aufgabe1" type="button" onclick="Aufgabe1()" style= "background-color: white;">Aufgabe<nobr> 1</nobr></button>
+            <button  id="Aufgabe1" type="button" class ="Aufgabe" onclick="Aufgabe1()" style= "background-color: white;">Aufgabe<nobr> 1</nobr></button>
                 
                 <p class = "Aufgabe" style="font-weight:bold;">Für 60 Tage Aushilfsarbeit bekommt ein Schüler 546 €. Wie viel € bekommt er für 76 Tage? &nbsp &nbsp Ergebnis: <input type="text" id="Eintrag1" class="Eingabe" maxlength="6" size="3" disabled ="true"></input> €</p>
                    <button type="button" id="Loesung1" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe1.pdf');" style="visibility:hidden; ">Lösung</button>
@@ -59,7 +61,9 @@
                           document.getElementById("Eintrag1").disabled="true"; }       
                           else if (event.key === 'Enter' && Eintrag1.value=="") {alert("Bitte eine Eingabe machen")}
                         }) 
-                      </script></div>
+                      </script>
+                      
+                    </div>
                       
  
                     <!--//Aufgabe 2-->     
