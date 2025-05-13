@@ -270,5 +270,14 @@
             <button type="button" id ="mehr" onclick="window.open('Dreisatz1.html');" >mehr...</button>
           </div>
 
+          <script>
+            document.body.addEventListener("input", function(inputEvent) {
+              const eingabeFeld = inputEvent.target;
+              if (eingabeFeld.maxLength > 0 && eingabeFeld.value.length > eingabeFeld.maxLength) {
+                eingabeFeld.value = eingabeFeld.value.substr(0, eingabeFeld.maxLength);
+              }
+            });
+          </script>
+
 </body>
 
