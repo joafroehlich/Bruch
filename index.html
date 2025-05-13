@@ -49,6 +49,7 @@
                         document.getElementById("Aufgabe1").disabled= true;
                         document.getElementById("Eintrag1").disabled = false;
                         document.getElementById("Eintrag1").focus(); 
+                        document.getElementById("Eintrag1").maxlength=6; 
                         }
                         Eintrag1.addEventListener('keydown', (event) => {
                           if (event.key === 'Enter' && Eintrag1.value=="691,60") {alert("Richtig"); document.getElementById("Eintrag1").disabled="true"; document.getElementById("Loesung1").style.visibility="visible";   
