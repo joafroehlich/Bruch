@@ -267,7 +267,7 @@
           </div>
 
           <div class="Aufg">
-            <button type="button" id ="mehr" onclick="window.open('Dreisatz1.html');" >mehr...</button>
+            <button type="button" id ="mehr" onclick="window.open('Dreisatz1.html'); window.close('index.html');">mehr...</button>
           </div>
 
           <script>
@@ -276,7 +276,7 @@
               if (eingabeFeld.maxLength > 0 && eingabeFeld.value.length > eingabeFeld.maxLength) {
                 eingabeFeld.value = eingabeFeld.value.substr(0, eingabeFeld.maxLength);
               }
-            });
+            })
           </script>
 
 </body>
