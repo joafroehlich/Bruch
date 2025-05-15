@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name ="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dreisatz</title>
+  <title>Prozentrechnung</title>
   
 </head>
 <body style="background-color: #B9D1EA; margin-top: 1em; ">
@@ -27,7 +27,7 @@
     
 	<div class="ueb1">
     <p class="Text1">Wie löse ich Matheaufgaben?</p>
-		<p class="Text1">Proportionale und antiproportionale Zuordnungen (Dreisatz)</p>
+		<p class="Text1">Prozentrechnung</p>
   </div>
 
   <div class="ueb2">
@@ -41,8 +41,9 @@
             
             <button  id="Aufgabe1" onclick="Aufgabe1()" >1</button>
                 
-                <p class = "Aufgabe" style="font-weight:bold;">Für 60 Tage Aushilfsarbeit bekommt ein Schüler 546 €. Wie viel € bekommt er für 76 Tage? Ergebnis: <input type="text" id="Eintrag1" class="Eingabe" maxlength="6" size="2" disabled ="true"></input> €</p>
-                   <button id="Loesung1" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe1.pdf');" style="visibility:hidden; ">Lösung</button>
+                <p class = "Aufgabe" style="font-weight:bold;">Ein Verein nimmt bei seinem Sommerfest 2540 € ein. Er muss davon 12% Vergnügungssteuer bezahlen.<br>   
+                  Welcher Betrag verbleibt dem Verein?  Ergebnis: <input type="text" id="Eintrag1" maxlength="7" size="4" disabled="true" ></input> €</br></p>
+                   <button id="Loesung1" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe1.pdf');" style="visibility:hidden; ">Lösung</button>
                       
                       <script>
                         function Aufgabe1() { 
@@ -51,10 +52,10 @@
                         document.getElementById("Eintrag1").focus(); 
                             }
                         Eintrag1.addEventListener('keydown', (event) => {
-                          if (event.key === 'Enter' && Eintrag1.value=="691,60") {alert("Richtig"); document.getElementById("Eintrag1").disabled="true"; document.getElementById("Loesung1").style.visibility="visible";   
+                          if (event.key === 'Enter' && Eintrag1.value=="2235,20") {alert("Richtig"); document.getElementById("Eintrag1").disabled="true"; document.getElementById("Loesung1").style.visibility="visible";   
                              
                            }
-                          else if (event.key === 'Enter' && Eintrag1.value!=="691,60" && Eintrag1.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag1").value="691,60";            
+                          else if (event.key === 'Enter' && Eintrag1.value!=="2235,20" && Eintrag1.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag1").value="2235,20";            
                           document.getElementById("Loesung1").style.visibility="visible";
                           document.getElementById("Eintrag1").disabled="true"; }       
                           else if (event.key === 'Enter' && Eintrag1.value=="") {alert("Bitte eine Eingabe machen")}
@@ -63,13 +64,13 @@
                       
                     </div>
                       
- 
-                    <!--//Aufgabe 2-->     
+                     <!--//Aufgabe 2-->     
                         
      <div class="Aufg">
                     <button id ="Aufgabe2" onclick="Aufgabe2()" >2</button>
-                    <p class = "Aufgabe" style="font-weight:bold;">Für Waren im Wert von 16 000 € muss der Empfänger 3 200 € Zoll bezahlen. Wie viel Zoll kosten Waren von 7 000 €?</p>
-                    <button id ="Loesung2" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe2.pdf');" style="visibility:hidden; ">Lösung</button>
+                    <p class = "Aufgabe" style="font-weight:bold;">Auf einer Rechnung steht: Schweinebraten 18,40 €,  Brot 2,00 €, Getränk 2,40 €. <br>
+                      Wie viel muss der Gast bezahlen, wenn er 10% Trinkgeld geben will?</br></span></p>
+                    <button id ="Loesung2" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe2.pdf');" style="visibility:hidden; ">Lösung</button>
             
                     <script>
                         function Aufgabe2() { 
@@ -86,8 +87,8 @@
 
       <button id="Aufgabe3" onclick="Aufgabe3()" >3</button>
                 
-                <p class = "Aufgabe" style="font-weight:bold;">Ein Fuhrpark besteht aus 13 Fahrzeugen, die monatlich 6 175 l Benzin verbrauchen.   <BR>Wie hoch ist der monatliche Verbrauch in l, wenn 2 Fahrzeuge dazu kommen?  Ergebnis: <input type="text" id="Eintrag3" maxlength="4" size="2" disabled="true"></input> €</BR></span></p>   
-                   <button id="Loesung3" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe3.pdf');" style="visibility:hidden;">Lösung</button>
+                <p class = "Aufgabe" style="font-weight:bold;">Von den 20 Schülern einer Klasse sind 3 krank. Wie viel Prozent der Schüler sind das? Ergebnis: <input type="text" id="Eintrag3" maxlength="2" size="1" disabled="true" ></input> %</p>   
+                   <button id="Loesung3" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe3.pdf');" style="visibility:hidden;">Lösung</button>
                       
           <script>
 
@@ -97,10 +98,10 @@
               document.getElementById("Eintrag3").focus(); 
               }
               Eintrag3.addEventListener('keydown', (event) => {
-                if (event.key === 'Enter' && Eintrag3.value=="7125") {alert("Richtig"); document.getElementById("Eintrag3").disabled="true"; document.getElementById("Loesung3").style.visibility="visible";   
+                if (event.key === 'Enter' && Eintrag3.value=="15") {alert("Richtig"); document.getElementById("Eintrag3").disabled="true"; document.getElementById("Loesung3").style.visibility="visible";   
                    
                  }
-                else if (event.key === 'Enter' && Eintrag3.value!=="7125" && Eintrag3.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag3").value="7125";            
+                else if (event.key === 'Enter' && Eintrag3.value!=="15" && Eintrag3.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag3").value="15";            
                 document.getElementById("Loesung3").style.visibility="visible";
                 document.getElementById("Eintrag3").disabled="true"; }       
                 else if (event.key === 'Enter' && Eintrag3.value=="") {alert("Bitte eine Eingabe machen")}
@@ -114,8 +115,8 @@
     <div class="Aufg">
 
       <button id ="Aufgabe4" onclick="Aufgabe4()" >4</button>
-      <p class = "Aufgabe" style="font-weight:bold;">28 Ordner kosten 156,80 €. Wie viel kosten 34 Ordner?</p>
-      <button  id ="Loesung4" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe4.pdf');" style="visibility:hidden; ">Lösung</button>
+      <p class = "Aufgabe" style="font-weight:bold;">In einer Klasse sind 8 Mädchen, das sind 25% der Schüler. Wie viel Schüler sind insgesamt in der Klasse? </p>
+      <button  id ="Loesung4" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe4.pdf');" style="visibility:hidden; ">Lösung</button>
 
       <script>
           function Aufgabe4() { 
@@ -132,8 +133,9 @@
 
       <button id="Aufgabe5" onclick="Aufgabe5()" >5</button>
                 
-                <p class = "Aufgabe" style="font-weight:bold;">Ein Großhändler bezieht 805 kg einer Ware für insgesamt 4 830 €. Wie viel kosten 245 kg?   Ergebnis: <input type="text" id="Eintrag5" maxlength="4" size="2" disabled ="true"></input> €</p>   
-                   <button id="Loesung5" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe5.pdf');" style="visibility:hidden;">Lösung</button>
+                <p class = "Aufgabe" style="font-weight:bold;">Ein Metzger gibt auf einen Fleischverkauf von 138,50 € einen Rabatt von 8%.   
+                  <br>Wie viel muss der Kunde bezahlen? Ergebnis: <input type="text" id="Eintrag5" maxlength="6" size="3" disabled="true" ></input> €</br></p>   
+                   <button id="Loesung5" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe5.pdf');" style="visibility:hidden;">Lösung</button>
                       
           <script>
 
@@ -143,10 +145,10 @@
               document.getElementById("Eintrag5").focus(); 
               }
               Eintrag5.addEventListener('keydown', (event) => {
-                if (event.key === 'Enter' && Eintrag5.value=="1470") {alert("Richtig"); document.getElementById("Eintrag5").disabled="true"; document.getElementById("Loesung5").style.visibility="visible";   
+                if (event.key === 'Enter' && Eintrag5.value=="127,42") {alert("Richtig"); document.getElementById("Eintrag5").disabled="true"; document.getElementById("Loesung5").style.visibility="visible";   
                    
                  }
-                else if (event.key === 'Enter' && Eintrag5.value!=="1470" && Eintrag5.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag5").value="1470";            
+                else if (event.key === 'Enter' && Eintrag5.value!=="127,42" && Eintrag5.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag5").value="127,42";            
                 document.getElementById("Loesung5").style.visibility="visible";
                 document.getElementById("Eintrag5").disabled="true"; }       
                 else if (event.key === 'Enter' && Eintrag5.value=="") {alert("Bitte eine Eingabe machen")}
@@ -160,9 +162,10 @@
       <!--//Aufgabe 6-->       
                         
       <button id ="Aufgabe6" onclick="Aufgabe6()" >6</button>
-        <p class = "Aufgabe" style="font-weight:bold;">Ein Vertreter erhält bei einem Umsatz von 109 200 € eine Prämie von 1 146,60 €.<BR>   
-          Wie hoch ist seine Prämie, wenn er den Umsatz um 8 400 € steigert?</BR></span></p>
-      <button id ="Loesung6" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe6.pdf');" style="visibility:hidden;">Lösung</button>
+        <p class = "Aufgabe" style="font-weight:bold;">Nach einer Klassenarbeit gibt es folgende Ergebnisse:2 Schüler eine 1,<br> 
+          8 Schüler eine 2, 10 Schüler eine 3, 8 Schüler eine 4 und 4 Schüler eine 5.<br>
+          Wie viel Prozent haben mindestens eine 4 erreicht? </BR></p>
+      <button id ="Loesung6" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe6.pdf');" style="visibility:hidden;">Lösung</button>
     
            <script>
 
@@ -179,8 +182,8 @@
         <div class="Aufg">
 
         <button id ="Aufgabe7" onclick="Aufgabe7()" >7</button>
-        <p class = "Aufgabe" style="font-weight:bold;">Für das Eindecken eines Daches von 408 m² braucht ein Dachdecker 10 200 Platten.    <BR>Wie viele Platten benötigt er für ein 381 m² großes Dach? Ergebnis: <input type="text" id="Eintrag7" maxlength="4" size="2" disabled="true" ></input></p>   
-        <button id ="Loesung7" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe7.pdf');" style="visibility:hidden;">Lösung</button>
+        <p class = "Aufgabe" style="font-weight:bold;">Ein Korb Äpfel wiegt 10 kg. Das Korbgewicht beträgt 5% des Gesamtgewichts. <BR>Wie viel kg wiegen die Äpfel?  Ergebnis: <input type="text" id="Eintrag7" maxlength="3" size="1" disabled="true"></input> kg</BR></p>   
+        <button id ="Loesung7" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe7.pdf');" style="visibility:hidden;">Lösung</button>
 
             <script>
 
@@ -190,10 +193,10 @@
                 document.getElementById("Eintrag7").focus(); 
                 }
                 Eintrag7.addEventListener('keydown', (event) => {
-                  if (event.key === 'Enter' && Eintrag7.value=="9525") {alert("Richtig"); document.getElementById("Eintrag7").disabled="true"; document.getElementById("Loesung7").style.visibility="visible";   
+                  if (event.key === 'Enter' && Eintrag7.value=="9,5") {alert("Richtig"); document.getElementById("Eintrag7").disabled="true"; document.getElementById("Loesung7").style.visibility="visible";   
                      
                    }
-                  else if (event.key === 'Enter' && Eintrag7.value!=="9525" && Eintrag7.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag7").value="9525";            
+                  else if (event.key === 'Enter' && Eintrag7.value!=="9,5" && Eintrag7.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag7").value="9,5";            
                   document.getElementById("Loesung7").style.visibility="visible";
                   document.getElementById("Eintrag7").disabled="true"; }       
                   else if (event.key === 'Enter' && Eintrag7.value=="") {alert("Bitte eine Eingabe machen")}
@@ -207,9 +210,9 @@
         <div class="Aufg">
                                 
               <button id ="Aufgabe8" onclick="Aufgabe8()" >8</button>
-                <p class = "Aufgabe" style="font-weight:bold;">Einen Auftrag sollen 24 Arbeiter in 9 Arbeitstagen erledigen. Wegen Krankheit fallen 6 Arbeiter aus.   
-                  <BR> In wie viel Tagen ist der Auftrag jetzt erledigt?</BR></p>
-              <button id ="Loesung8" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe8.pdf');" style="visibility:hidden;">Lösung</button>
+                <p class = "Aufgabe" style="font-weight:bold;">Bei der Produktion von Schrauben entsteht üblicherweise 1,5 % Ausschuss.
+                  <BR> Wie viel Schrauben wurden produziert, wenn 147 unbrauchbar waren? </BR></p>
+              <button id ="Loesung8" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe8.pdf');" style="visibility:hidden;">Lösung</button>
             
                    <script>
         
@@ -226,8 +229,8 @@
         <div class="Aufg">
 
           <button id ="Aufgabe9" onclick="Aufgabe9()" >9</button>
-          <p class = "Aufgabe" style="font-weight:bold;">Aus 50 kg Rohkaffee erhält man> 43,3 kg Röstkaffee. <BR>Wie hoch ist der Röstverlust bei einer Tagesproduktion von 22 650 kg Röstkaffee? Ergebnis: <input type="text" id="Eintrag9" maxlength="8" size="5" disabled ="true"></input> kg<BR>Tragen Sie das Ergebnis auf 3 Stellen nach dem Komma gerundet ein.<BR>Runden Sie auch Zwischenergebnisse auf 3 Stellen nach dem Komma.</input></p>   
-          <button id ="Loesung9" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe9.pdf');" style="visibility:hidden;">Lösung</button>
+          <p class = "Aufgabe" style="font-weight:bold;">In einer Klasse sind 40 Schüler. Davon werden 38 versetzt. Wie viel Prozent sind das?   Ergebnis: <input type="text" id="Eintrag9" maxlength="2" size="1" disabled="true" ></input> %</span></p>   
+          <button id ="Loesung9" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe9.pdf');" style="visibility:hidden;">Lösung</button>
   
               <script>
   
@@ -237,10 +240,10 @@
                   document.getElementById("Eintrag9").focus(); 
                   }
                   Eintrag9.addEventListener('keydown', (event) => {
-                    if (event.key === 'Enter' && Eintrag9.value=="3510,750") {alert("Richtig"); document.getElementById("Eintrag9").disabled="true"; document.getElementById("Loesung9").style.visibility="visible";   
+                    if (event.key === 'Enter' && Eintrag9.value=="95") {alert("Richtig"); document.getElementById("Eintrag9").disabled="true"; document.getElementById("Loesung9").style.visibility="visible";   
                        
                      }
-                    else if (event.key === 'Enter' && Eintrag9.value!=="3510,750" && Eintrag9.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag9").value="3510,750";            
+                    else if (event.key === 'Enter' && Eintrag9.value!=="95" && Eintrag9.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag9").value="95";            
                     document.getElementById("Loesung9").style.visibility="visible";
                     document.getElementById("Eintrag9").disabled="true"; }       
                     else if (event.key === 'Enter' && Eintrag9.value=="") {alert("Bitte eine Eingabe machen")}
@@ -254,8 +257,8 @@
         <div class="Aufg">
                                 
           <button id ="Aufgabe10" onclick="Aufgabe10()" >10</button>
-            <p class = "Aufgabe" style="font-weight:bold;">Für einen Ballen Kleiderstoff von 32,4 m Länge zahlt ein Betrieb 436,80 €. <BR> Wie viel kostet ein 2,15 m langer Stoffballen?</BR></p>
-          <button id ="Loesung10" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe10.pdf');" style="visibility:hidden;">Lösung</button>
+            <p class = "Aufgabe" style="font-weight:bold;">12,5 % einer Geldsumme entsprechen 11 €. Wie hoch ist die Gesamtsumme? </p>
+          <button id ="Loesung10" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe10.pdf');" style="visibility:hidden;">Lösung</button>
         
                <script>
     
@@ -267,7 +270,7 @@
           </div>
 
           <div class="Aufg">
-            <button type="button" id ="mehr" onclick="window.open('Dreisatz1.html'); window.close('index.html');">mehr...</button>
+            <button type="button" id ="mehr" onclick="window.open('Prozent1.html'); window.close('index.html');">mehr...</button>
           </div>
 
           <script>
