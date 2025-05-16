@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bruchrechnen</title>
+  
+</head>
+<body style="background-color: #B9D1EA; margin-top: 8em; ">
+       
+
+    <style> .ueb1 {
+        display: flex;flex-direction:column;justify-content:center;align-items:center;}
+        .Text1 { font-size: 1.5em;background-color: white; font-family: Verdana,Sans-serif; }
+        
+        .ueb2 {
+        display: flex;flex-direction:row;justify-content:center;align-items:center;}
+        .Text2 { font-size: 1em;background-color: white; justify-content:space-betweeen;font-family: Verdana,Sans-serif;margin:0.5em; }
+
+        .Aufg {
+        display: flex;flex-direction:row;justify-content:center;align-items:center;}
+        .Aufgabe { font-size: 0.8em;  font-family: Verdana,Sans-serif;margin:1em; }
+        button {background-color:white;font-size:0.8em; font-weight: bold; font-family: Verdana, Sans-serif;}
+        input {background-color:yellow; }
+    </style>
+    
+	
+  <div class="ueb2">
+    <p class="Text2">Klicken Sie auf eine Aufgabe Ihrer Wahl. <br>Sie sehen eine Eingabeaufforderung oder den Schalter: Lösung.</br></p>
+		<p class="Text2">Bestätigen Sie Ihre Eingabe, <br> oder starten Sie die Lösung.</br></p>
+  </div>
+
+  <div class="ueb2">
+    <p class="Text2">Zerlegen Sie die Zahl in Primfaktoren, ordnen Sie die Faktoren der<br>
+Größe nach. Verwenden Sie beim Eintragen keine Leerzeichen.<br><br>
+
+<span style="color:red; font-weight:bold;">864     Musterlösung: 2*2*2*2*2*3*3*3</span></br></p>
+		<p class="Text2" style="text-align:center;">Zu den Primzahlen<br><a href="https://de.wikibooks.org/wiki/Primzahlen:_Tabelle_der_Primzahlen_(2_-_100.000)">Bitte klicken.</a></br></p>
+  </div>
+
+  <div class="Aufg">
+            
+            <!--//Aufgabe 1-->
+            
+            <button  id="Aufgabe1" onclick="Aufgabe1()" >1</button>
+               
+                <p class = "Aufgabe" style="font-weight:bold;">1 840 <input type="text" id="Eintrag1" maxlength="12" size="10" disabled="true" ></input></p>
+                   <button id="Loesung1" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe1.pdf');" style="visibility:hidden; ">Lösung</button>
+                      
+                      <script>
+                        function Aufgabe1() { 
+                        document.getElementById("Aufgabe1").disabled= true;
+                        document.getElementById("Eintrag1").disabled = false;
+                        document.getElementById("Eintrag1").focus(); 
+                            }
+                        Eintrag1.addEventListener('keydown', (event) => {
+                          if (event.key === 'Enter' && Eintrag1.value=="691,60") {alert("Richtig"); document.getElementById("Eintrag1").disabled="true"; document.getElementById("Loesung1").style.visibility="visible";   
+                             
+                           }
+                          else if (event.key === 'Enter' && Eintrag1.value!=="691,60" && Eintrag1.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag1").value="691,60";            
+                          document.getElementById("Loesung1").style.visibility="visible";
+                          document.getElementById("Eintrag1").disabled="true"; }       
+                          else if (event.key === 'Enter' && Eintrag1.value=="") {alert("Bitte eine Eingabe machen")}
+                        }) 
+                      </script>
+
+                     <p class="Aufgabe">         </p>  
+          <button id ="Aufgabe10" onclick="Aufgabe10()" >10</button>
+            <p class = "Aufgabe" style="font-weight:bold;">Bestimmen Sie das kgV von<br>
+          2, 3, 4, 5, 6, 10, und 12.  Ergebnis: <input type="text" id="Eintrag10" maxlength="2" size="1" disabled="true" ></input></br></p>
+          <button id ="Loesung10" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe10.pdf');" style="visibility:hidden;">Lösung</button>
+        
+               <script>
+                        function Aufgabe10() { 
+                        document.getElementById("Aufgabe10").disabled= true;
+                        document.getElementById("Eintrag10").disabled = false;
+                        document.getElementById("Eintrag10").focus(); 
+                            }
+                        Eintrag10.addEventListener('keydown', (event) => {
+                          if (event.key === 'Enter' && Eintrag10.value=="691,60") {alert("Richtig"); document.getElementById("Eintrag10").disabled="true"; document.getElementById("Loesung10").style.visibility="visible";   
+                             
+                           }
+                          else if (event.key === 'Enter' && Eintrag10.value!=="691,60" && Eintrag10.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag10").value="691,60";            
+                          document.getElementById("Loesung10").style.visibility="visible";
+                          document.getElementById("Eintrag10").disabled="true"; }       
+                          else if (event.key === 'Enter' && Eintrag10.value=="") {alert("Bitte eine Eingabe machen")}
+                        }) 
+                      </script>
+    
+          </div>
+
+                    <script>
+            document.body.addEventListener("input", function(inputEvent) {
+              const eingabeFeld = inputEvent.target;
+              if (eingabeFeld.maxLength > 0 && eingabeFeld.value.length > eingabeFeld.maxLength) {
+                eingabeFeld.value = eingabeFeld.value.substr(0, eingabeFeld.maxLength);
+              }
+            })
+          </script>
+
+                      
+                    
