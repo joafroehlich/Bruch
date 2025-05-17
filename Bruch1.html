@@ -47,10 +47,11 @@ Größe nach. Verwenden Sie beim Eintragen keine Leerzeichen.<br><br>
   <div class="Aufg">
             
             <!--//Aufgabe 1-->
+
                <button  id="Aufgabe1" onclick="Aufgabe1()" >1</button>
                
                 <p class = "Aufgabe" style="font-weight:bold;">1 840 <input type="text" id="Eintrag1" maxlength="12" size="10" disabled="true" ></input></p> 
-                <button id="Loesung1" onclick="window.open('https://www.matheaufgaben-loesen.de/Bruchrechnen/Bruch_Aufgabe1.pdf');" >Lösung</button>
+                <button id="Loesung1" onclick="window.open('https://www.matheaufgaben-loesen.de/Bruchrechnen/Bruch_Aufgabe1.pdf');" style="visibility:hidden">Lösung</button>
                       
                       <script>
                         function Aufgabe1() { 
@@ -68,9 +69,71 @@ Größe nach. Verwenden Sie beim Eintragen keine Leerzeichen.<br><br>
                           else if (event.key === 'Enter' && Eintrag1.value=="") {alert("Bitte eine Eingabe machen")}
                         }) 
                       </script>
-                      </div>
 
-                      <!--//Das nachfolgende p dient dazu, einen Abstand zwischen Aufgebe 1 und 10 herzustellen-->
+                  <!--//Das nachfolgende p dient dazu, einen Abstand zwischen Aufgebe 1 und 10 herzustellen-->
+
+                   <p class="Aufgabe">                 </p>  
+
+                  <!--//Aufgabe 10-->
+
+          <button id ="Aufgabe10" onclick="Aufgabe10()" >10</button>
+            <p class = "Aufgabe" style="font-weight:bold;">Bestimmen Sie das kgV von<br>
+          2, 3, 4, 5, 6, 10, und 12.  Ergebnis: <input type="text" id="Eintrag10" maxlength="2" size="1" disabled="true" ></input></br></p>
+          <button id ="Loesung10" onclick="window.open('https://www.matheaufgaben-loesen.de/Bruchrechnen/Bruch_Aufgabe10.pdf');" style="visibility:hidden;">Lösung</button>
+        
+               <script>
+                        function Aufgabe10() { 
+                        document.getElementById("Aufgabe10").disabled= true;
+                        document.getElementById("Eintrag10").disabled = false;
+                        document.getElementById("Eintrag10").focus(); 
+                            }
+                        Eintrag10.addEventListener('keydown', (event) => {
+                          if (event.key === 'Enter' && Eintrag10.value=="60") {alert("Richtig"); document.getElementById("Eintrag10").disabled="true"; document.getElementById("Loesung10").style.visibility="visible";   
+                             
+                           }
+                          else if (event.key === 'Enter' && Eintrag10.value!=="60" && Eintrag10.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag10").value="60";            
+                          document.getElementById("Loesung10").style.visibility="visible";
+                          document.getElementById("Eintrag10").disabled="true"; }       
+                          else if (event.key === 'Enter' && Eintrag10.value=="") {alert("Bitte eine Eingabe machen")}
+                        }) 
+                      </script>
+    
+          </div>
+
+                      <!--//Aufgabe 2-->     
+     
+     
+         <div class="Aufg">
+
+                    <button id ="Aufgabe2" onclick="Aufgabe2()" >2</button>
+                    <p class = "Aufgabe" style="font-weight:bold;">2 535</p>
+                    <button id ="Loesung2" onclick="window.open('https://www.matheaufgaben-loesen.de/Bruchrechnen/Bruch_Aufgabe1a.pdf');" style="visibility:hidden; ">Lösung</button>
+            
+                    <script>
+                        function Aufgabe2() { 
+                        document.getElementById("Aufgabe2").disabled="true"; document.getElementById("Loesung2").style.visibility="visible";
+                                                  }
+                      
+                    </script> 
+
+                    <p class="Aufgabe">                            </p> 
+
+                    <!--//Aufgabe 11-->     
+                        
+                    <button id ="Aufgabe11" onclick="Aufgabe11()" >11</button>
+                    <p class = "Aufgabe" style="font-weight:bold;">Bestimmen Sie das kgV von<br>
+          37, 61, 71 und 74.</br></span></p>
+                    <button id ="Loesung11" onclick="window.open('https://www.matheaufgaben-loesen.de/Bruchrechnen/Bruch_Aufgabe5.pdf');" style="visibility:hidden; ">Lösung</button>
+            
+                    <script>
+                        function Aufgabe11() { 
+                        document.getElementById("Aufgabe11").disabled="true"; document.getElementById("Loesung11").style.visibility="visible";
+                                                  }
+                      
+                    </script> 
+
+            </div>
+
 
                      
 
