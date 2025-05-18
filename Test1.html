@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de"><!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bruchrechnen</title>
+  
+</head>
+<body style="background-color: #B9D1EA; margin-top: 8em; ">
+
+    <style>
+    
+    .aufgabe {
+   display: grid;
+   grid: "h2   h2  " auto 
+         "text text" auto
+         "vers lsng" auto
+       /  1fr  auto;
+}
+.aufgabe h2 {
+   grid-area: h2;
+}
+.aufgabe .text {
+   grid-area: text;
+}
+.aufgabe .versuch {
+   grid-area: vers;
+   text-align: right;
+}
+.aufgabe button {
+   grid-area: prüf;
+   justify-self: end;
+}
+.aufgabe a {
+   grid-area: lsng;
+}
+.aufgabe input {
+   width: 6em;
+}
+.aufgabe :is(button, a) {
+   width: 4.5em;
+   /* plus etliches Zeugs zur visuallen Angleichung a / button */
+   </style>
+
+   <main>
+<form class="aufgabe" name="aufgabe_1">
+  <h2>Aufgabe 1</h2>
+  <p class="text">Auf gaben text Auf gaben text Auf gaben text Auf gaben text Auf gaben text
+    Auf gaben text Auf gaben text Auf gaben text Auf gaben text</p>
+  <label class="versuch">
+    Ihr Versuch:
+    <input type="text" name="versuch_1">
+  </label>
+  <button name="verify">Prüfen</button>
+  <a href="...">Lösung</a>
+</form>
+<form class="aufgabe" name="aufgabe_2">
+  <h2>Aufgabe 2</h2>
+  <p class="text">Auf gaben text Auf gaben text Auf gaben text Auf gaben text Auf gaben text
+    Auf gaben text Auf gaben text Auf gaben text Auf gaben text</p>
+  <label class="versuch">
+    Ihr Versuch:
+    <input type="text" name="versuch_2">
+  </label>
+  <button name="verify">Prüfen</button>
+  <a href="...">Lösung</a>
+</form>
+</main>
+   </body>
+}
