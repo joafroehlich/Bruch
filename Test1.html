@@ -12,7 +12,7 @@
     <style>
     
    body {
-  max-width: 5em;
+  max-width: 30em;
   margin: 0 auto;
   padding: 0 6px;
 }
@@ -50,19 +50,20 @@
    grid-area: lsng;
 }
 
-</style>
-@media (width > 21em) {
+@media (width < 210em) {
    .aufgabe {
       grid: "h2   h2   h2 " auto 
             "text text text" auto
             "vers prüf lsng" auto
           /  1fr auto auto;
    }
+</style>
+
 }
 
    <main>
 <form class="aufgabe" name="aufgabe_1">
-  <h2>Aufgabe 1</h2>
+  <h2><button  id="Aufgabe1" onclick="Aufgabe1()" >1</button></h2>
   <p class="text">Auf gaben text Auf gaben text Auf gaben text Auf gaben text Auf gaben text
     Auf gaben text Auf gaben text Auf gaben text Auf gaben text</p>
   <label class="versuch">
