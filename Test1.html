@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="de"><!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8">
@@ -12,22 +11,36 @@
 
     <style>
     
-    .aufgabe {
+   body {
+  max-width: 20em;
+  margin: 0 auto;
+  padding: 0 6px;
+}
+.aufgabe {
+   margin: 1em 0;
    display: grid;
-   grid: "h2   h2  " auto 
+   grid: "h2  h2 " auto 
          "text text" auto
-         "vers lsng" auto
-       /  1fr  auto;
+         "vers vers" auto
+         "prüf lsng" auto
+       /  1fr auto;
+   gap: 0.3em;
 }
 .aufgabe h2 {
    grid-area: h2;
+   font: bold 1rem sans-serif;
+   margin: 0;
 }
 .aufgabe .text {
    grid-area: text;
+   margin: 0;
 }
 .aufgabe .versuch {
    grid-area: vers;
    text-align: right;
+}
+.aufgabe input {
+   width: 6em;
 }
 .aufgabe button {
    grid-area: prüf;
@@ -36,13 +49,16 @@
 .aufgabe a {
    grid-area: lsng;
 }
-.aufgabe input {
-   width: 6em;
+
+</style>
+@media (width > 21em) {
+   .aufgabe {
+      grid: "h2   h2   h2 " auto 
+            "text text text" auto
+            "vers prüf lsng" auto
+          /  1fr auto auto;
+   }
 }
-.aufgabe :is(button, a) {
-   width: 4.5em;
-   /* plus etliches Zeugs zur visuallen Angleichung a / button */
-   </style>
 
    <main>
 <form class="aufgabe" name="aufgabe_1">
@@ -68,5 +84,6 @@
   <a href="...">Lösung</a>
 </form>
 </main>
+
+
    </body>
-}
