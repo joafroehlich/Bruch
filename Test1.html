@@ -7,12 +7,9 @@
   <title>Bruchrechnen</title>
   
 </head>
-<body style="background-color: #B9D1EA; margin-top: 8em; ">
-
-    <style>
-    
-   body {
-  max-width: 30em;
+<style>
+body {
+  max-width: 50em;
   margin: 0 auto;
   padding: 0 6px;
 }
@@ -37,7 +34,7 @@
 }
 .aufgabe .versuch {
    grid-area: vers;
-   text-align: right;
+   
 }
 .aufgabe input {
    width: 6em;
@@ -48,26 +45,36 @@
 }
 .aufgabe a {
    grid-area: lsng;
+   text-align: left;
 }
-
-@media (width < 210em) {
+.aufgabe :is(button, a) {
+   display: inline-block;
+   box-sizing: border-box;
+   font-size: 0.9em;;
+   width: 4.5em;
+   font-family: sans-serif;
+   padding: 2px;
+   background-color: ButtonFace;
+   border: thin solid ButtonText;
+   border-radius: 3px;
+   text-align: center;
+   color: ButtonText;
+}
+@media (width > 21em) {
    .aufgabe {
       grid: "h2   h2   h2 " auto 
             "text text text" auto
             "vers prüf lsng" auto
           /  1fr auto auto;
    }
-</style>
-
 }
-
-   <main>
+</style>
+<main>
 <form class="aufgabe" name="aufgabe_1">
-  <h2><button  id="Aufgabe1" onclick="Aufgabe1()" >1</button></h2>
-  <p class="text">Auf gaben text Auf gaben text Auf gaben text Auf gaben text Auf gaben text
-    Auf gaben text Auf gaben text Auf gaben text Auf gaben text</p>
+  <h2>Aufgabe 1</h2>
+  <p class="text" style="font-weight:bold">1 840</p>
   <label class="versuch">
-    Ihr Versuch:
+    Tragen Sie Ihr Ergebnis ein:
     <input type="text" name="versuch_1">
   </label>
   <button name="verify">Prüfen</button>
@@ -85,6 +92,5 @@
   <a href="...">Lösung</a>
 </form>
 </main>
-
 
    </body>
