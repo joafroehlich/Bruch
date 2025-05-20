@@ -22,6 +22,7 @@ body {
          "prüf lsng" auto
        /  1fr auto;
    gap: 0.3em;
+   
 }
 .aufgabe h2 {
    grid-area: h2;
@@ -71,14 +72,15 @@ body {
 </style>
 <main>
 <form class="aufgabe" name="aufgabe_1">
-  <h2>Aufgabe 1</h2>
+  <h2><button  id="Aufgabe1" onclick="Aufgabe1()" >Aufgabe1</button></h2>
   <p class="text" style="font-weight:bold">1 840</p>
   <label class="versuch">
     Ihr Ergebnis:
-    <input type="text" name="versuch_1">
-  </label>
+    <input type="text" id="Eintrag1" maxlength="12" size="10" style= background-color:yellow disabled="true" ></input>
+  
   <button name="verify">Prüfen</button>
-  <a href="...">Lösung</a>
+  <button id="Loesung1" onclick="window.open('https://www.matheaufgaben-loesen.de/Bruchrechnen/Bruch_Aufgabe1.pdf');" style="visibility:hidden">Lösung</button>
+  </label>
 </form>
 <form class="aufgabe" name="aufgabe_2">
   <h2>Aufgabe 2</h2>
