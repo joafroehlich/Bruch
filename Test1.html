@@ -16,19 +16,20 @@ body {
 .aufgabe {
    margin: 1em 0;
    display: grid;
-   grid: "h2  h2 " auto 
+   grid: "Auf  Auf " auto 
          "text text" auto
          "vers vers" auto
-         "prüf lsng" auto
-       /  1fr auto;
+         "prüf lsng" auto;
+       
    gap: 0.3em;
    
+   
 }
-.aufgabe h2 {
-   grid-area: h2;
+.aufgabe .Auf {
+   grid-area: Auf;
    font: bold 1rem sans-serif;
-   margin: 0;
-}
+   margin: 0;}
+
 .aufgabe .text {
    grid-area: text;
    margin: 0;
@@ -37,9 +38,7 @@ body {
    grid-area: vers;
    
 }
-.aufgabe input {
-   width: 6em;
-}
+
 .aufgabe button {
    grid-area: prüf;
    justify-self: end;
@@ -48,39 +47,42 @@ body {
    grid-area: lsng;
    text-align: left;
 }
-.aufgabe :is(button, a) {
-   display: inline-block;
-   box-sizing: border-box;
-   font-size: 0.9em;;
-   width: 4.5em;
-   font-family: sans-serif;
-   padding: 2px;
-   background-color: ButtonFace;
-   border: thin solid ButtonText;
-   border-radius: 3px;
-   text-align: center;
-   color: ButtonText;
-}
+
 @media (width > 21em) {
    .aufgabe {
-      grid: "h2   h2   h2 " auto 
+      grid: "Auf   Auf   Auf " auto 
             "text text text" auto
             "vers prüf lsng" auto
           /  1fr auto auto;
    }
 }
 </style>
-<main>
+
 <form class="aufgabe" name="aufgabe_1">
-  <h2><button  id="Aufgabe1" onclick="Aufgabe1()" >Aufgabe1</button></h2>
+  <p class="Auf"  >Aufgabe 1</p>
   <p class="text" style="font-weight:bold">1 840</p>
   <label class="versuch">
     Ihr Ergebnis:
-    <input type="text" id="Eintrag1" maxlength="12" size="10" style= background-color:yellow disabled="true" ></input>
-  
-  <button name="verify">Prüfen</button>
+    <input type="text" id="Eintrag1" maxlength="12" size="10" style= background-color:yellow ></input>
+    <button name="verify">Prüfen</button>
   <button id="Loesung1" onclick="window.open('https://www.matheaufgaben-loesen.de/Bruchrechnen/Bruch_Aufgabe1.pdf');" style="visibility:hidden">Lösung</button>
   </label>
+  <script>
+                        function Aufgabe1() { 
+                        document.getElementById("Aufgabe1").disabled= true;
+                        document.getElementById("Eintrag1").disabled = false;
+                        document.getElementById("Eintrag1").focus(); 
+                            }
+                        Eintrag1.addEventListener('keydown', (event) => {
+                          if (event.key === 'Enter' && Eintrag1.value=="2*2*2*2*5*23") {alert("Richtig"); document.getElementById("Eintrag1").disabled="true"; document.getElementById("Loesung1").style.visibility="visible";   
+                             
+                           }
+                          else if (event.key === 'Enter' && Eintrag1.value!=="2*2*2*2*5*23" && Eintrag1.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag1").value="2*2*2*2*5*23";            
+                          document.getElementById("Loesung1").style.visibility="visible";
+                          document.getElementById("Eintrag1").disabled="true"; }       
+                          else if (event.key === 'Enter' && Eintrag1.value=="") {alert("Bitte eine Eingabe machen")}
+                        }) 
+                      </script>
 </form>
 <form class="aufgabe" name="aufgabe_2">
   <h2>Aufgabe 2</h2>
@@ -93,6 +95,6 @@ body {
   <button name="verify">Prüfen</button>
   <a href="...">Lösung</a>
 </form>
-</main>
+
 
    </body>
