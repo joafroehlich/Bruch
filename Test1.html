@@ -40,6 +40,7 @@ body {
 
 .aufgabe .versuch {
    grid-area: vers;
+   text-align:right;
    
 }
 
@@ -52,14 +53,6 @@ body {
    }
 }
 
-@media (width > 15em) {
-   .alter {
-      grid: "Auf   Auf   Auf " auto 
-            "text text text" auto
-            "lsng lsng lsng" auto
-          /  1fr auto auto;
-   }
-}
 </style>
 
 <form class="aufgabe" name="aufgabe_1">
@@ -90,10 +83,10 @@ body {
                       </script>
 </form>
 
-<form class="alter" name="aufgabe_2">
+<form class="aufgabe" name="aufgabe_2">
   <p class="Auf"  >Aufgabe 2</p>
   <p class="text" style="font-weight:bold">2 535</p>
-  <button onclick="window.open('https://www.matheaufgaben-loesen.de/Bruchrechnen/Bruch_Aufgabe2.pdf');" >Lösung</button>
+  <button class ="lsng" onclick="window.open('https://www.matheaufgaben-loesen.de/Bruchrechnen/Bruch_Aufgabe2.pdf');" >Lösung</button>
 </form>
 
 
