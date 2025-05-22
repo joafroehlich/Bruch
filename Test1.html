@@ -64,24 +64,28 @@ body {
   <label class="versuch">
     Ihr Ergebnis:
     <input type="text" id="Eintrag1" maxlength="12" size="10" style= background-color:yellow ></input>
-    <button name="verify">Prüfen</button>
+    <button id="Pruef1" onclick="Aufgabe1()">Prüfen</button>
   <button id="Loesung1" onclick="window.open('https://www.matheaufgaben-loesen.de/Bruchrechnen/Bruch_Aufgabe1.pdf');" style="visibility:hidden">Lösung</button>
   </label>
-  <script>
+  
+               
+                
+                <button id="Loesung1" onclick="window.open('https://www.matheaufgaben-loesen.de/Bruchrechnen/Bruch_Aufgabe1.pdf');" style="visibility:hidden">Lösung</button>
+                 
+                      <script>
                         function Aufgabe1() { 
-                        document.getElementById("Aufgabe1").disabled= true;
-                        document.getElementById("Eintrag1").disabled = false;
-                        document.getElementById("Eintrag1").focus(); 
-                            }
-                        Eintrag1.addEventListener('keydown', (event) => {
-                          if (event.key === 'Enter' && Eintrag1.value=="2*2*2*2*5*23") {alert("Richtig"); document.getElementById("Eintrag1").disabled="true"; document.getElementById("Loesung1").style.visibility="visible";   
-                             
-                           }
-                          else if (event.key === 'Enter' && Eintrag1.value!=="2*2*2*2*5*23" && Eintrag1.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag1").value="2*2*2*2*5*23";            
-                          document.getElementById("Loesung1").style.visibility="visible";
-                          document.getElementById("Eintrag1").disabled="true"; }       
-                          else if (event.key === 'Enter' && Eintrag1.value=="") {alert("Bitte eine Eingabe machen")}
-                        }) 
+                        
+                        
+                            
+                        
+                          if (Eintrag1.value=="2*2*2*2*5*23") {alert("Richtig"); document.getElementById("Pruef1").disabled= true;document.getElementById("Loesung1").style.visibility="visible";   
+                          }  
+                           
+                          else if (Eintrag1.value!=="2*2*2*2*5*23" && Eintrag1.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag1").value="2*2*2*2*5*23";            
+                          document.getElementById("Loesung1").style.visibility="visible";document.getElementById("Pruef1").disabled= true;}
+                               
+                          else if (Eintrag1.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
                       </script>
 </form>
 <form class="aufgabe" name="aufgabe_2">
