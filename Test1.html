@@ -34,21 +34,16 @@ body {
    grid-area: text;
    margin: 0;
 }
+.aufgabe .lsng {
+   grid-area: lsng;
+}
+
 .aufgabe .versuch {
    grid-area: vers;
    
 }
 
-.aufgabe button {
-   grid-area: prüf;
-   justify-self: end;
-}
-.aufgabe a {
-   grid-area: lsng;
-   text-align: left;
-}
-
-@media (width > 21em) {
+@media (width > 15em) {
    .aufgabe {
       grid: "Auf   Auf   Auf " auto 
             "text text text" auto
@@ -70,14 +65,11 @@ body {
   
                
                 
-                <button id="Loesung1" onclick="window.open('https://www.matheaufgaben-loesen.de/Bruchrechnen/Bruch_Aufgabe1.pdf');" style="visibility:hidden">Lösung</button>
+                
                  
                       <script>
                         function Aufgabe1() { 
-                        
-                        
-                            
-                        
+                                                
                           if (Eintrag1.value=="2*2*2*2*5*23") {alert("Richtig"); document.getElementById("Pruef1").disabled= true;document.getElementById("Loesung1").style.visibility="visible";   
                           }  
                            
@@ -88,16 +80,11 @@ body {
                          
                       </script>
 </form>
+
 <form class="aufgabe" name="aufgabe_2">
-  <h2>Aufgabe 2</h2>
-  <p class="text">Auf gaben text Auf gaben text Auf gaben text Auf gaben text Auf gaben text
-    Auf gaben text Auf gaben text Auf gaben text Auf gaben text</p>
-  <label class="versuch">
-    Ihr Versuch:
-    <input type="text" name="versuch_2">
-  </label>
-  <button name="verify">Prüfen</button>
-  <a href="...">Lösung</a>
+  <p class="Auf"  >Aufgabe 2</p>
+  <p class="text" style="font-weight:bold">2 535</p>
+  <button class ="lsng" onclick="window.open('https://www.matheaufgaben-loesen.de/Bruchrechnen/Bruch_Aufgabe2.pdf');" >Lösung</button>
 </form>
 
 
