@@ -11,15 +11,15 @@
        
 
     <style> .ueb1 {
-        display: flex;flex-direction:column;justify-content:center;align-items:center;}
-        .Text1 { font-size: 1.5em;background-color: white; font-family: Verdana,Sans-serif; }
+        display: flex;flex-direction:row;justify-content:center;align-items:center;}
+        .Text1 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif; }
         
         .ueb2 {
         display: flex;flex-direction:row;justify-content:center;align-items:center;}
         .Text2 { font-size: 1em;background-color: white; justify-content:space-betweeen;font-family: Verdana,Sans-serif;margin:0.5em; }
 
         .Aufg {
-         display: grid;grid-template-columns: 1fr 1fr; gap: 1em}
+         display: flex;flex-direction:row;justify-content:center;align-items:center;}
         .Aufgabe { font-size: 0.8em;  font-family: Verdana,Sans-serif;margin:1em; }
         button {background-color:white;font-size:0.8em; font-weight: bold; font-family: Verdana, Sans-serif;}
         input {background-color:yellow; }
@@ -30,16 +30,16 @@
     
 	
   <div class="ueb2">
-    <p class="Text2">Klicken Sie auf eine Aufgabe Ihrer Wahl. <br>Sie sehen eine Eingabeaufforderung oder den Schalter: Lösung.</br></p>
+    <p class="Text2">Sie sehen eine Eingabeaufforderung <br>oder den Schalter: Lösung.</br></p>
 		<p class="Text2">Bestätigen Sie Ihre Eingabe, <br> oder starten Sie die Lösung.</br></p>
   </div>
 
-  <div class="ueb2">
-    <p class="Text2">Zu den Aufgaben 1 - 9:<br>Zerlegen Sie die Zahl in Primfaktoren, ordnen Sie die Faktoren der<br>
-Größe nach. Verwenden Sie beim Eintragen keine Leerzeichen.<br><br>
+  <div class="ueb1">
+    <p class="Text1">Zerlegen Sie die Zahl in Primfaktoren, <br>ordnen Sie die Faktoren der
+Größe nach. <br>Verwenden Sie beim Eintragen keine Leerzeichen.<br>
 
 <span style="color:red; font-weight:bold;">864     Musterlösung: 2*2*2*2*2*3*3*3</span></br></p>
-		<p class="Text2" style="text-align:center;">Zu den Primzahlen<br><a href="https://de.wikibooks.org/wiki/Primzahlen:_Tabelle_der_Primzahlen_(2_-_100.000)">Bitte klicken.</a></br></p>
+		<p class="Text2" style="text-align:center;"><a href="https://de.wikibooks.org/wiki/Primzahlen:_Tabelle_der_Primzahlen_(2_-_100.000)">Zu den Primzahlen.</a></br></p>
   </div>
 
   
@@ -47,92 +47,35 @@ Größe nach. Verwenden Sie beim Eintragen keine Leerzeichen.<br><br>
             
             <!--//Aufgabe 1-->
 
-               <button  id="Aufgabe1" onclick="Aufgabe1()" >1</button>
-               
-                <p class = "Aufgabe" style="font-weight:bold;">1 840 <input type="text" id="Eintrag1" maxlength="12" size="10" disabled="true" ></input></p> 
-                <button id="Loesung1" onclick="window.open('https://www.matheaufgaben-loesen.de/Bruchrechnen/Bruch_Aufgabe1.pdf');" style="visibility:hidden">Lösung</button>
-                      
+               <p class="Auf"  >Aufgabe 1</p>
+               <p class="text" style="font-weight:bold">1 840</p>
+               <label class="versuch">
+                 Ihr Ergebnis:
+               <input type="text" id="Eintrag1" maxlength="12" size="10" style= background-color:yellow ></input>
+               <button id="Pruef1" onclick="Aufgabe1()">Prüfen</button>
+               <button id="Loesung1" onclick="window.open('https://www.matheaufgaben-loesen.de/Bruchrechnen/Bruch_Aufgabe1.pdf');" style="visibility:hidden">Lösung</button>
+              </label>
+                
+                 
                       <script>
                         function Aufgabe1() { 
-                        document.getElementById("Aufgabe1").disabled= true;
-                        document.getElementById("Eintrag1").disabled = false;
-                        document.getElementById("Eintrag1").focus(); 
-                            }
-                        Eintrag1.addEventListener('keydown', (event) => {
-                          if (event.key === 'Enter' && Eintrag1.value=="2*2*2*2*5*23") {alert("Richtig"); document.getElementById("Eintrag1").disabled="true"; document.getElementById("Loesung1").style.visibility="visible";   
-                             
-                           }
-                          else if (event.key === 'Enter' && Eintrag1.value!=="2*2*2*2*5*23" && Eintrag1.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag1").value="2*2*2*2*5*23";            
-                          document.getElementById("Loesung1").style.visibility="visible";
-                          document.getElementById("Eintrag1").disabled="true"; }       
-                          else if (event.key === 'Enter' && Eintrag1.value=="") {alert("Bitte eine Eingabe machen")}
-                        }) 
+                                                
+                          if (Eintrag1.value=="2*2*2*2*5*23") {alert("Richtig"); document.getElementById("Pruef1").disabled= true;document.getElementById("Loesung1").style.visibility="visible";   
+                          }  
+                           
+                          else if (Eintrag1.value!=="2*2*2*2*5*23" && Eintrag1.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag1").value="2*2*2*2*5*23";            
+                          document.getElementById("Loesung1").style.visibility="visible";document.getElementById("Pruef1").disabled= true;}
+                               
+                          else if (Eintrag1.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
                       </script>
+</form>
 
                   <!--//Das nachfolgende p dient dazu, einen Abstand zwischen Aufgebe 1 und 10 herzustellen-->
 
                    <p class="Aufgabe">                 </p>  
 
-                  <!--//Aufgabe 10-->
-
-          <button id ="Aufgabe10" onclick="Aufgabe10()" >10</button>
-            <p class = "Aufgabe" style="font-weight:bold;">Bestimmen Sie das kgV von<br>
-          2, 3, 4, 5, 6, 10, und 12.  Ergebnis: <input type="text" id="Eintrag10" maxlength="2" size="1" disabled="true" ></input></br></p>
-          <button id ="Loesung10" onclick="window.open('https://www.matheaufgaben-loesen.de/Bruchrechnen/Bruch_Aufgabe10.pdf');" style="visibility:hidden;">Lösung</button>
-        
-               <script>
-                        function Aufgabe10() { 
-                        document.getElementById("Aufgabe10").disabled= true;
-                        document.getElementById("Eintrag10").disabled = false;
-                        document.getElementById("Eintrag10").focus(); 
-                            }
-                        Eintrag10.addEventListener('keydown', (event) => {
-                          if (event.key === 'Enter' && Eintrag10.value=="60") {alert("Richtig"); document.getElementById("Eintrag10").disabled="true"; document.getElementById("Loesung10").style.visibility="visible";   
-                             
-                           }
-                          else if (event.key === 'Enter' && Eintrag10.value!=="60" && Eintrag10.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag10").value="60";            
-                          document.getElementById("Loesung10").style.visibility="visible";
-                          document.getElementById("Eintrag10").disabled="true"; }       
-                          else if (event.key === 'Enter' && Eintrag10.value=="") {alert("Bitte eine Eingabe machen")}
-                        }) 
-                      </script>
-    
-          </div>
-
-                      <!--//Aufgabe 2-->     
-     
-     
-         <div class="Aufg">
-
-                    <button id ="Aufgabe2" onclick="Aufgabe2()" >2</button>
-                    <p class = "Aufgabe" style="font-weight:bold;">2 535</p>
-                    <button id ="Loesung2" onclick="window.open('https://www.matheaufgaben-loesen.de/Bruchrechnen/Bruch_Aufgabe1a.pdf');" style="visibility:hidden; ">Lösung</button>
-            
-                    <script>
-                        function Aufgabe2() { 
-                        document.getElementById("Aufgabe2").disabled="true"; document.getElementById("Loesung2").style.visibility="visible";
-                                                  }
-                      
-                    </script> 
-
-                    <p class="Aufgabe">                            </p> 
-
-                    <!--//Aufgabe 11-->     
-                        
-                    <button id ="Aufgabe11" onclick="Aufgabe11()" >11</button>
-                    <p class = "Aufgabe" style="font-weight:bold;">Bestimmen Sie das kgV von<br>
-          37, 61, 71 und 74.</br></span></p>
-                    <button id ="Loesung11" onclick="window.open('https://www.matheaufgaben-loesen.de/Bruchrechnen/Bruch_Aufgabe5.pdf');" style="visibility:hidden; ">Lösung</button>
-            
-                    <script>
-                        function Aufgabe11() { 
-                        document.getElementById("Aufgabe11").disabled="true"; document.getElementById("Loesung11").style.visibility="visible";
-                                                  }
-                      
-                    </script> 
-
-            </div>
-
+                  
 
                      
 
@@ -148,6 +91,8 @@ Größe nach. Verwenden Sie beim Eintragen keine Leerzeichen.<br><br>
               }
             })
           </script>
+
+        </body></html>
 
                       
                     
