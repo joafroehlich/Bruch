@@ -7,7 +7,7 @@
   <title>Bruchrechnen</title>
   
 
-<body style="background-color: #B9D1EA; margin-top: 8em; ">
+<body style="background-color: #B9D1EA; margin-top: 3em; ">
        
 
     <style> .ueb1 {
@@ -20,10 +20,52 @@
 
         .Aufg {
          display: flex;flex-direction:row;justify-content:center;align-items:center;}
-        .Aufgabe { font-size: 0.8em;  font-family: Verdana,Sans-serif;margin:1em; }
-        button {background-color:white;font-size:0.8em; font-weight: bold; font-family: Verdana, Sans-serif;}
+        .Aufgabe { font-size: 1em;  font-family: Verdana,Sans-serif; margin:0.2em;}
+        button {background-color:white;font-size:0.8em; font-family: Verdana, Sans-serif;}
         input {background-color:yellow; }
+body {
+  max-width: 30em;
+  margin: 0 auto;
+  padding: 0 6px;
+}
+.aufgabe {
+   margin: 1em 0;
+   display: grid;
+   grid: "Auf  Auf " auto 
+         "text text" auto
+         "vers vers" auto
+         "prüf lsng" auto;
+       
+   gap: 0.3em;
+   
+   
+}
+.aufgabe .Auf {
+   grid-area: Auf;
+   font: bold 1rem sans-serif;
+   margin: 0;}
 
+.aufgabe .text {
+   grid-area: text;
+   margin: 0;
+}
+.aufgabe .lsng {
+   grid-area: lsng;
+}
+
+.aufgabe .versuch {
+   grid-area: vers;
+   text-align:right;
+   
+}
+
+@media (width > 15em) {
+   .aufgabe {
+      grid: "Auf   Auf   Auf " auto 
+            "text text text" auto
+            "vers prüf lsng" auto
+          /  1fr auto auto;
+   }}
         
     </style>
     </head>
@@ -38,25 +80,21 @@
     <p class="Text1">Zerlegen Sie die Zahl in Primfaktoren, <br>ordnen Sie die Faktoren der
 Größe nach. <br>Verwenden Sie beim Eintragen keine Leerzeichen.<br>
 
-<span style="color:red; font-weight:bold;">864     Musterlösung: 2*2*2*2*2*3*3*3</span></br></p>
+<span style="color:red; font-weight:bold;">864     Musterlösung: 2*2*2*2*2*3*3*3</span>
 		<p class="Text2" style="text-align:center;"><a href="https://de.wikibooks.org/wiki/Primzahlen:_Tabelle_der_Primzahlen_(2_-_100.000)">Zu den Primzahlen.</a></br></p>
   </div>
 
+  <form class="aufgabe" name="aufgabe_1">
+  <p class="Auf"  >Aufgabe 1</p>
+  <p class="text" style="font-weight:bold">1 840</p>
+  <label class="versuch" >
+    Ihr Ergebnis:
+    <input type="text" id="Eintrag1" maxlength="12" size="10" style= background-color:yellow ></input>
+    <button id="Pruef1" onclick="Aufgabe1()">Prüfen</button>
+  <button id="Loesung1" onclick="window.open('https://www.matheaufgaben-loesen.de/Bruchrechnen/Bruch_Aufgabe1.pdf');" style="visibility:hidden">Lösung</button>
+  </label>
   
-  <div class="Aufg">
-            
-            <!--//Aufgabe 1-->
-
-               <p class="Auf"  >Aufgabe 1</p>
-               <p class="text" style="font-weight:bold">1 840</p>
-               <label class="versuch">
-                 Ihr Ergebnis:
-               <input type="text" id="Eintrag1" maxlength="12" size="10" style= background-color:yellow ></input>
-               <button id="Pruef1" onclick="Aufgabe1()">Prüfen</button>
-               <button id="Loesung1" onclick="window.open('https://www.matheaufgaben-loesen.de/Bruchrechnen/Bruch_Aufgabe1.pdf');" style="visibility:hidden">Lösung</button>
-              </label>
-                
-                 
+                    
                       <script>
                         function Aufgabe1() { 
                                                 
@@ -71,17 +109,44 @@ Größe nach. <br>Verwenden Sie beim Eintragen keine Leerzeichen.<br>
                       </script>
 </form>
 
-                  <!--//Das nachfolgende p dient dazu, einen Abstand zwischen Aufgebe 1 und 10 herzustellen-->
+<form class="aufgabe" name="aufgabe_2">
+  <p class="Auf"  >Aufgabe 2</p>
+  <p class="text" style="font-weight:bold">2 535</p>
+  <button class ="lsng" onclick="window.open('https://www.matheaufgaben-loesen.de/Bruchrechnen/Bruch_Aufgabe1a.pdf');" >Lösung</button>
+</form>
 
-                   <p class="Aufgabe">                 </p>  
+<form class="aufgabe" name="aufgabe_3">
+  <p class="Auf"  >Aufgabe 3</p>
+  <p class="text" style="font-weight:bold">3 232</p>
+  <label class="versuch">
+    Ihr Ergebnis:
+    <input type="text" id="Eintrag3" maxlength="13" size="10" style= background-color:yellow ></input>
+    <button id="Pruef3" onclick="Aufgabe3()">Prüfen</button>
+  <button id="Loesung3" onclick="window.open('https://www.matheaufgaben-loesen.de/Bruchrechnen/Bruch_Aufgabe1b.pdf');" style="visibility:hidden">Lösung</button>
+  </label>
+  
+                    
+                      <script>
+                        function Aufgabe3() { 
+                                                
+                          if (Eintrag3.value=="2*2*2*2*2*101") {alert("Richtig"); document.getElementById("Pruef3").disabled= true;document.getElementById("Loesung3").style.visibility="visible";   
+                          }  
+                           
+                          else if (Eintrag3.value!=="2*2*2*2*2*101" && Eintrag3.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag3").value="2*2*2*2*2*101";            
+                          document.getElementById("Loesung3").style.visibility="visible";document.getElementById("Pruef3").disabled= true;}
+                               
+                          else if (Eintrag3.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+</form>
 
-                  
-
-                     
-
-
-                      
-
+<form class="aufgabe" name="aufgabe_4">
+  <p class="Auf"  >Aufgabe 4</p>
+  <p class="text" style="font-weight:bold">10 448</p>
+  <button class ="lsng" onclick="window.open('https://www.matheaufgaben-loesen.de/Bruchrechnen/Bruch_Aufgabe1c.pdf');" >Lösung</button>
+</form>
+            
+            
                      
           <script>
             document.body.addEventListener("input", function(inputEvent) {
