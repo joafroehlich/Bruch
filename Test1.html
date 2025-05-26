@@ -7,68 +7,53 @@
   <title>Bruchrechnen</title>
   
 </head>
-<style>
-body {
-  max-width: 30em;
-  margin: 0 auto;
-  padding: 0 6px;
-}
-.aufgabe {
-   margin: 1em 0;
-   display: grid;
-   grid: "Auf  Auf " auto 
-         "text text" auto
-         "vers vers" auto
-         "prüf lsng" auto;
+<body style="background-color: #B9D1EA; margin-top: 1em; ">
        
-   gap: 0.3em;
-   
-   
-}
-.aufgabe .Auf {
-   grid-area: Auf;
-   font: bold 1rem sans-serif;
-   margin: 0;}
 
-.aufgabe .text {
-   grid-area: text;
-   margin: 0;
-}
-.aufgabe .lsng {
-   grid-area: lsng;
-}
+    <style> .ueb1 
+         
+        .Text1 { font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em;}
+        
+        .ueb2 {
+        display: flex;flex-direction:row;justify-content:start;align-items:center;}
+        .Text2 { font-size: 1em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        
+        .Aufg 
+        
+        .Aufgabe { font-size: 0.8em;  font-family: Verdana,Sans-serif;margin:0.5em; }
+        button {background-color:white;font-size:0.8em; font-weight: bold; font-family: Verdana, Sans-serif; }
+        input {background-color:yellow; }
+    </style>
+    
+	<div class="ueb1">
+    <p class="Text1">Wie löse ich Matheaufgaben?</p>
+		<p class="Text1">Bruchrechnen</p>
+  </div>
 
-.aufgabe .versuch {
-   grid-area: vers;
-   text-align:right;
-   
-}
+  <div class="ueb2">
+    <p class="Text2">Klicken Sie auf eine Aufgabe Ihrer Wahl. Sie sehen <br>eine Eingabeaufforderung oder den Schalter: Lösung.</br></p>
+		<p class="Text2">Tragen Sie Ihr Ergebnis ein, prüfen Sie es, <br>oder starten Sie die Lösung.</br></p>
+  </div>
 
-@media (width > 15em) {
-   .aufgabe {
-      grid: "Auf   Auf   Auf " auto 
-            "text text text" auto
-            "vers prüf lsng" auto
-          /  1fr auto auto;
-   }
-}
+  <div class="ueb2">
+    <p class="Text3">Zerlegen Sie die Zahl in Primfaktoren, <br>ordnen Sie die Faktoren der
+Größe nach. <br>Verwenden Sie beim Eintragen keine Leerzeichen.<br>
 
-</style>
+<span style="color:red; font-weight:bold;">864     Musterlösung: 2*2*2*2*2*3*3*3</span>
+		<p class="Text2" style="text-align:center;"><a href="https://de.wikibooks.org/wiki/Primzahlen:_Tabelle_der_Primzahlen_(2_-_100.000)">Zu den Primzahlen.</a></br></p>
+  </div>
 
-<form class="aufgabe" name="aufgabe_1">
-  <p class="Auf"  >Aufgabe 1</p>
-  <p class="text" style="font-weight:bold">1 840</p>
-  <label class="versuch">
-    Ihr Ergebnis:
+  <div class ="Aufg" >
+
+  <p class ="Aufgabe" style="font-weight:bold" >Aufgabe 1</p>
+  <p style="font-weight:bold">1 840    <span>Ihr Ergebnis:</span>
     <input type="text" id="Eintrag1" maxlength="12" size="10" style= background-color:yellow ></input>
     <button id="Pruef1" onclick="Aufgabe1()">Prüfen</button>
-  <button id="Loesung1" onclick="window.open('https://www.matheaufgaben-loesen.de/Bruchrechnen/Bruch_Aufgabe1.pdf');" style="visibility:hidden">Lösung</button>
-  </label>
+  <button id="Loesung1" onclick="window.open('https://www.matheaufgaben-loesen.de/Bruchrechnen/Bruch_Aufgabe1.pdf');" style="visibility:hidden">Lösung</button></p>
   
-               
-                
-                
-                 
+  
+                    
                       <script>
                         function Aufgabe1() { 
                                                 
@@ -81,13 +66,6 @@ body {
                           else if (Eintrag1.value=="") {alert("Bitte eine Eingabe machen")}}
                          
                       </script>
-</form>
-
-<form class="aufgabe" name="aufgabe_2">
-  <p class="Auf"  >Aufgabe 2</p>
-  <p class="text" style="font-weight:bold">2 535</p>
-  <button class ="lsng" onclick="window.open('https://www.matheaufgaben-loesen.de/Bruchrechnen/Bruch_Aufgabe2.pdf');" >Lösung</button>
-</form>
-
+</div>
 
    </body>
