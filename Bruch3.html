@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bruchrechnen</title>
+
+</head>
+
+<body style="background-color: #B9D1EA; margin-top: 1em; ">
+       
+
+    <style> 
+         
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em;}
+        
+        .ueb1 {display: flex;flex-direction:row;justify-content:start;align-items:center;}
+        .ueb2 {display: flex;flex-direction:column;justify-content:start;align-items:center;}
+        .Text2 { font-size: 1em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        
+        .Aufgabe { font-size: 0.8em;  font-family: Verdana,Sans-serif;margin:0.5em;}
+        button {background-color:white;font-size:1em; font-family: Verdana, Sans-serif; }
+        input {background-color:yellow; }
+    </style>
+
+<!--//Aufgabe 23-->
+
+    <p class="Aufgabe" style="font-weight:bold" >Aufgabe 23</p>
+        <p class="Aufgabe" style="font-weight:bold">Bestimmen Sie den ggT von <br> 630, 1 512, 2 772, 4 662, 65 520    &nbsp; &nbsp; &nbsp; 
+        <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Bruchrechnen/Bruch_Aufgabe16.pdf');" >Lösung</button></p>
+
+<!--//Aufgabe 24-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 24</p>
+  <p class = "Aufgabe" ><strong>Bestimmen Sie den ggT von <br> 180, 504, 3 132, 12 780</strong><br> Ihr Ergebnis:
+    <input type="text" id="Eintrag24" maxlength="2" size="1" style= background-color:yellow ></input>
+    <button id="Pruef24" onclick="Aufgabe24()">Prüfen</button>
+  <button id="Loesung24" onclick="window.open('https://www.matheaufgaben-loesen.de/Bruchrechnen/Bruch_Aufgabe17.pdf');" style="visibility:hidden">Lösung</button></p>
+
+                    <script>
+                        function Aufgabe24() { 
+                                                
+                          if (Eintrag24.value=="36") {alert("Richtig"); document.getElementById("Pruef24").disabled= true;document.getElementById("Loesung24").style.visibility="visible";   
+                          }  
+                           
+                          else if (Eintrag24.value!=="36" && Eintrag24.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag24").value="36";                                  
+                          document.getElementById("Loesung24").style.visibility="visible";document.getElementById("Pruef24").disabled= true;}                               
+                          else if (Eintrag24.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script><br>
+
+      <p class="Aufgabe" > <span style= "background-color:white;">Addition und Subtraktion</span></p><br> 
+
+    <!--//Aufgabe 25--> 
+    
+    <p class="Aufgabe" style="font-weight:bold" >Aufgabe 25</p>
+        <pre><p class="Aufgabe" style="font-weight:bold"> 1       2      3     1
+-- + ---- - --- - ---     &nbsp; &nbsp; &nbsp;    <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Bruchrechnen/Bruch_Aufgabe18.pdf');" >Lösung</button>
+ 2       3      4     6  </p></pre>  
+        
+
+
+       <button type="button" class ="Aufgabe" onclick="window.open('index.html'); window.close('Bruch2.html');">zurück...</button>    
+	     <button type="button" class ="Aufgabe" onclick="window.open('Bruch3.html'); window.close('Bruch2.html');">mehr...</button>
+    
+    <script>
+            document.body.addEventListener("input", function(inputEvent) {
+              const eingabeFeld = inputEvent.target;
+              if (eingabeFeld.maxLength > 0 && eingabeFeld.value.length > eingabeFeld.maxLength) {
+                eingabeFeld.value = eingabeFeld.value.substr(0, eingabeFeld.maxLength);
+              }
+            })
+          </script>
+</body>
+
+
+
+
+
+
