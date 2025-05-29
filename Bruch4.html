@@ -83,6 +83,25 @@
 116 ----- + 23 -----    &nbsp; &nbsp;    <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Bruchrechnen/Bruch_Aufgabe28.pdf');" >Lösung</button> 
        117            78 </p></pre> 
 
+    <!--//Aufgabe 36-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 36</p>
+  <pre><p class = "Aufgabe" ><strong>       5           5           1            <input type="text" id="Eintrag34" maxlength="2" style = width:15px></input>
+ 19 --- - 10 ---- + 2 --- = 11 -----  </strong>  &nbsp; &nbsp;Ihr Ergebnis: <button id="Pruef34" onclick="Aufgabe34()">Prüfen</button>  <button id="Loesung34" onclick="window.open('https://www.matheaufgaben-loesen.de/Bruchrechnen/Bruch_Aufgabe29.pdf');" style="visibility:hidden">Lösung</button>
+ <strong>      6           8          2             24 </strong>     </p></pre>
+   
+                    <script>
+                        function Aufgabe34() { 
+                                                
+                          if (Eintrag34.value=="504") {alert("Richtig"); document.getElementById("Pruef34").disabled= true;document.getElementById("Loesung34").style.visibility="visible";   
+                          }  
+                           
+                          else if (Eintrag34.value!=="504" && Eintrag34.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag34").value="504";                                  
+                          document.getElementById("Loesung34").style.visibility="visible";document.getElementById("Pruef34").disabled= true;}                               
+                          else if (Eintrag34.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>   
+
  
                    
  
