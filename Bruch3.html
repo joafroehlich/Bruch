@@ -157,8 +157,26 @@
     
     <p class="Aufgabe" style="font-weight:bold" >Aufgabe 51</p>
         <pre><p class="Aufgabe" style="font-weight:bold">3       5        2       7     
--- * ----- * ---- * ---  &nbsp; &nbsp;    <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Bruchrechnen/Bruch_Aufgabe37a.pdf');" >Lösung</button>            
-8      14       3      15  </p></pre>                                            
+-- * ----- * ---- * ---  &nbsp; &nbsp;    <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Bruchrechnen/Bruch_Aufgabe38.pdf');" >Lösung</button>            
+8      14       3      15  </p></pre> 
+
+<!--//Aufgabe 52-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 52</p>
+  <pre><p class = "Aufgabe" ><strong>       18      37       58          2
+5 * ---- * ----- * ----- = 2 ----  </strong>  &nbsp; &nbsp;Ihr Ergebnis: <button id="Pruef52" onclick="Aufgabe52()">Prüfen</button>  <button id="Loesung52" onclick="window.open('https://www.matheaufgaben-loesen.de/Bruchrechnen/Bruch_Aufgabe39.pdf');" style="visibility:hidden">Lösung</button>
+ <strong>      29      25      111</strong>        <input type="text" id="Eintrag52" maxlength="1" style = width:10px></input>    </p></pre>
+   
+                    <script>
+                        function Aufgabe52() { 
+                                                
+                          if (Eintrag50.value=="5") {alert("Richtig"); document.getElementById("Pruef52").disabled= true;document.getElementById("Loesung52").style.visibility="visible";   
+                          }  
+                           
+                          else if (Eintrag52.value!=="5" && Eintrag52.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag52").value="5";                                  
+                          document.getElementById("Loesung52").style.visibility="visible";document.getElementById("Pruef52").disabled= true;}                               
+                          else if (Eintrag52.value=="") {alert("Bitte eine Eingabe machen")}}
+                      </script> 
 
               
 
