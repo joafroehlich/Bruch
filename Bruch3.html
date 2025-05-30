@@ -333,9 +333,28 @@
 <!--//Aufgabe 65--> 
     
     <p class="Aufgabe" style="font-weight:bold" >Aufgabe 65</p>
-        <pre><p class="Aufgabe" style="font-weight:bold">      16          4
+        <pre><p class="Aufgabe" style="font-weight:bold">       16          4
 12 ----- : 3 -----    &nbsp; &nbsp;    <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Bruchrechnen/Bruch_Aufgabe47a.pdf');" >Lösung</button>                
-      17         17 </p></pre>
+       17         17 </p></pre>
+
+<!--//Aufgabe 66-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 66</p>
+  <pre><p class = "Aufgabe" ><strong>       25           26        385      
+ 66 ----- : 12 ----- = ------ </strong>   &nbsp;Ihr Ergebnis: <button id="Pruef66" onclick="Aufgabe66()">Prüfen</button>  <button id="Loesung66" onclick="window.open('https://www.matheaufgaben-loesen.de/Bruchrechnen/Bruch_Aufgabe48.pdf');" style="visibility:hidden">Lösung</button>      
+ <strong>      36           55</strong>        <input type="text" id="Eintrag66" maxlength="2" style = width:15px></input></p></pre>
+       
+      
+                    <script>
+                        function Aufgabe66() { 
+                                                
+                          if (Eintrag66.value=="72") {alert("Richtig"); document.getElementById("Pruef66").disabled= true;document.getElementById("Loesung66").style.visibility="visible";   
+                          }  
+                           
+                          else if (Eintrag66.value!=="72" && Eintrag66.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag66").value="72";                                  
+                          document.getElementById("Loesung66").style.visibility="visible";document.getElementById("Pruef66").disabled= true;}                               
+                          else if (Eintrag66.value=="") {alert("Bitte eine Eingabe machen")}}
+                      </script>       
 
                         
 
