@@ -140,7 +140,7 @@ b) 1 t Kies kostet 80/3 €. Wie teuer ist die Gesamtlieferung? </strong></p></p
 
                     <script>
                         function Aufgabe78() {    
-                                                8
+                                                
                           if (Eintrag78.value=="20") {alert("Richtig"); document.getElementById("Pruef78").disabled= true;document.getElementById("Loesung78").style.visibility="visible";   
                           }  
                            
@@ -171,7 +171,7 @@ Ihr Ergebnis: <input type="text" id="Eintrag80" maxlength="6" style = width:45px
 
                     <script>
                         function Aufgabe80() {    
-                                                8
+                                                
                           if (Eintrag80.value=="112500") {alert("Richtig"); document.getElementById("Pruef80").disabled= true;document.getElementById("Loesung80").style.visibility="visible";   
                           }  
                            
@@ -200,7 +200,7 @@ Ihr Ergebnis: <input type="text" id="Eintrag82" maxlength="4" style = width:31px
 
                     <script>
                         function Aufgabe82() {    
-                                                8
+                                                
                           if (Eintrag82.value=="2000") {alert("Richtig"); document.getElementById("Pruef82").disabled= true;document.getElementById("Loesung82").style.visibility="visible";   
                           }  
                            
@@ -219,7 +219,25 @@ Wie viel Liter sind das?
 b) Ein Anzug kostet nur noch 3/4 des alten Preises. 
 Bisher kostete er 204 Euro. Wie viel kostet er jetzt?</strong>    <button id="Loesung83" onclick="window.open('https://www.matheaufgaben-loesen.de/Bruchrechnen/Bruch_Aufgabe60.pdf');" >Lösung</button></p></pre>    
 
+ <!--//Aufgabe 84-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 84</p>
+  <pre><p class = "Aufgabe" ><strong>In einem Gefäß sind 3/10 l Milch, 
+damit ist es zu 2/5 gefüllt. Wie viel l   <input type="text" id="Eintrag84" maxlength="1" style = width:10px></input>
+passen insgesamt in das Gefäß?            --- l    
+                                           4</strong>
+Ihr Ergebnis:  <button id="Pruef84" onclick="Aufgabe84()">Prüfen</button>  <button id="Loesung84" onclick="window.open('https://www.matheaufgaben-loesen.de/Bruchrechnen/Bruch_Aufgabe61.pdf');" style="visibility:hidden">Lösung</button></p></pre>                                                                                                                               
+                    <script>
+                        function Aufgabe84() {    
+                                                
+                          if (Eintrag84.value=="3") {alert("Richtig"); document.getElementById("Pruef84").disabled= true;document.getElementById("Loesung84").style.visibility="visible";   
+                          }  
+                           
+                          else if (Eintrag84.value!=="3" && Eintrag84.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag84").value="3";                                  
+                          document.getElementById("Loesung84").style.visibility="visible";document.getElementById("Pruef84").disabled= true;}                               
+                          else if (Eintrag84.value=="") {alert("Bitte eine Eingabe machen")}}
                          
+                      </script>                        
  
  <button type="button" onclick="window.open('index.html'); window.close('Bruch4.html');">zurück...</button>    
 	    
