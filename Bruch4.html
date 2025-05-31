@@ -237,12 +237,71 @@ Ihr Ergebnis:  <button id="Pruef84" onclick="Aufgabe84()">Prüfen</button>  <but
                           document.getElementById("Loesung84").style.visibility="visible";document.getElementById("Pruef84").disabled= true;}                               
                           else if (Eintrag84.value=="") {alert("Bitte eine Eingabe machen")}}
                          
-                      </script>                        
- 
+                      </script>
+                      
+<!--//Aufgabe 85--> 
+    
+    <p class="Aufgabe" style="font-weight:bold" >Aufgabe 85</p>
+        <pre><p class = "Aufgabe" ><strong>Für den Kauf eines Computers bekommt 
+ein Junge ein Drittel des Kaufpreises von seinem 
+Onkel, 3/8 von seinem Vater, die restlichen 424 € 
+muss er selbst bezahlen.
+Wie viel € kostet der neue Computer?</strong>    <button id="Loesung85" onclick="window.open('https://www.matheaufgaben-loesen.de/Bruchrechnen/Bruch_Aufgabe62.pdf');" >Lösung</button></p></pre>    
+                      
+ <!--//Aufgabe 86-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 86</p>
+  <pre><p class = "Aufgabe" ><strong>Ein Kind bekommt eine Packung Pralinen 
+zum Geburtstag. Es isst sofort 3/10 der Pralinen. 
+Am nächsten Tag nascht es 5/21 vom Rest.   8 
+Welcher Bruchteil bleibt noch übrig?     -----      </strong>             
+                                          <input type="text" id="Eintrag86" maxlength="2" style = width:15px></input>
+Ihr Ergebnis: <button id="Pruef86" onclick="Aufgabe86()">Prüfen</button>  <button id="Loesung86" onclick="window.open('https://www.matheaufgaben-loesen.de/Bruchrechnen/Bruch_Aufgabe63.pdf');" style="visibility:hidden">Lösung</button></p></pre>                                                                                                                               
+                    <script>
+                        function Aufgabe86() {    
+                                                
+                          if (Eintrag86.value=="15") {alert("Richtig"); document.getElementById("Pruef86").disabled= true;document.getElementById("Loesung86").style.visibility="visible";   
+                          }  
+                           
+                          else if (Eintrag86.value!=="15" && Eintrag86.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag86").value="15";                                  
+                          document.getElementById("Loesung86").style.visibility="visible";document.getElementById("Pruef86").disabled= true;}                               
+                          else if (Eintrag86.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+     <!--//Aufgabe 87--> 
+    
+    <p class="Aufgabe" style="font-weight:bold" >Aufgabe 87</p>
+        <pre><p class = "Aufgabe" ><strong>Der afrikanische Kontinent ist zu 3/5 mit 
+Wüsten bedeckt. 5/12 davon ist die Sahara.
+Welchen Bruchteil des gesmten Kontinents 
+bedeckt die Sahara? </strong>    <button id="Loesung87" onclick="window.open('https://www.matheaufgaben-loesen.de/Bruchrechnen/Bruch_Aufgabe64.pdf');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 88-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 88</p>
+  <pre><p class = "Aufgabe" ><strong>In einer Klasse kann die Hälfte aller Kinder 
+schwimmen. Ein Drittel davon hat das silberne 
+Schwimmabzeichen. Welcher Bruchteil der gesamten 
+Klasse hat das silberne Abzeichen?       1
+                                        ----      </strong>             
+                                         <input type="text" id="Eintrag88" maxlength="1" style = width:10px></input>
+Ihr Ergebnis: <button id="Pruef88" onclick="Aufgabe88()">Prüfen</button>  <button id="Loesung88" onclick="window.open('https://www.matheaufgaben-loesen.de/Bruchrechnen/Bruch_Aufgabe65.pdf');" style="visibility:hidden">Lösung</button></p></pre>                                                                                                                               
+                    <script>
+                        function Aufgabe88() {    
+                                                
+                          if (Eintrag88.value=="6") {alert("Richtig"); document.getElementById("Pruef88").disabled= true;document.getElementById("Loesung88").style.visibility="visible";   
+                          }  
+                           
+                          else if (Eintrag88.value!=="6" && Eintrag88.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag88").value="6";                                  
+                          document.getElementById("Loesung88").style.visibility="visible";document.getElementById("Pruef88").disabled= true;}                               
+                          else if (Eintrag88.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
  <button type="button" onclick="window.open('index.html'); window.close('Bruch4.html');">zurück...</button>    
 	    
-    
-    <script>
+  <script>
             document.body.addEventListener("input", function(inputEvent) {
               const eingabeFeld = inputEvent.target;
               if (eingabeFeld.maxLength > 0 && eingabeFeld.value.length > eingabeFeld.maxLength) {
