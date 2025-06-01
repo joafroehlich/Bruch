@@ -12,10 +12,7 @@
 
     <style> 
         .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em;}
-        
-        .ueb1 {display: flex;flex-direction:row;justify-content:start;align-items:center;}
-        .ueb2 {display: flex;flex-direction:column;justify-content:start;align-items:center;}
-        .Text2 { font-size: 1em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
         .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
         
         .Aufgabe { font-size: 0.8em;  font-family: Verdana,Sans-serif;margin:0.5em;}
@@ -26,13 +23,9 @@
 	
     <p class="Text1">Wie löse ich Matheaufgaben?</p>
 		<p class="Text1">Proportionale und antiproportionale <br> Zuordnungen (Dreisatz)</p>
+    <p class="Text2" > <span style= "background-color:white;">Sie sehen eine gelbe Eingabeaufforderung <br> oder den Schalter: Lösung.</span></p>
+  	<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
   
-
-  <div class="ueb1">
-    <p class="Text2">Klicken Sie auf eine Aufgabe Ihrer Wahl. <br>Sie sehen eine Eingabeaufforderung oder den Schalter: Lösung.</br></p>
-		<p class="Text2">Tragen Sie Ihr Ergebnis ein, prüfen <br> Sie es oder starten Sie eine Lösung.</br></p>
-  </div>
-
 <!--//Aufgabe 1-->
 
     <p class ="Aufgabe" style="font-weight:bold">Aufgabe 1</p>
@@ -68,7 +61,7 @@ Wie hoch ist der monatliche Verbrauch in l, <br>wenn 2 Fahrzeuge dazu kommen?
 &nbsp; &nbsp; </strong> <br>
 Ihr Ergebnis: <input type="text" id="Eintrag3" maxlength="4" size="2" style= background-color:yellow > l</input> &nbsp; 
       <button id="Pruef3" onclick="Aufgabe3()">Prüfen</button>&nbsp;
-  <button id="Loesung3" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe3.pdf');" style="visibility:hidden">Lösung</button></p>
+  <button id="Loesung3" onclick="window.open('https://www.matheaufgaben-loesen.de/');" style="visibility:hidden">Lösung</button></p>
   
                      <script>c
                         function Aufgabe3() { 
@@ -88,146 +81,117 @@ Ihr Ergebnis: <input type="text" id="Eintrag3" maxlength="4" size="2" style= bac
 
   <p class="Aufgabe" style="font-weight:bold" >Aufgabe 4</p>
   <p class="Aufgabe" style="font-weight:bold">28 Ordner kosten 156,80 €. <br>Wie viel kosten 34 Ordner?  &nbsp; &nbsp; 
-  <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Bruchrechnen/Bruch_Aufgabe1c.pdf');" >Lösung</button></p>
+  <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe4.pdf');" >Lösung</button></p>
+
       <!--//Aufgabe 5--> 
 
-      <div class="Aufg">
+      <p class ="Aufgabe" style="font-weight:bold">Aufgabe 5</p>
+  <p class = "Aufgabe" ><strong>Ein Großhändler bezieht 805 kg einer Ware für <br>insgesamt 4 830 €. Wie viel kosten 245 kg?   &nbsp; &nbsp;</strong> Ihr Ergebnis:
+    <input type="text" id="Eintrag5" maxlength="4" size="1" style= background-color:yellow ></input> €
+     <button id="Pruef5" onclick="Aufgabe5()">Prüfen</button>
+  <button id="Loesung5" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe5.pdf');" style="visibility:hidden">Lösung</button></p>
+     
+     <script>
+                        function Aufgabe5() { 
+                                                
+                          if (Eintrag5.value=="1470") {alert("Richtig"); document.getElementById("Pruef5").disabled= true;document.getElementById("Loesung5").style.visibility="visible";   
+                          }  
+                           
+                          else if (Eintrag5.value!=="1470" && Eintrag5.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag5").value="1470";            
+                          document.getElementById("Loesung5").style.visibility="visible";document.getElementById("Pruef5").disabled= true;}
+                               
+                          else if (Eintrag5.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
 
-      <button id="Aufgabe5" onclick="Aufgabe5()" >5</button>
-                
-                <p class = "Aufgabe" style="font-weight:bold;">Ein Großhändler bezieht 805 kg einer Ware für insgesamt 4 830 €. Wie viel kosten 245 kg?   Ergebnis: <input type="text" id="Eintrag5" maxlength="4" size="2" disabled ="true"></input> €</p>   
-                   <button id="Loesung5" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe5.pdf');" style="visibility:hidden;">Lösung</button>
-                      
-          <script>
+    <!--//Aufgabe 6-->
 
-              function Aufgabe5() { 
-              document.getElementById("Aufgabe5").disabled= true;
-              document.getElementById("Eintrag5").disabled = false;
-              document.getElementById("Eintrag5").focus(); 
-              }
-              Eintrag5.addEventListener('keydown', (event) => {
-                if (event.key === 'Enter' && Eintrag5.value=="1470") {alert("Richtig"); document.getElementById("Eintrag5").disabled="true"; document.getElementById("Loesung5").style.visibility="visible";   
-                   
-                 }
-                else if (event.key === 'Enter' && Eintrag5.value!=="1470" && Eintrag5.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag5").value="1470";            
-                document.getElementById("Loesung5").style.visibility="visible";
-                document.getElementById("Eintrag5").disabled="true"; }       
-                else if (event.key === 'Enter' && Eintrag5.value=="") {alert("Bitte eine Eingabe machen")}
-              }) 
-          </script>
-          
-    </div>
+  <p class="Aufgabe" style="font-weight:bold" >Aufgabe 6</p>
+  <p class="Aufgabe" style="font-weight:bold">Ein Vertreter erhält bei einem Umsatz von <br>109 200 € eine Prämie von 1 146,60 €.<br>   
+Wie hoch ist seine Prämie, wenn er den Umsatz <br> um 8 400 € steigert?
+ &nbsp; &nbsp; <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe6.pdf');" >Lösung</button></p>
+                    
+<!--//Aufgabe 7--> 
 
-    <div class="Aufg">
-      
-      <!--//Aufgabe 6-->       
-                        
-      <button id ="Aufgabe6" onclick="Aufgabe6()" >6</button>
-        <p class = "Aufgabe" style="font-weight:bold;">Ein Vertreter erhält bei einem Umsatz von 109 200 € eine Prämie von 1 146,60 €.<BR>   
-          Wie hoch ist seine Prämie, wenn er den Umsatz um 8 400 € steigert?</BR></span></p>
-      <button id ="Loesung6" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe6.pdf');" style="visibility:hidden;">Lösung</button>
-    
-           <script>
+  <p class ="Aufgabe" style="font-weight:bold">Aufgabe 7</p>
+  <p class = "Aufgabe" ><strong>Für das Eindecken eines Daches von 408 m² <br>braucht ein Dachdecker 10 200 Platten.<br> 
+Wie viele Platten benötigt er für ein 381 m² großes Dach? </strong><br>
+Ihr Ergebnis:  <input type="text" id="Eintrag7" maxlength="2" size="1" style= background-color:yellow ></input> &nbsp; 
+    <button id="Pruef7" onclick="Aufgabe7()">Prüfen</button>&nbsp;
+    <button id="Loesung7" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe7.pdf');" style="visibility:hidden">Lösung</button></p>
 
-                function Aufgabe6() { 
-                document.getElementById("Aufgabe6").disabled="true"; document.getElementById("Loesung6").style.visibility="visible";
-                                        }
-           </script>
+                    <script>
+                        function Aufgabe7() { 
+                                                
+                          if (Eintrag7.value=="12") {alert("Richtig"); document.getElementById("Pruef7").disabled= true;document.getElementById("Loesung7").style.visibility="visible";   
+                          }  
+                           
+                          else if (Eintrag7.value!=="12" && Eintrag7.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag7").value="12";            
+                          document.getElementById("Loesung7").style.visibility="visible";document.getElementById("Pruef7").disabled= true;}
+                               
+                          else if (Eintrag7.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
 
-      </div>
-      
-              
-        <!--//Aufgabe 7--> 
-
-        <div class="Aufg">
-
-        <button id ="Aufgabe7" onclick="Aufgabe7()" >7</button>
-        <p class = "Aufgabe" style="font-weight:bold;">Für das Eindecken eines Daches von 408 m² braucht ein Dachdecker 10 200 Platten.    <BR>Wie viele Platten benötigt er für ein 381 m² großes Dach? Ergebnis: <input type="text" id="Eintrag7" maxlength="4" size="2" disabled="true" ></input></p>   
-        <button id ="Loesung7" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe7.pdf');" style="visibility:hidden;">Lösung</button>
-
-            <script>
-
-                function Aufgabe7() {
-                document.getElementById("Aufgabe7").disabled= true;
-                document.getElementById("Eintrag7").disabled = false;
-                document.getElementById("Eintrag7").focus(); 
-                }
-                Eintrag7.addEventListener('keydown', (event) => {
-                  if (event.key === 'Enter' && Eintrag7.value=="9525") {alert("Richtig"); document.getElementById("Eintrag7").disabled="true"; document.getElementById("Loesung7").style.visibility="visible";   
-                     
-                   }
-                  else if (event.key === 'Enter' && Eintrag7.value!=="9525" && Eintrag7.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag7").value="9525";            
-                  document.getElementById("Loesung7").style.visibility="visible";
-                  document.getElementById("Eintrag7").disabled="true"; }       
-                  else if (event.key === 'Enter' && Eintrag7.value=="") {alert("Bitte eine Eingabe machen")}
-                }) 
-              </script>
-              
-            </div>
-
-             <!--//Aufgabe 8-->   
+<!--//Aufgabe 8-->   
              
-        <div class="Aufg">
-                                
-              <button id ="Aufgabe8" onclick="Aufgabe8()" >8</button>
-                <p class = "Aufgabe" style="font-weight:bold;">Einen Auftrag sollen 24 Arbeiter in 9 Arbeitstagen erledigen. Wegen Krankheit fallen 6 Arbeiter aus.   
-                  <BR> In wie viel Tagen ist der Auftrag jetzt erledigt?</BR></p>
-              <button id ="Loesung8" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe8.pdf');" style="visibility:hidden;">Lösung</button>
-            
-                   <script>
-        
-                        function Aufgabe8() { 
-                        document.getElementById("Aufgabe8").disabled="true"; document.getElementById("Loesung8").style.visibility="visible";
-                                                }
-                   </script>
-        
-              </div>
+      <p class="Aufgabe" style="font-weight:bold" >Aufgabe 8</p>
+      <p class="Aufgabe" style="font-weight:bold">Einen Auftrag sollen 24 Arbeiter in <br> 9 Arbeitstagen erledigen. Wegen Krankheit fallen 6 Arbeiter aus.<br>   
+In wie viel Tagen ist der Auftrag jetzt erledigt?&nbsp; &nbsp; &nbsp; 
+      <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe8.pdf');" >Lösung</button></p>
 
 
-         <!--//Aufgabe 9--> 
+ <!--//Aufgabe 9--> 
 
-        <div class="Aufg">
+ <p class ="Aufgabe" style="font-weight:bold">Aufgabe 9</p>
+  <p class = "Aufgabe" ><strong>Aus 50 kg Rohkaffee erhält man 43,3 kg Röstkaffee.<br>
+Wie hoch ist der Röstverlust bei einer Tagesproduktion <br>von 22 650 kg Röstkaffee?
+ &nbsp; &nbsp;</strong> Ihr Ergebnis:
+   <input type="text" id="Eintrag9" maxlength="6" size="2" style= background-color:yellow ></input>
+    <button id="Pruef9" onclick="Aufgabe9()">Prüfen</button>
+  <button id="Loesung9" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe9.pdf');" style="visibility:hidden">Lösung</button></p>
+<p class = "Aufgabe" ><strong>Tragen Sie das Ergebnis auf 3 Stellen nach dem Komma gerundet ein.<br>
+Runden Sie auch Zwischenergebnisse auf 3 Stellen nach dem Komma.</strong></p>
 
-          <button id ="Aufgabe9" onclick="Aufgabe9()" >9</button>
-          <p class = "Aufgabe" style="font-weight:bold;">Aus 50 kg Rohkaffee erhält man> 43,3 kg Röstkaffee. <BR>Wie hoch ist der Röstverlust bei einer Tagesproduktion von 22 650 kg Röstkaffee? Ergebnis: <input type="text" id="Eintrag9" maxlength="8" size="5" disabled ="true"></input> kg<BR>Tragen Sie das Ergebnis auf 3 Stellen nach dem Komma gerundet ein.<BR>Runden Sie auch Zwischenergebnisse auf 3 Stellen nach dem Komma.</input></p>   
-          <button id ="Loesung9" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe9.pdf');" style="visibility:hidden;">Lösung</button>
-  
-              <script>
-  
-                  function Aufgabe9() {
-                  document.getElementById("Aufgabe9").disabled= true;
-                  document.getElementById("Eintrag9").disabled = false;
-                  document.getElementById("Eintrag9").focus(); 
-                  }
-                  Eintrag9.addEventListener('keydown', (event) => {
-                    if (event.key === 'Enter' && Eintrag9.value=="3510,750") {alert("Richtig"); document.getElementById("Eintrag9").disabled="true"; document.getElementById("Loesung9").style.visibility="visible";   
-                       
-                     }
-                    else if (event.key === 'Enter' && Eintrag9.value!=="3510,750" && Eintrag9.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag9").value="3510,750";            
-                    document.getElementById("Loesung9").style.visibility="visible";
-                    document.getElementById("Eintrag9").disabled="true"; }       
-                    else if (event.key === 'Enter' && Eintrag9.value=="") {alert("Bitte eine Eingabe machen")}
-                  }) 
-                </script>
-                
-              </div>
+                    <script>
+                        function Aufgabe9() { 
+                                                
+                          if (Eintrag9.value=="3504,7") {alert("Richtig"); document.getElementById("Pruef9").disabled= true;document.getElementById("Loesung9").style.visibility="visible";   
+                          }  
+                           
+                          else if (Eintrag9.value!=="3504,7" && Eintrag9.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag9").value="3504,7";            
+                          document.getElementById("Loesung9").style.visibility="visible";document.getElementById("Pruef9").disabled= true;}
+                               
+                          else if (Eintrag9.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
 
         <!--//Aufgabe 10-->   
              
-        <div class="Aufg">
-                                
-          <button id ="Aufgabe10" onclick="Aufgabe10()" >10</button>
-            <p class = "Aufgabe" style="font-weight:bold;">Für einen Ballen Kleiderstoff von 32,4 m Länge zahlt ein Betrieb 436,80 €. <BR> Wie viel kostet ein 2,15 m langer Stoffballen?</BR></p>
-          <button id ="Loesung10" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe10.pdf');" style="visibility:hidden;">Lösung</button>
-        
-               <script>
-    
-                    function Aufgabe10() { 
-                    document.getElementById("Aufgabe10").disabled="true"; document.getElementById("Loesung10").style.visibility="visible";
-                                            }
-               </script>
-    
-          </div>
+        <p class="Aufgabe" style="font-weight:bold" >Aufgabe 10</p>
+        <p class="Aufgabe" style="font-weight:bold">Für einen Ballen Kleiderstoff von 32,4 m Länge <br>zahlt ein Betrieb 436,80 €.<br>  
+Wie viel kostet ein 2,15 m langer Stoffballen?   &nbsp; &nbsp; &nbsp;  
+        <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe10.pdf');" >Lösung</button></p>
+
+        <!--//Aufgabe 11-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 11</p>
+  <p class = "Aufgabe" ><strong>Ein Betrieb vermietet Rasenmäher. Zwei Tage kosten 15 €.<br>Wie viel kosten 3 Tage?   </strong>Ihr Ergebnis:
+    <input type="text" id="Eintrag11" maxlength="5" size="2" style= background-color:yellow > €</input>
+    <button id="Pruef11" onclick="Aufgabe11()">Prüfen</button>
+  <button id="Loesung11" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe11.pdf');" style="visibility:hidden">Lösung</button></p>
+
+                    <script>
+                        function Aufgabe11() { 
+                                                
+                          if (Eintrag11.value=="22,50") {alert("Richtig"); document.getElementById("Pruef11").disabled= true;document.getElementById("Loesung11").style.visibility="visible";   
+                          }  
+                           
+                          else if (Eintrag11.value!=="22,50" && Eintrag11.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag11").value=" 22,50";            
+                          document.getElementById("Loesung11").style.visibility="visible";document.getElementById("Pruef11").disabled= true;}                               
+                          else if (Eintrag11.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>         
 
           <div class="Aufg">
             <button type="button" id ="mehr" onclick="window.open('Dreisatz1.html'); window.close('index.html');">mehr...</button>
