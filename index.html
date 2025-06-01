@@ -285,6 +285,62 @@ Wie viele Lkw <br>braucht man zusätzlich, um den Termin einzuhalten?</strong><b
 Wie lange brauchen 7 Angestellte für diese Arbeit?&nbsp; &nbsp;  
         <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe18.pdf');" >Lösung</button></p>
                                            
+<!--//Aufgabe 19-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 19</p>
+  <p class = "Aufgabe" ><strong>Ein Vorrat reicht noch 45 Tage, wenn täglich 150 kg <br>davon verkauft werden.   
+Wie lange reicht er, wenn <br>täglich 270 kg verkauft werden?</strong><br>
+    Ihr Ergebnis: <input type="text" id="Eintrag19" maxlength="2" size="1" style= background-color:yellow ></input>
+    <button id="Pruef19" onclick="Aufgabe19()">Prüfen</button>
+  <button id="Loesung19" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe19.pdf');" style="visibility:hidden">Lösung</button></p>
+
+                    <script>
+                        function Aufgabe19() { 
+                                                
+                          if (Eintrag19.value=="25") {alert("Richtig"); document.getElementById("Pruef19").disabled= true;document.getElementById("Loesung19").style.visibility="visible";   
+                          }  
+                           
+                          else if (Eintrag19.value!=="25" && Eintrag19.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag19").value="25";            
+                          document.getElementById("Loesung19").style.visibility="visible";document.getElementById("Pruef19").disabled= true;}                               
+                          else if (Eintrag19.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+    <!--//Aufgabe 20-->   
+             
+        <p class="Aufgabe" style="font-weight:bold" >Aufgabe 20</p>
+        <p class="Aufgabe" style="font-weight:bold">Während einer Inventur nehmen 7 Verkäufer in 8 Stunden <br>5 600 Artikel auf. 
+Wie lange benötigen 9 Verkäufer für <br>6 300 Artikel?&nbsp; &nbsp;  
+        <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe20.pdf');" >Lösung</button></p>
+                                            
+<!--//Aufgabe 21-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 21</p>
+  <p class = "Aufgabe" ><strong>Für einen Pudding für 4 Personen braucht man <br>0,5 l Milch.        
+Wie viel Liter braucht man für einen <br>Pudding für 10 Personen?</strong><br>
+    Ihr Ergebnis: <input type="text" id="Eintrag21" maxlength="4" size="1" style= background-color:yellow ></input>
+    <button id="Pruef21" onclick="Aufgabe21()">Prüfen</button>
+  <button id="Loesung21" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe21.pdf');" style="visibility:hidden">Lösung</button></p>
+
+                    <script>
+                        function Aufgabe21() { 
+                                                
+                          if (Eintrag21.value=="1,25") {alert("Richtig"); document.getElementById("Pruef21").disabled= true;document.getElementById("Loesung21").style.visibility="visible";   
+                          }  
+                           
+                          else if (Eintrag21.value!=="1,25" && Eintrag21.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag21").value="1,25";            
+                          document.getElementById("Loesung21").style.visibility="visible";document.getElementById("Pruef21").disabled= true;}                               
+                          else if (Eintrag21.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+    <!--//Aufgabe 22-->   
+             
+        <p class="Aufgabe" style="font-weight:bold" >Aufgabe 22</p>
+        <p class="Aufgabe" style="font-weight:bold">300 l Öl reichen für 20 Lampen, die an 25 Tagen <br>jeweils 6 Stunden brennen.       
+Wie viel Öl benötigen <br>18 Lampen, die an 30 Tagen jeweils 5 Stunden brennen?&nbsp; &nbsp;  
+        <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe22.pdf');" >Lösung</button></p>
+                    
                       
           <div class="Aufg">
             <button type="button" id ="mehr" onclick="window.open('Dreisatz1.html'); window.close('index.html');">mehr...</button>
