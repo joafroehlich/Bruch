@@ -557,6 +557,34 @@ Wie viel Stunden <br>dauert die Arbeit, wenn nur 11 Arbeiter zur <br>Verfügung 
 monatlich Stromkosten in <br>Höhe von 2,36 Euro. 
 Wie hoch sind die Kosten, wenn <br>10 Glühlampen zu je 60 Watt installiert werden?     
         <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe38.pdf');" >Lösung</button></p>
+
+    <!--//Aufgabe 39-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 39</p>
+  <p class = "Aufgabe" ><strong>2 Pumpen füllen in 6,5 Stunden den 1300 t fassenden <br>Tank eines Schiffes. 
+In wie viel Stunden füllen <br>3 Pumpen einen 2100 t fassenden Tank?                    </strong> <br>
+    Ihr Ergebnis: <input type="text" id="Eintrag39" maxlength="1" size="1" style= background-color:yellow > h</input>
+    <button id="Pruef39" onclick="Aufgabe39()">Prüfen</button>
+  <button id="Loesung39" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe39.pdf');" style="visibility:hidden">Lösung</button></p>
+
+                    <script>
+                        function Aufgabe39() {                                                
+                          if (Eintrag39.value=="7") {alert("Richtig"); document.getElementById("Pruef39").disabled= true;document.getElementById("Loesung39").style.visibility="visible";   
+                          }  
+                           
+                          else if (Eintrag39.value!=="7" && Eintrag39.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag39").value="7";            
+                          document.getElementById("Loesung39").style.visibility="visible";document.getElementById("Pruef39").disabled= true;}                               
+                          else if (Eintrag39.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+      <!--//Aufgabe 40-->   
+             
+        <p class="Aufgabe" style="font-weight:bold" >Aufgabe 40</p>
+        <p class="Aufgabe" style="font-weight:bold">24 Arbeiter bauen in 30 Arbeitstagen 120 Maschinen <br>zusammen. 
+Wie viele Arbeiter braucht man, um 100 <br>Maschinen in 40 Arbeitstagen zusammenzubauen?     
+        <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe40.pdf');" >Lösung</button></p>
+                
                 
                  
                 
