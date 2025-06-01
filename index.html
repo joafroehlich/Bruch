@@ -23,7 +23,7 @@
 	
     <p class="Text1">Wie löse ich Matheaufgaben?</p>
 		<p class="Text1">Proportionale und antiproportionale <br> Zuordnungen (Dreisatz)</p>
-    <p class="Text2" > <span style= "background-color:white;">Sie sehen eine gelbe Eingabeaufforderung <br> oder den Schalter: Lösung.</span></p>
+    <p class="Text2" > <span style= "background-color:white;">Sie sehen eine gelbes Eingabefeld <br> oder den Schalter: Lösung.</span></p>
   	<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
   
 <!--//Aufgabe 1-->
@@ -468,7 +468,99 @@ In wie viel Stunden wird die Strecke <br>bei einer Geschwindigkeit von 80 km/h z
                           document.getElementById("Loesung31").style.visibility="visible";document.getElementById("Pruef31").disabled= true;}                               
                           else if (Eintrag31.value=="") {alert("Bitte eine Eingabe machen")}}
                          
-                      </script>  
+                      </script>
+                      
+          <!--//Aufgabe 32-->   
+             
+        <p class="Aufgabe" style="font-weight:bold" >Aufgabe 32</p>
+        <p class="Aufgabe" style="font-weight:bold">Zwei Bagger heben einen Graben in 48 Stunden aus. <br>Wie viel Stunden benötigen fünf Bagger? 
+        <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe32.pdf');" >Lösung</button></p>
+
+  <!--//Aufgabe 33-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 33</p>
+  <p class = "Aufgabe" ><strong>Der Lebensmittelvorrat einer Raumstation reicht für <br>3 Besatzungsmitglieder 32 Tage.   
+Wie viel Tage reicht <br>dieser Vorrat für 4 Besatzungsmitglieder?</strong> <br>
+    Ihr Ergebnis: <input type="text" id="Eintrag33" maxlength="2" size="1" style= background-color:yellow > Tage</input>
+    <button id="Pruef33" onclick="Aufgabe33()">Prüfen</button>
+  <button id="Loesung33" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe33.pdf');" style="visibility:hidden">Lösung</button></p>
+
+                    <script>
+                        function Aufgabe33() {                                                
+                          if (Eintrag33.value=="24") {alert("Richtig"); document.getElementById("Pruef33").disabled= true;document.getElementById("Loesung33").style.visibility="visible";   
+                          }  
+                           
+                          else if (Eintrag33.value!=="24" && Eintrag33.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag33").value="24";            
+                          document.getElementById("Loesung33").style.visibility="visible";document.getElementById("Pruef33").disabled= true;}                               
+                          else if (Eintrag33.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+      <!--//Aufgabe 34-->   
+             
+        <p class="Aufgabe" style="font-weight:bold" >Aufgabe 34</p>
+        <p class="Aufgabe" style="font-weight:bold">Ein Schüler teilt jede Woche 390 Prospekte aus und <br>bekommt dafür 28,08 €. <br>
+a) Ein anderer verteilt für dieselbe Firma in einem <br>anderen Stadtteil 360 Prospekte. Was verdient er?<br>
+b) Ein weiterer verdient 18 € in der Woche. <br>Wie viele Prospekte trägt er aus?     
+        <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe34.pdf');" >Lösung</button></p>
+
+<!--//Aufgabe 35-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 35</p>
+  <p class = "Aufgabe" ><strong>Tee wird in 60 Tüten zu je 50 g verpackt. <br>                                                
+Wie viel Tüten zu je 125 g erhält man aus der <br>gleichen Teemenge?</strong> <br>
+    Ihr Ergebnis: <input type="text" id="Eintrag35" maxlength="2" size="1" style= background-color:yellow > </input>
+    <button id="Pruef35" onclick="Aufgabe35()">Prüfen</button>
+  <button id="Loesung35" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe35.pdf');" style="visibility:hidden">Lösung</button></p>
+
+                    <script>
+                        function Aufgabe35() {                                                
+                          if (Eintrag35.value=="24") {alert("Richtig"); document.getElementById("Pruef35").disabled= true;document.getElementById("Loesung35").style.visibility="visible";   
+                          }  
+                           
+                          else if (Eintrag35.value!=="24" && Eintrag35.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag35").value="24";            
+                          document.getElementById("Loesung35").style.visibility="visible";document.getElementById("Pruef35").disabled= true;}                               
+                          else if (Eintrag35.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+     <!--//Aufgabe 36-->   
+             
+        <p class="Aufgabe" style="font-weight:bold" >Aufgabe 36</p>
+        <p class="Aufgabe" style="font-weight:bold">Einen Wald können 15 Forstarbeiter in <br>24 Arbeitsstunden roden. 
+Wie viel Stunden <br>dauert die Arbeit, wenn nur 11 Arbeiter zur <br>Verfügung stehen?   
+        <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe36.pdf');" >Lösung</button></p>
+
+    <!--//Aufgabe 37-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 37</p>
+  <p class = "Aufgabe" ><strong>Eine Kiste mit 168 Weingläsern kostet 403,20 Euro. <br>Wie viel kosten drei Dutzend Weingläser?   </strong> <br>
+    Ihr Ergebnis: <input type="text" id="Eintrag37" maxlength="5" size="2" style= background-color:yellow > €</input>
+    <button id="Pruef37" onclick="Aufgabe37()">Prüfen</button>
+  <button id="Loesung37" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe37.pdf');" style="visibility:hidden">Lösung</button></p>
+
+                    <script>
+                        function Aufgabe37() {                                                
+                          if (Eintrag37.value=="86,40") {alert("Richtig"); document.getElementById("Pruef37").disabled= true;document.getElementById("Loesung37").style.visibility="visible";   
+                          }  
+                           
+                          else if (Eintrag37.value!=="86,40" && Eintrag37.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag37").value="86,40";            
+                          document.getElementById("Loesung37").style.visibility="visible";document.getElementById("Pruef37").disabled= true;}                               
+                          else if (Eintrag37.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+      <!--//Aufgabe 38-->   
+             
+        <p class="Aufgabe" style="font-weight:bold" >Aufgabe 38</p>
+        <p class="Aufgabe" style="font-weight:bold">Eine Treppenhausbeleuchtung mit 8 Glühlampen zu <br>je 40 Watt verursacht 
+monatlich Stromkosten in <br>Höhe von 2,36 Euro. 
+Wie hoch sind die Kosten, wenn <br>10 Glühlampen zu je 60 Watt installiert werden?     
+        <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe38.pdf');" >Lösung</button></p>
+                
+                 
+                
+            
                  
                  
                   
