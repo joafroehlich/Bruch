@@ -31,7 +31,7 @@
 
     <p class ="Aufgabe" style="font-weight:bold">Aufgabe 1</p>
   <p class = "Aufgabe" ><strong>Ein Verein nimmt bei seinem Sommerfest 2540 € ein. <br>Er muss davon 12% Vergnügungssteuer bezahlen.<br>   
-                  Welcher Betrag verbleibt dem Verein?  Ergebnis: </strong><br> 
+                  Welcher Betrag verbleibt dem Verein? </strong><br> 
     Ihr Ergebnis: <input type="text" id="Eintrag1" maxlength="7" size="3" style= background-color:yellow > €</input> &nbsp; 
       <button id="Pruef1" onclick="Aufgabe1()">Prüfen</button>&nbsp;
   <button id="Loesung1" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe1.pdf');" style="visibility:hidden">Lösung</button></p>
@@ -53,202 +53,119 @@
 
   <p class="Aufgabe" style="font-weight:bold" >Aufgabe 2</p>
   <p class="Aufgabe" style="font-weight:bold">Auf einer Rechnung steht: Schweinebraten 18,40 €,  <br>Brot 2,00 €, Getränk 2,40 €. 
-                      Wie viel muss der <br>Gast bezahlen, wenn er 10% Trinkgeld geben will? &nbsp; &nbsp; 
+                      Wie viel muss der <br>Gast bezahlen, wenn er 10% Trinkgeld geben will? &nbsp; &nbsp; <br>
   <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe2.pdf');" >Lösung</button></p>
                  
             
-            
-                      
-                    </div>
-                      
-                     <!--//Aufgabe 2-->     
-                        
-     <div class="Aufg">
-                    <button id ="Aufgabe2" onclick="Aufgabe2()" >2</button>
-                    <p class = "Aufgabe" style="font-weight:bold;">Auf einer Rechnung steht: Schweinebraten 18,40 €,  Brot 2,00 €, Getränk 2,40 €. <br>
-                      Wie viel muss der Gast bezahlen, wenn er 10% Trinkgeld geben will?</br></span></p>
-                    <button id ="Loesung2" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe2.pdf');" style="visibility:hidden; ">Lösung</button>
-            
+     <!--//Aufgabe 3--> 
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 3</p>
+  <p class = "Aufgabe" ><strong>Von den 20 Schülern einer Klasse sind 3 krank. <br>Wie viel Prozent der Schüler sind das?  
+&nbsp; &nbsp; </strong> <br>
+Ihr Ergebnis: <input type="text" id="Eintrag3" maxlength="2" size="1" style= background-color:yellow > %</input> &nbsp; 
+      <button id="Pruef3" onclick="Aufgabe3()">Prüfen</button>&nbsp;
+  <button id="Loesung3" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe3.pdf');" style="visibility:hidden">Lösung</button></p>
+  
+                     <script>c
+                        function Aufgabe3() { 
+                                                
+                          if (Eintrag3.value=="15") {alert("Richtig"); document.getElementById("Pruef3").disabled= true;
+                          }  
+                           
+                          else if (Eintrag3.value!=="15" && Eintrag3.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag3").value="15";            
+                          document.getElementById("Loesung3").style.visibility="visible";document.getElementById("Pruef3").disabled= true;}
+                               
+                          else if (Eintrag3.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+    <!--//Aufgabe 4-->
+
+  <p class="Aufgabe" style="font-weight:bold" >Aufgabe 4</p>
+  <p class="Aufgabe" style="font-weight:bold">In einer Klasse sind 8 Mädchen, das sind 25% der <br>Schüler. Wie viel Schüler sind insgesamt in der Klasse?<br> 
+  <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe4.pdf');" >Lösung</button></p>
+  
+          <!--//Aufgabe 5--> 
+
+      <p class ="Aufgabe" style="font-weight:bold">Aufgabe 5</p>
+  <p class = "Aufgabe" ><strong>Ein Metzger gibt auf einen Fleischverkauf <br>von 138,50 € einen Rabatt von 8%.<br>   
+                  Wie viel muss der Kunde bezahlen? </strong><br> 
+    Ihr Ergebnis: <input type="text" id="Eintrag5" maxlength="6" size="2" style= background-color:yellow ></input> €
+     <button id="Pruef5" onclick="Aufgabe5()">Prüfen</button>
+  <button id="Loesung5" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe5.pdf');" style="visibility:hidden">Lösung</button></p>
+     
+     <script>
+                        function Aufgabe5() { 
+                                                
+                          if (Eintrag5.value=="127,42") {alert("Richtig"); document.getElementById("Pruef5").disabled= true;
+                          }  
+                           
+                          else if (Eintrag5.value!=="127,42" && Eintrag5.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag5").value="127,42";            
+                          document.getElementById("Loesung5").style.visibility="visible";document.getElementById("Pruef5").disabled= true;}
+                               
+                          else if (Eintrag5.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+
+    <!--//Aufgabe 6-->
+
+  <p class="Aufgabe" style="font-weight:bold" >Aufgabe 6</p>
+  <p class="Aufgabe" style="font-weight:bold">Nach einer Klassenarbeit gibt es folgende Ergebnisse:<br>2 Schüler eine 1, 
+          8 Schüler eine 2, 10 Schüler eine 3, <br>8 Schüler eine 4 und 4 Schüler eine 5.<br>
+          Wie viel Prozent haben mindestens eine 4 erreicht?<br>
+    <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe6.pdf');" >Lösung</button></p>
+      
+   <!--//Aufgabe 7--> 
+
+  <p class ="Aufgabe" style="font-weight:bold">Aufgabe 7</p>
+  <p class = "Aufgabe" ><strong>Ein Korb Äpfel wiegt 10 kg. Das Korbgewicht <br>beträgt 5% des Gesamtgewichts. <BR>Wie viel kg wiegen die Äpfel? </strong><br>
+Ihr Ergebnis:  <input type="text" id="Eintrag7" maxlength="3" size="1" style= background-color:yellow > kg</input> &nbsp; 
+    <button id="Pruef7" onclick="Aufgabe7()">Prüfen</button>&nbsp;
+    <button id="Loesung7" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe7.pdf');" style="visibility:hidden">Lösung</button></p>
+
                     <script>
-                        function Aufgabe2() { 
-                        document.getElementById("Aufgabe2").disabled="true"; document.getElementById("Loesung2").style.visibility="visible";
-                                                  }
-                      
-                    </script>  
-                    
-                    </div>
-
-    <div class = "Aufg">
-      
-      <!--//Aufgabe 3--> 
-
-      <button id="Aufgabe3" onclick="Aufgabe3()" >3</button>
-                
-                <p class = "Aufgabe" style="font-weight:bold;">Von den 20 Schülern einer Klasse sind 3 krank. Wie viel Prozent der Schüler sind das? Ergebnis: <input type="text" id="Eintrag3" maxlength="2" size="1" disabled="true" ></input> %</p>   
-                   <button id="Loesung3" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe3.pdf');" style="visibility:hidden;">Lösung</button>
-                      
-          <script>
-
-              function Aufgabe3() { 
-              document.getElementById("Aufgabe3").disabled= true;
-              document.getElementById("Eintrag3").disabled = false;
-              document.getElementById("Eintrag3").focus(); 
-              }
-              Eintrag3.addEventListener('keydown', (event) => {
-                if (event.key === 'Enter' && Eintrag3.value=="15") {alert("Richtig"); document.getElementById("Eintrag3").disabled="true"; document.getElementById("Loesung3").style.visibility="visible";   
-                   
-                 }
-                else if (event.key === 'Enter' && Eintrag3.value!=="15" && Eintrag3.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag3").value="15";            
-                document.getElementById("Loesung3").style.visibility="visible";
-                document.getElementById("Eintrag3").disabled="true"; }       
-                else if (event.key === 'Enter' && Eintrag3.value=="") {alert("Bitte eine Eingabe machen")}
-              }) 
-          </script>
-          
-    </div>
-
-    <!--//Aufgabe 4-->     
-                        
-    <div class="Aufg">
-
-      <button id ="Aufgabe4" onclick="Aufgabe4()" >4</button>
-      <p class = "Aufgabe" style="font-weight:bold;">In einer Klasse sind 8 Mädchen, das sind 25% der Schüler. Wie viel Schüler sind insgesamt in der Klasse? </p>
-      <button  id ="Loesung4" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe4.pdf');" style="visibility:hidden; ">Lösung</button>
-
-      <script>
-          function Aufgabe4() { 
-          document.getElementById("Aufgabe4").disabled="true"; document.getElementById("Loesung4").style.visibility="visible";
-                                    }
+                        function Aufgabe7() { 
+                                                
+                          if (Eintrag7.value=="9,5") {alert("Richtig"); document.getElementById("Pruef7").disabled= true;
+                          }  
+                           
+                          else if (Eintrag7.value!=="9,5" && Eintrag7.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag7").value="9,5";            
+                          document.getElementById("Loesung7").style.visibility="visible";document.getElementById("Pruef7").disabled= true;}
+                               
+                          else if (Eintrag7.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>   
         
-      </script>  
-      
-      </div>
-
-      <!--//Aufgabe 5--> 
-
-      <div class="Aufg">
-
-      <button id="Aufgabe5" onclick="Aufgabe5()" >5</button>
-                
-                <p class = "Aufgabe" style="font-weight:bold;">Ein Metzger gibt auf einen Fleischverkauf von 138,50 € einen Rabatt von 8%.   
-                  <br>Wie viel muss der Kunde bezahlen? Ergebnis: <input type="text" id="Eintrag5" maxlength="6" size="3" disabled="true" ></input> €</br></p>   
-                   <button id="Loesung5" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe5.pdf');" style="visibility:hidden;">Lösung</button>
-                      
-          <script>
-
-              function Aufgabe5() { 
-              document.getElementById("Aufgabe5").disabled= true;
-              document.getElementById("Eintrag5").disabled = false;
-              document.getElementById("Eintrag5").focus(); 
-              }
-              Eintrag5.addEventListener('keydown', (event) => {
-                if (event.key === 'Enter' && Eintrag5.value=="127,42") {alert("Richtig"); document.getElementById("Eintrag5").disabled="true"; document.getElementById("Loesung5").style.visibility="visible";   
-                   
-                 }
-                else if (event.key === 'Enter' && Eintrag5.value!=="127,42" && Eintrag5.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag5").value="127,42";            
-                document.getElementById("Loesung5").style.visibility="visible";
-                document.getElementById("Eintrag5").disabled="true"; }       
-                else if (event.key === 'Enter' && Eintrag5.value=="") {alert("Bitte eine Eingabe machen")}
-              }) 
-          </script>
-          
-    </div>
-
-    <div class="Aufg">
-      
-      <!--//Aufgabe 6-->       
-                        
-      <button id ="Aufgabe6" onclick="Aufgabe6()" >6</button>
-        <p class = "Aufgabe" style="font-weight:bold;">Nach einer Klassenarbeit gibt es folgende Ergebnisse:2 Schüler eine 1,<br> 
-          8 Schüler eine 2, 10 Schüler eine 3, 8 Schüler eine 4 und 4 Schüler eine 5.<br>
-          Wie viel Prozent haben mindestens eine 4 erreicht? </BR></p>
-      <button id ="Loesung6" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe6.pdf');" style="visibility:hidden;">Lösung</button>
-    
-           <script>
-
-                function Aufgabe6() { 
-                document.getElementById("Aufgabe6").disabled="true"; document.getElementById("Loesung6").style.visibility="visible";
-                                        }
-           </script>
-
-      </div>
-      
-              
-        <!--//Aufgabe 7--> 
-
-        <div class="Aufg">
-
-        <button id ="Aufgabe7" onclick="Aufgabe7()" >7</button>
-        <p class = "Aufgabe" style="font-weight:bold;">Ein Korb Äpfel wiegt 10 kg. Das Korbgewicht beträgt 5% des Gesamtgewichts. <BR>Wie viel kg wiegen die Äpfel?  Ergebnis: <input type="text" id="Eintrag7" maxlength="3" size="1" disabled="true"></input> kg</BR></p>   
-        <button id ="Loesung7" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe7.pdf');" style="visibility:hidden;">Lösung</button>
-
-            <script>
-
-                function Aufgabe7() {
-                document.getElementById("Aufgabe7").disabled= true;
-                document.getElementById("Eintrag7").disabled = false;
-                document.getElementById("Eintrag7").focus(); 
-                }
-                Eintrag7.addEventListener('keydown', (event) => {
-                  if (event.key === 'Enter' && Eintrag7.value=="9,5") {alert("Richtig"); document.getElementById("Eintrag7").disabled="true"; document.getElementById("Loesung7").style.visibility="visible";   
-                     
-                   }
-                  else if (event.key === 'Enter' && Eintrag7.value!=="9,5" && Eintrag7.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag7").value="9,5";            
-                  document.getElementById("Loesung7").style.visibility="visible";
-                  document.getElementById("Eintrag7").disabled="true"; }       
-                  else if (event.key === 'Enter' && Eintrag7.value=="") {alert("Bitte eine Eingabe machen")}
-                }) 
-              </script>
-              
-            </div>
-
-             <!--//Aufgabe 8-->   
+       <!--//Aufgabe 8-->   
              
-        <div class="Aufg">
-                                
-              <button id ="Aufgabe8" onclick="Aufgabe8()" >8</button>
-                <p class = "Aufgabe" style="font-weight:bold;">Bei der Produktion von Schrauben entsteht üblicherweise 1,5 % Ausschuss.
-                  <BR> Wie viel Schrauben wurden produziert, wenn 147 unbrauchbar waren? </BR></p>
-              <button id ="Loesung8" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe8.pdf');" style="visibility:hidden;">Lösung</button>
-            
-                   <script>
-        
-                        function Aufgabe8() { 
-                        document.getElementById("Aufgabe8").disabled="true"; document.getElementById("Loesung8").style.visibility="visible";
-                                                }
-                   </script>
-        
-              </div>
+      <p class="Aufgabe" style="font-weight:bold" >Aufgabe 8</p>
+      <p class="Aufgabe" style="font-weight:bold">Bei der Produktion von Schrauben entsteht <br>üblicherweise 1,5 % Ausschuss.
+                  Wie viel Schrauben <br>wurden produziert, wenn 147 unbrauchbar waren? <br> 
+      <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe8.pdf');" >Lösung</button></p>
 
+ <!--//Aufgabe 9--> 
 
-         <!--//Aufgabe 9--> 
+ <p class ="Aufgabe" style="font-weight:bold">Aufgabe 9</p>
+  <p class = "Aufgabe" ><strong>In einer Klasse sind 40 Schüler. Davon <br>werden 38 versetzt. Wie viel Prozent sind das?
+</strong><br>
+Ihr Ergebnis: <input type="text" id="Eintrag9" maxlength="2" size="1" style= background-color:yellow > %</input>
+    <button id="Pruef9" onclick="Aufgabe9()">Prüfen</button>
+  <button id="Loesung9" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe9.pdf');" style="visibility:hidden">Lösung</button></p>
 
-        <div class="Aufg">
+<script>
+                        function Aufgabe9() { 
+                                                
+                          if (Eintrag9.value=="95") {alert("Richtig"); document.getElementById("Pruef9").disabled= true;
+                          }  
+                           
+                          else if (Eintrag9.value!=="95" && Eintrag9.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag9").value="95";            
+                          document.getElementById("Loesung9").style.visibility="visible";document.getElementById("Pruef9").disabled= true;}
+                               
+                          else if (Eintrag9.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
 
-          <button id ="Aufgabe9" onclick="Aufgabe9()" >9</button>
-          <p class = "Aufgabe" style="font-weight:bold;">In einer Klasse sind 40 Schüler. Davon werden 38 versetzt. Wie viel Prozent sind das?   Ergebnis: <input type="text" id="Eintrag9" maxlength="2" size="1" disabled="true" ></input> %</span></p>   
-          <button id ="Loesung9" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe9.pdf');" style="visibility:hidden;">Lösung</button>
-  
-              <script>
-  
-                  function Aufgabe9() {
-                  document.getElementById("Aufgabe9").disabled= true;
-                  document.getElementById("Eintrag9").disabled = false;
-                  document.getElementById("Eintrag9").focus(); 
-                  }
-                  Eintrag9.addEventListener('keydown', (event) => {
-                    if (event.key === 'Enter' && Eintrag9.value=="95") {alert("Richtig"); document.getElementById("Eintrag9").disabled="true"; document.getElementById("Loesung9").style.visibility="visible";   
-                       
-                     }
-                    else if (event.key === 'Enter' && Eintrag9.value!=="95" && Eintrag9.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag9").value="95";            
-                    document.getElementById("Loesung9").style.visibility="visible";
-                    document.getElementById("Eintrag9").disabled="true"; }       
-                    else if (event.key === 'Enter' && Eintrag9.value=="") {alert("Bitte eine Eingabe machen")}
-                  }) 
-                </script>
-                
-              </div>
-
+         
         <!--//Aufgabe 10-->   
              
         <div class="Aufg">
