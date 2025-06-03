@@ -350,8 +350,8 @@ Wie viel Prozent zahlt ein Schüler,<br>der in Reihe 11 - 20 sitzt, gegenüber e
 <!--//Aufgabe 23-->
 
     <p class ="Aufgabe" style="font-weight:bold">Aufgabe 23</p>
-  <p class = "Aufgabe" ><strong>Eine Milchsorte enthält 4,2 % Fett.<br>
-                    Wie viel g Fett sind in 35 l Milch enthalten, <br>wenn 1 l Milch 1030 g wiegt?</strong><br>
+  <p class = "Aufgabe" ><strong>Eine Milchsorte enthält 4,2 % Fett.
+                    Wie viel g Fett <br>sind in 35 l Milch enthalten, wenn 1 l Milch 1030 g wiegt?</strong><br>
     Ihr Ergebnis: <input type="text" id="Eintrag23" maxlength="6" size="2" style= background-color:yellow > g</input>
     <button id="Pruef23" onclick="Aufgabe23()">Prüfen</button>
   <button id="Loesung23" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe23.pdf');" style="visibility:hidden">Lösung</button></p>
@@ -426,8 +426,239 @@ Wie viel Prozent zahlt ein Schüler,<br>der in Reihe 11 - 20 sitzt, gegenüber e
              
         <p class="Aufgabe" style="font-weight:bold" >Aufgabe 28</p>
         <p class="Aufgabe" style="font-weight:bold">Ein Straßenbahnfahrschein für eine einfache Fahrt kostet 2 €. <br>Ein Sammelfahrschein für 6 Fahrten kostet 10 €.
-              Wie viel <br>Prozent kann man beim Kauf einer Sechserkarte sparen?      
-        <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe27.pdf');" >Lösung</button></p>
+              Wie viel <br>Prozent kann man beim Kauf einer Sechserkarte sparen?    <br>  
+        <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe28.pdf');" >Lösung</button></p>
+
+   <!--//Aufgabe 29-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 29</p>
+  <p class = "Aufgabe" ><strong>In einer Obstkiste sind 12 % der Früchte verdorben. <br>Der Verkäufer muss deswegen 39,6 kg wegwerfen.<br>
+    Wie viel kg kann er noch verkaufen?</strong> <br>
+    Ihr Ergebnis: <input type="text" id="Eintrag29" maxlength="5" size="2" style= background-color:yellow > kg</input>
+    <button id="Pruef29" onclick="Aufgabe29()">Prüfen</button>
+  <button id="Loesung29" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe29.pdf');" style="visibility:hidden">Lösung</button></p>
+
+                    <script>
+                        function Aufgabe29() {                                                
+                          if (Eintrag29.value=="290,4") {alert("Richtig"); document.getElementById("Pruef29").disabled= true;
+                          }  
+                           
+                          else if (Eintrag29.value!=="290,4" && Eintrag29.value!=="") {alert("Leider falsch. Das richtige Ergebnis und der Link zur Lösung werden angezeigt. "); document.getElementById("Eintrag29").value="290,4";            
+                          document.getElementById("Loesung29").style.visibility="visible";document.getElementById("Pruef29").disabled= true;}                               
+                          else if (Eintrag29.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+    <!--//Aufgabe 30-->   
+             
+        <p class="Aufgabe" style="font-weight:bold" >Aufgabe 30</p>
+        <p class="Aufgabe" style="font-weight:bold">In Deutschland gibt es 136 000 km² Wald, das sind 29 % <br>der Gesamtfläche.
+                            Wie groß ist die Gesamtfläche <br>Deutschlands?      
+        <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe30.pdf');" >Lösung</button></p>
+
+    <!--//Aufgabe 31-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 31</p>
+  <p class = "Aufgabe" ><strong>Deutschland hat 1963 für 52,3 Milliarden DM Waren importiert. <br>Das sind 5,6 % mehr als 1962.
+                    Für wie viel DM hat <br>Deutschland 1962 Waren importiert?</strong> <br>
+    Ihr Ergebnis: <input type="text" id="Eintrag31" maxlength="5" size="2" style= background-color:yellow > DM</input>
+    <button id="Pruef31" onclick="Aufgabe31()">Prüfen</button>
+  <button id="Loesung31" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe31.pdf');" style="visibility:hidden">Lösung</button></p>
+
+                    <script>
+                        function Aufgabe31() {                                                
+                          if (Eintrag31.value=="49,53") {alert("Richtig"); document.getElementById("Pruef31").disabled= true;
+                          }  
+                           
+                          else if (Eintrag31.value!=="49,53" && Eintrag31.value!=="") {alert("Leider falsch. Das richtige Ergebnis und der Link zur Lösung werden angezeigt. "); document.getElementById("Eintrag31").value="49,53";            
+                          document.getElementById("Loesung31").style.visibility="visible";document.getElementById("Pruef31").disabled= true;}                               
+                          else if (Eintrag31.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+            <!--//Aufgabe 32-->   
+             
+        <p class="Aufgabe" style="font-weight:bold" >Aufgabe 32</p>
+        <p class="Aufgabe" style="font-weight:bold">Beim Kauf eines Grundstücks muss man 7 % Grunderwerbs-<br>steuer an das Finanzamt bezahlen.
+                    Wie viel Grunderwerbs-<br>steuer muss ein Käufer bezahlen, wenn das Grundstück <br>13 410 € kostet?
+        <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe32.pdf');" >Lösung</button></p>
+
+  <!--//Aufgabe 33-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 33</p>
+  <p class = "Aufgabe" ><strong>DEin Bauer versichert seine Ernte gegen Hagelschäden. <br>Den Wert der Ernte gibt er mit 
+                    12 400 € an. Für diesen <br>Betrag muss man 40 € Versicherungsbeitrag bezahlen.<br>
+                    Wie viel Prozent sind das?</strong> <br>
+    Ihr Ergebnis: <input type="text" id="Eintrag33" maxlength="4" size="1" style= background-color:yellow > %</input>
+    <button id="Pruef33" onclick="Aufgabe33()">Prüfen</button>
+  <button id="Loesung33" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe33.pdf');" style="visibility:hidden">Lösung</button></p>
+
+                    <script>
+                        function Aufgabe33() {                                                
+                          if (Eintrag33.value=="0,32") {alert("Richtig"); document.getElementById("Pruef33").disabled= true;
+                          }  
+                           
+                          else if (Eintrag33.value!=="0,32" && Eintrag33.value!=="") {alert("Leider falsch. Das richtige Ergebnis und der Link zur Lösung werden angezeigt. "); document.getElementById("Eintrag33").value="0,32";            
+                          document.getElementById("Loesung33").style.visibility="visible";document.getElementById("Pruef33").disabled= true;}                               
+                          else if (Eintrag33.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+     <!--//Aufgabe 34-->   
+             
+        <p class="Aufgabe" style="font-weight:bold" >Aufgabe 34</p>
+        <p class="Aufgabe" style="font-weight:bold">Ein Immobilienmakler verlangt vom Käufer einer Eigentums-<br>wohnung eine 
+                Provision von 5700 €, das sind 3 % des Kauf-<br>preises. Wie viel kostet die Wohnung?    
+        <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe34.pdf');" >Lösung</button></p>
+
+  <!--//Aufgabe 35-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 35</p>
+  <p class = "Aufgabe" ><strong>Die Milch in einer 200 g Dose hat einen Fettgehalt von 10%. <br>Wie viel g Wasser muss man hinzugeben,
+                um einen Fettgehalt <br>von 4 % zu erhalten?</strong> <br>
+    Ihr Ergebnis: <input type="text" id="Eintrag35" maxlength="3" size="1" style= background-color:yellow > g</input>
+    <button id="Pruef35" onclick="Aufgabe35()">Prüfen</button>
+  <button id="Loesung35" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe35.pdf');" style="visibility:hidden">Lösung</button></p>
+
+                    <script>
+                        function Aufgabe35() {                                                
+                          if (Eintrag35.value=="300") {alert("Richtig"); document.getElementById("Pruef35").disabled= true;
+                          }  
+                           
+                          else if (Eintrag35.value!=="300" && Eintrag35.value!=="") {alert("Leider falsch. Das richtige Ergebnis und der Link zur Lösung werden angezeigt. "); document.getElementById("Eintrag35").value="300";            
+                          document.getElementById("Loesung35").style.visibility="visible";document.getElementById("Pruef35").disabled= true;}                               
+                          else if (Eintrag35.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+     <!--//Aufgabe 36-->   
+             
+        <p class="Aufgabe" style="font-weight:bold" >Aufgabe 36</p>
+        <p class="Aufgabe" style="font-weight:bold">Ein Angestellter verdient im Monat 1700 € brutto. Netto <br>verbleiben ihm 1160 €.
+                a) Wie hoch sind seine Abzüge in <br>Prozent?<br>b) Wie viel müsste er bei gleichem Prozentsatz brutto <br>verdienen, damit ihm netto 1700 € ausbezahlt werden?<br>  
+        <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe36.pdf');" >Lösung</button></p>
+                 
+    <!--//Aufgabe 37-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 37</p>
+  <p class = "Aufgabe" ><strong>Ein Mixgetränk besteht aus 3 Teilen Orangensaft, 2 Teilen <br>Ananassaft, 2 Teilen Mineralwasser,
+    1 Tei 40%iger Gin und <br>1 Teil 80%iger Rum.
+    Wie viel Prozent Alkohol hat das fertige <br>Getränk?  </strong> 
+    Ihr Ergebnis: <input type="text" id="Eintrag37" maxlength="5" size="2" style= background-color:yellow > %</input>
+    <button id="Pruef37" onclick="Aufgabe37()">Prüfen</button>
+  <button id="Loesung37" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe37.pdf');" style="visibility:hidden">Lösung</button></p>
+
+                    <script>
+                        function Aufgabe37() {                                                
+                          if (Eintrag37.value=="13,33") {alert("Richtig"); document.getElementById("Pruef37").disabled= true;
+                          }  
+                           
+                          else if (Eintrag37.value!=="13,33" && Eintrag37.value!=="") {alert("Leider falsch. Das richtige Ergebnis und der Link zur Lösung werden angezeigt. "); document.getElementById("Eintrag37").value="13,33";            
+                          document.getElementById("Loesung37").style.visibility="visible";document.getElementById("Pruef37").disabled= true;}                               
+                          else if (Eintrag37.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+      <!--//Aufgabe 38-->   
+             
+        <p class="Aufgabe" style="font-weight:bold" >Aufgabe 38</p>
+        <p class="Aufgabe" style="font-weight:bold">Ein Händler gibt beim Kauf einer Maschine 15% Rabatt auf den <br>Listenpreis.
+                Der Kunde muss nach Abzug von 3% Skonto noch <br>1319,20 € bezahlen.
+                Wie hoch war der Listenpreis?   
+        <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe38.pdf');" >Lösung</button></p>
+
+    <!--//Aufgabe 39-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 39</p>
+  <p class = "Aufgabe" ><strong>In einer Zeitung wirbt eine Firma für ein Produkt. Die Zeitung hat <br>90 000 Bezieher.
+    Man schätzt, dass 50% der Bezieher die Anzeige <br>lesen und 4% davon das Produkt kaufen.<br>        
+    a) Mit wie viel Käufern kann die Firma rechnen? </strong> <br>
+    Ihr Ergebnis: <input type="text" id="Eintrag39" maxlength="4" size="1" style= background-color:yellow > </input>
+    <button id="Pruef39" onclick="Aufgabe39()">Prüfen</button>
+  <button id="Loesung39" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe39.pdf');" style="visibility:hidden">Lösung</button><br>
+  <strong>b) Wie hoch ist der Gesamtgewinn, wenn die Firma 85 € Gewinn <br>pro Produkt macht?</strong></p>
+
+                    <script>
+                        function Aufgabe39() {                                                
+                          if (Eintrag39.value=="1800") {alert("Richtig"); document.getElementById("Pruef39").disabled= true;
+                          }  
+                           
+                          else if (Eintrag39.value!=="1800" && Eintrag39.value!=="") {alert("Leider falsch. Das richtige Ergebnis und der Link zur Lösung werden angezeigt. "); document.getElementById("Eintrag39").value="1800";            
+                          document.getElementById("Loesung39").style.visibility="visible";document.getElementById("Pruef39").disabled= true;}                               
+                          else if (Eintrag39.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+     <!--//Aufgabe 40-->   
+             
+        <p class="Aufgabe" style="font-weight:bold" >Aufgabe 40</p>
+        <p class="Aufgabe" style="font-weight:bold">Ein Händler gibt 10% Rabatt auf den Listenpreis, ein anderer<br>
+                7% Rabatt und zusätzlich 3% Skonto.<br>
+                Wie viel Prozent muss der Kunde beim günstigeren Händler <br>bezahlen?  
+        <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe40.pdf');" >Lösung</button></p>
+
+   <!--//Aufgabe 41-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 41</p>
+  <p class = "Aufgabe" ><strong>Der größte je gemessene Mensch war 2,75 m, der kleinste 0,40 m.<br>
+    a) Wie viel Prozent betrug die Länge des Großen von der Länge des <br>Kleinen? </strong>
+    Ihr Ergebnis: <input type="text" id="Eintrag41" maxlength="5" size="1" style= background-color:yellow > %</input>
+    <button id="Pruef41" onclick="Aufgabe41()">Prüfen</button>
+  <button id="Loesung41" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe41.pdf');" style="visibility:hidden">Lösung</button><br>  
+    <strong>b) Wie viel Prozent betrug die Länge des Kleinen von der Länge <br>des Großen?</strong></p>  
+    
+
+                    <script>
+                        function Aufgabe41() {                                                
+                          if (Eintrag41.value=="687,5") {alert("Richtig"); document.getElementById("Pruef41").disabled= true;
+                          }  
+                           
+                          else if (Eintrag41.value!=="687,5" && Eintrag41.value!=="") {alert("Leider falsch. Das richtige Ergebnis und der Link zur Lösung werden angezeigt. "); document.getElementById("Eintrag41").value="687,5";            
+                          document.getElementById("Loesung41").style.visibility="visible";document.getElementById("Pruef41").disabled= true;}                               
+                          else if (Eintrag41.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+     <!--//Aufgabe 42-->   
+             
+        <p class="Aufgabe" style="font-weight:bold" >Aufgabe 42</p>
+        <p class="Aufgabe" style="font-weight:bold">Ein Bauer versichert seine Ernte mit 50 000 € gegen Hagelschaden.<br>
+                a) Wie hoch ist seine Jahresprämie bei einem Prozentsatz von 7,5 %?<br>                    
+                b) Seine Feuerversicherung verlangt 0,4 % der Versicherungssumme <br>als Prämie.<br> 
+                Die Prämie beträgt 120 €. Wie hoch ist die Versicherungssumme?<br>                          
+                c) Für  seine Hausratversicherung über 32 000 € muss er 80 € <br>bezahlen. 
+                Wie hoch ist der Prozentsatz?    
+        <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe42.pdf');" >Lösung</button></p>
+
+         <!--//Aufgabe 43-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 43</p>
+  <p class = "Aufgabe" ><strong>Für eine Kfz-Haftpflichtversicherung muss der Versicherungsnehmer <br>noch 40 % von 
+             ursprünglich 726,40 € bezahlen. Nach einem Schadens-<br>fall muss er 55 % bezahlen.
+             Bis zu welcher Schadenshöhe lohnt es sich,<br> den Schaden selbst zu bezahlen, wenn er
+             1 Jahr 55 %, 2 Jahre 50 % <br>und 3 Jahre 45 % bezahlen muss, um wieder in den
+             ursprünglichen <br>Tarif zu kommen?  </strong> 
+    Ihr Ergebnis: <input type="text" id="Eintrag43" maxlength="6" size="2" style= background-color:yellow > Tage</input>
+    <button id="Pruef43" onclick="Aufgabe43()">Prüfen</button>
+  <button id="Loesung43" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe43.pdf');" style="visibility:hidden">Lösung</button></p>
+
+                    <script>
+                        function Aufgabe43() {                                                
+                          if (Eintrag43.value=="363,20") {alert("Richtig"); document.getElementById("Pruef43").disabled= true;
+                          }  
+                           
+                          else if (Eintrag43.value!=="363,20" && Eintrag43.value!=="") {alert("Leider falsch. Das richtige Ergebnis und der Link zur Lösung werden angezeigt. "); document.getElementById("Eintrag43").value="363,20";            
+                          document.getElementById("Loesung43").style.visibility="visible";document.getElementById("Pruef43").disabled= true;}                               
+                          else if (Eintrag43.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>      
+                 
+                 
+
+        
+                
+                    
+                  
                    
                     
                       
