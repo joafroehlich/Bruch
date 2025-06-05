@@ -33,7 +33,6 @@
 bei einem Zinssatz von 7,3 % zu zahlen?  </strong><br> 
     Ihr Ergebnis: <input type="text" id="Eintrag1" maxlength="6" size="2" style= background-color:yellow > €</input> &nbsp; 
       <button id="Pruef1" onclick="Aufgabe1()">Prüfen</button>&nbsp;
-  <button id="Loesung1" onclick="window.open('https://www.matheaufgaben-loesen.de/Zins/Zins_Aufgabe1.pdf');" style="visibility:hidden">Lösung</button></p>
   
                      <script>
                         function Aufgabe1() { 
@@ -41,8 +40,8 @@ bei einem Zinssatz von 7,3 % zu zahlen?  </strong><br>
                           if (Eintrag1.value=="496,40") {alert("Richtig"); document.getElementById("Pruef1").disabled= true;
                           }
                            
-                          else if (Eintrag1.value!=="496,40" && Eintrag1.value!=="") {alert("Leider falsch. Das richtige Ergebnis und der Link zur Lösung werden angezeigt. "); document.getElementById("Eintrag1").value="496,40";            
-                          document.getElementById("Loesung1").style.visibility="visible";document.getElementById("Pruef1").disabled= true;}
+                          else if (Eintrag1.value!=="496,40" && Eintrag1.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag1").value="496,40"; window.open('https://www.matheaufgaben-loesen.de/Zins/Zins_Aufgabe1.pdf');           
+                          ;document.getElementById("Pruef1").disabled= true;}
                                
                           else if (Eintrag1.value=="") {alert("Bitte eine Eingabe machen")}}
                          
