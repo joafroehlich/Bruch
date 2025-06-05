@@ -62,7 +62,7 @@ Wie hoch ist der Kredit?
 Wie hoch ist die Hypothek? </strong><br>
 Ihr Ergebnis: <input type="text" id="Eintrag3" maxlength="6" size="2" style= background-color:yellow > €</input> &nbsp; 
       <button id="Pruef3" onclick="Aufgabe3()">Prüfen</button>&nbsp;
-  <button id="Loesung3" onclick="window.open('https://www.matheaufgaben-loesen.de/Zins/Zins_Aufgabe3.pdf');" style="visibility:hidden">Lösung</button></p>
+  
   
                      <script>c
                         function Aufgabe3() { 
@@ -70,8 +70,8 @@ Ihr Ergebnis: <input type="text" id="Eintrag3" maxlength="6" size="2" style= bac
                           if (Eintrag3.value=="168000") {alert("Richtig"); document.getElementById("Pruef3").disabled= true;
                           }  
                            
-                          else if (Eintrag3.value!=="168000" && Eintrag3.value!=="") {alert("Leider falsch. Das richtige Ergebnis und der Link zur Lösung werden angezeigt. "); document.getElementById("Eintrag3").value="168000";            
-                          document.getElementById("Loesung3").style.visibility="visible";document.getElementById("Pruef3").disabled= true;}
+                          else if (Eintrag3.value!=="168000" && Eintrag3.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag3").value="168000";window.open('Zins_Aufgabe3.html');             
+                          document.getElementById("Pruef3").disabled= true;}
                                
                           else if (Eintrag3.value=="") {alert("Bitte eine Eingabe machen")}}
                          
@@ -83,7 +83,7 @@ Ihr Ergebnis: <input type="text" id="Eintrag3" maxlength="6" size="2" style= bac
   <p class="Aufgabe" style="font-weight:bold">Ein Hausbesitzer kann zur Zeit eine Restschuld von 20 000 € nicht tilgen.<br>
 Er zahlt dafür jährlich 7,5 % Zinsen.<br>
 Wie viel Zinsen hat er nach 2 Jahren gezahlt?    
-  <button  onclick="window.open('Zins_Aufgabe1.html');">Lösung</button></p>
+  <button  onclick="window.open('Zins_Aufgabe4.html');">Lösung</button></p>
   
           <!--//Aufgabe 5--> 
 
@@ -92,7 +92,7 @@ Wie viel Zinsen hat er nach 2 Jahren gezahlt?
 Welchen Betrag muss sie der Bank bei einem Zinssatz von 12,3 % überweisen.</strong><br> 
     Ihr Ergebnis: <input type="text" id="Eintrag5" maxlength="4" size="1" style= background-color:yellow > €</input> 
      <button id="Pruef5" onclick="Aufgabe5()">Prüfen</button>
-  <button id="Loesung5" onclick="window.open('https://www.matheaufgaben-loesen.de/Zins/Zins_Aufgabe5.pdf');" style="visibility:hidden">Lösung</button></p>
+  
      
      <script>
                         function Aufgabe5() { 
@@ -100,8 +100,8 @@ Welchen Betrag muss sie der Bank bei einem Zinssatz von 12,3 % überweisen.</str
                           if (Eintrag5.value=="5615") {alert("Richtig"); document.getElementById("Pruef5").disabled= true;
                           }  
                            
-                          else if (Eintrag5.value!=="5615" && Eintrag5.value!=="") {alert("Leider falsch. Das richtige Ergebnis und der Link zur Lösung werden angezeigt. "); document.getElementById("Eintrag5").value="5615";            
-                          document.getElementById("Loesung5").style.visibility="visible";document.getElementById("Pruef5").disabled= true;}
+                          else if (Eintrag5.value!=="5615" && Eintrag5.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag5").value="5615";window.open('Zins_Aufgabe5.html');            
+                          document.getElementById("Pruef5").disabled= true;}
                                
                           else if (Eintrag5.value=="") {alert("Bitte eine Eingabe machen")}}
                          
@@ -112,7 +112,7 @@ Welchen Betrag muss sie der Bank bei einem Zinssatz von 12,3 % überweisen.</str
   <p class="Aufgabe" style="font-weight:bold" >Aufgabe 6</p>
   <p class="Aufgabe" style="font-weight:bold">Zum Bau eines Hauses ist ein Kredit von 180 000 € nötig. Die Sparkasse gewährt einen Zinssatz von 6,8 %.<br>
 Wie hoch ist die Zinsbelastung im ersten Jahr?                                                                                                   
-    <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Zins/Zins_Aufgabe6.pdf');" >Lösung</button></p>
+    <button  onclick="window.open('Zins_Aufgabe6.html');" >Lösung</button></p>
       
    <!--//Aufgabe 7--> 
 
@@ -121,7 +121,7 @@ Wie hoch ist die Zinsbelastung im ersten Jahr?
 Wie hoch ist der Zinssatz? <br>Tragen Sie das Ergebnis auf 1 Stelle nach dem Komma gerundet ein.</strong><br>
 Ihr Ergebnis:  <input type="text" id="Eintrag7" maxlength="3" size="1" style= background-color:yellow > %</input> &nbsp; 
     <button id="Pruef7" onclick="Aufgabe7()">Prüfen</button>&nbsp;
-    <button id="Loesung7" onclick="window.open('https://www.matheaufgaben-loesen.de/Zins/Zins_Aufgabe7.pdf');" style="visibility:hidden">Lösung</button></p>
+    
 
                     <script>
                         function Aufgabe7() { 
@@ -129,8 +129,8 @@ Ihr Ergebnis:  <input type="text" id="Eintrag7" maxlength="3" size="1" style= ba
                           if (Eintrag7.value=="3,9") {alert("Richtig"); document.getElementById("Pruef7").disabled= true;
                           }  
                            
-                          else if (Eintrag7.value!=="3,9" && Eintrag7.value!=="") {alert("Leider falsch. Das richtige Ergebnis und der Link zur Lösung werden angezeigt. "); document.getElementById("Eintrag7").value="3,9";            
-                          document.getElementById("Loesung7").style.visibility="visible";document.getElementById("Pruef7").disabled= true;}
+                          else if (Eintrag7.value!=="3,9" && Eintrag7.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag7").value="3,9";window.open('Zins_Aufgabe7.html');            
+                          document.getElementById("Pruef7").disabled= true;}
                                
                           else if (Eintrag7.value=="") {alert("Bitte eine Eingabe machen")}}
                          
@@ -141,7 +141,7 @@ Ihr Ergebnis:  <input type="text" id="Eintrag7" maxlength="3" size="1" style= ba
       <p class="Aufgabe" style="font-weight:bold" >Aufgabe 8</p>
       <p class="Aufgabe" style="font-weight:bold">Für ein Guthaben von 7500 € schreibt die Bank 412,50 € Jahreszinsen gut.<br>
 Wie hoch ist der Zinssatz?                                                                                     
-      <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Zins/Zins_Aufgabe8.pdf');" >Lösung</button></p>
+      <button  onclick="window.open('Zins_Aufgabe8.html');" >Lösung</button></p>
 
  <!--//Aufgabe 9--> 
 
@@ -151,7 +151,7 @@ a) Wie hoch sind die Gesamtzinsen, wenn sie erst nach 4 Jahren abgehoben werden?
 b) Wie hoch sind die Gesamtzinsen, wenn sie jedes Jahr abgehoben werden?</strong><br>
 Ihr Ergebnis: <input type="text" id="Eintrag9" maxlength="6" size="2" style= background-color:yellow > €</input>
     <button id="Pruef9" onclick="Aufgabe9()">Prüfen</button>
-  <button id="Loesung9" onclick="window.open('https://www.matheaufgaben-loesen.de/Zins/Zins_Aufgabe9.pdf');" style="visibility:hidden">Lösung</button></p>
+  
 
 <script>
                         function Aufgabe9() { 
@@ -159,8 +159,8 @@ Ihr Ergebnis: <input type="text" id="Eintrag9" maxlength="6" size="2" style= bac
                           if (Eintrag9.value=="986,93") {alert("Richtig"); document.getElementById("Pruef9").disabled= true;
                           }  
                            
-                          else if (Eintrag9.value!=="986,93" && Eintrag9.value!=="") {alert("Leider falsch. Das richtige Ergebnis und der Link zur Lösung werden angezeigt. "); document.getElementById("Eintrag9").value="986,93";            
-                          document.getElementById("Loesung9").style.visibility="visible";document.getElementById("Pruef9").disabled= true;}
+                          else if (Eintrag9.value!=="986,93" && Eintrag9.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag9").value="986,93";window.open('Zins_Aufgabe9.html');            
+                          document.getElementById("Pruef9").disabled= true;}
                                
                           else if (Eintrag9.value=="") {alert("Bitte eine Eingabe machen")}}
                          
@@ -172,7 +172,7 @@ Ein Handwerksbetrieb braucht für ein Jahr einen Kredit über 18 000 €. Es lie
 <pre><p class ="Aufgabe"><strong>A 15 000 € zu 4,5 %               3 000 € zu 6,35 %
 B 12 000 € zu 4,5 %               6 000 € zu 6,5 %
 C   8 500 € zu 4,9 %               9 500 € zu 5,1 %.
-Wie viel kostet das günstigste Angebot?</strong>    <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Zins/Zins_Aufgabe10.pdf');" >Lösung</button></p></pre>
+Wie viel kostet das günstigste Angebot?</strong>    <button  onclick="window.open('Zins_Aufgabe10.html');" >Lösung</button></p></pre>
 
         <!--//Aufgabe 11-->
 
@@ -183,15 +183,15 @@ Ihr Chef will am Ende des Jahres den geliehenen Betrag plus 55 € zurückhaben.
 Wie hoch ist der Zinssatz des günstigeren Angebots? </strong><br>
     Ihr Ergebnis: <input type="text" id="Eintrag11" maxlength="3" size="1" style= background-color:yellow > %</input>
     <button id="Pruef11" onclick="Aufgabe11()">Prüfen</button>
-  <button id="Loesung11" onclick="window.open('https://www.matheaufgaben-loesen.de/Zins/Zins_Aufgabe11.pdf');" style="visibility:hidden">Lösung</button></p>
+  
 
                     <script>
                         function Aufgabe11() { 
                                                 
                           if (Eintrag11.value=="8,3") {alert("Richtig"); document.getElementById("Pruef11").disabled= true;
                           }  
-                          else if (Eintrag11.value!=="8,3" && Eintrag11.value!=="") {alert("Leider falsch. Das richtige Ergebnis und der Link zur Lösung werden angezeigt. "); document.getElementById("Eintrag11").value=" 8,3";            
-                          document.getElementById("Loesung11").style.visibility="visible";document.getElementById("Pruef11").disabled= true;}                               
+                          else if (Eintrag11.value!=="8,3" && Eintrag11.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag11").value=" 8,3";window.open('Zins_Aufgabe11.html');            
+                          document.getElementById("Pruef11").disabled= true;}                               
                           else if (Eintrag11.value=="") {alert("Bitte eine Eingabe machen")}}
                          
                       </script>
@@ -201,7 +201,7 @@ Wie hoch ist der Zinssatz des günstigeren Angebots? </strong><br>
         <p class="Aufgabe" style="font-weight:bold" >Aufgabe 12</p>
         <p class="Aufgabe" style="font-weight:bold">Ein Kunde leiht sich bei einer Bank 4800 € für 5 Monate zu einem Zinssatz von 5,5 %.<br> 
 Wie viel Zinsen muss er bezahlen?
-        <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Zins/Zins_Aufgabe12.pdf');" >Lösung</button></p>
+        <button  onclick="window.open('Zins_Aufgabe12.html');" >Lösung</button></p>
                 
       <!--//Aufgabe 13-->
 
@@ -210,7 +210,7 @@ Wie viel Zinsen muss er bezahlen?
 Wie hoch sind die Zinsen? </strong><br>                                                                                                                                                                        </strong>
                     Ihr Ergebnis: <input type="text" id="Eintrag13" maxlength="6" size="2" style= background-color:yellow > €</input>
     <button id="Pruef13" onclick="Aufgabe13()">Prüfen</button>
-  <button id="Loesung13" onclick="window.open('https://www.matheaufgaben-loesen.de/Zins/Zins_Aufgabe13.pdf');" style="visibility:hidden">Lösung</button><br>                       
+  
   </p>
     
 
@@ -220,8 +220,8 @@ Wie hoch sind die Zinsen? </strong><br>                                         
                           if (Eintrag13.value=="344,40") {alert("Richtig"); document.getElementById("Pruef13").disabled= true;
                           }  
                            
-                          else if (Eintrag13.value!=="344,40" && Eintrag13.value!=="") {alert("Leider falsch. Das richtige Ergebnis und der Link zur Lösung werden angezeigt. "); document.getElementById("Eintrag13").value="344,40";            
-                          document.getElementById("Loesung13").style.visibility="visible";document.getElementById("Pruef13").disabled= true;}                               
+                          else if (Eintrag13.value!=="344,40" && Eintrag13.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag13").value="344,40";window.open('Zins_Aufgabe13.html');            
+                          document.getElementById("Pruef13").disabled= true;}                               
                           else if (Eintrag13.value=="") {alert("Bitte eine Eingabe machen")}}
                          
                       </script> 
@@ -231,7 +231,7 @@ Wie hoch sind die Zinsen? </strong><br>                                         
         <p class="Aufgabe" style="font-weight:bold" >Aufgabe 14</p>
         <p class="Aufgabe" style="font-weight:bold">Eine Bank verzinst ein Kapital von 7200 € mit 3,5 %.<br>
 Wie viel Zinsen erhält man nach 2 Monaten und 20 Tagen?   
-        <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Zins/Zins_Aufgabe14.pdf');" >Lösung</button></p>
+        <button  onclick="window.open('Zins_Aufgabe14.html');"  >Lösung</button></p>
      
         <!--//Aufgabe 15-->
 
@@ -250,7 +250,7 @@ und die Bank 13,5 % Überziehungszinsen verlangt? <br></strong>
                           if (Eintrag15.value=="19,69") {alert("Richtig"); document.getElementById("Pruef15").disabled= true;
                           }  
                            
-                          else if (Eintrag15.value!=="19,69" && Eintrag15.value!=="") {alert("Leider falsch. Das richtige Ergebnis und der Link zur Lösung werden angezeigt. "); document.getElementById("Eintrag15").value="19,69";            
+                          else if (Eintrag15.value!=="19,69" && Eintrag15.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag15").value="19,69";            
                           document.getElementById("Loesung15").style.visibility="visible";document.getElementById("Pruef15").disabled= true;}                               
                           else if (Eintrag15.value=="") {alert("Bitte eine Eingabe machen")}}
                          
@@ -279,7 +279,7 @@ Wie viel Tage war das Geld angelegt?  </strong><br>
                           if (Eintrag17.value=="80") {alert("Richtig"); document.getElementById("Pruef17").disabled= true;
                           }  
                            
-                          else if (Eintrag17.value!=="80" && Eintrag17.value!=="") {alert("Leider falsch. Das richtige Ergebnis und der Link zur Lösung werden angezeigt. "); document.getElementById("Eintrag17").value="80";            
+                          else if (Eintrag17.value!=="80" && Eintrag17.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag17").value="80";            
                           document.getElementById("Loesung17").style.visibility="visible";document.getElementById("Pruef17").disabled= true;}                               
                           else if (Eintrag17.value=="") {alert("Bitte eine Eingabe machen")}}
                          
@@ -308,7 +308,7 @@ Wie hoch war das Anfangskapital Ko?                                             
                           if (Eintrag19.value=="3000") {alert("Richtig"); document.getElementById("Pruef19").disabled= true;
                           }  
                            
-                          else if (Eintrag19.value!=="3000" && Eintrag19.value!=="") {alert("Leider falsch. Das richtige Ergebnis und der Link zur Lösung werden angezeigt. "); document.getElementById("Eintrag19").value="3000";            
+                          else if (Eintrag19.value!=="3000" && Eintrag19.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag19").value="3000";            
                           document.getElementById("Loesung19").style.visibility="visible";document.getElementById("Pruef19").disabled= true;}                               
                           else if (Eintrag19.value=="") {alert("Bitte eine Eingabe machen")}}
                          
@@ -338,7 +338,7 @@ a) Nach wie viel Jahren hat sich der Betrag verdoppelt, wenn das Enkelkind keine
                           if (Eintrag21.value=="11,9") {alert("Richtig"); document.getElementById("Pruef21").disabled= true;
                           }  
                            
-                          else if (Eintrag21.value!=="11,9" && Eintrag21.value!=="") {alert("Leider falsch. Das richtige Ergebnis und der Link zur Lösung werden angezeigt. "); document.getElementById("Eintrag21").value="11,9";            
+                          else if (Eintrag21.value!=="11,9" && Eintrag21.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag21").value="11,9";            
                           document.getElementById("Loesung21").style.visibility="visible";document.getElementById("Pruef21").disabled= true;}                               
                           else if (Eintrag21.value=="") {alert("Bitte eine Eingabe machen")}}
                          
@@ -372,7 +372,7 @@ c) für die Hälfte der Ersparnisse und halb so hohem Zinssatz?   </strong><br><
                           if (Eintrag23.value=="400") {alert("Richtig"); document.getElementById("Pruef23").disabled= true;
                           }  
                            
-                          else if (Eintrag23.value!=="400" && Eintrag23.value!=="") {alert("Leider falsch. Das richtige Ergebnis und der Link zur Lösung werden angezeigt. "); document.getElementById("Eintrag23").value="400";            
+                          else if (Eintrag23.value!=="400" && Eintrag23.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag23").value="400";            
                           document.getElementById("Loesung23").style.visibility="visible";document.getElementById("Pruef23").disabled= true;}                               
                           else if (Eintrag23.value=="") {alert("Bitte eine Eingabe machen")}}
                          
@@ -402,7 +402,7 @@ Welchen Betrag haben sie angelegt? </strong><br>
                           if (Eintrag25.value=="460") {alert("Richtig"); document.getElementById("Pruef25").disabled= true;
                           }  
                            
-                          else if (Eintrag25.value!=="460" && Eintrag25.value!=="") {alert("Leider falsch. Das richtige Ergebnis und der Link zur Lösung werden angezeigt. "); document.getElementById("Eintrag25").value="460";            
+                          else if (Eintrag25.value!=="460" && Eintrag25.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag25").value="460";            
                           document.getElementById("Loesung25").style.visibility="visible";document.getElementById("Pruef25").disabled= true;}                               
                           else if (Eintrag25.value=="") {alert("Bitte eine Eingabe machen")}}
                          
@@ -432,7 +432,7 @@ Wie hoch sind die Kosten für das günstigere Angebot? </strong><br>
                           if (Eintrag27.value=="1900") {alert("Richtig"); document.getElementById("Pruef27").disabled= true;
                           }  
                            
-                          else if (Eintrag27.value!=="1900" && Eintrag27.value!=="") {alert("Leider falsch. Das richtige Ergebnis und der Link zur Lösung werden angezeigt. "); document.getElementById("Eintrag27").value="1900";            
+                          else if (Eintrag27.value!=="1900" && Eintrag27.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag27").value="1900";            
                           document.getElementById("Loesung27").style.visibility="visible";document.getElementById("Pruef27").disabled= true;}                               
                           else if (Eintrag27.value=="") {alert("Bitte eine Eingabe machen")}}
                          
@@ -459,7 +459,7 @@ und jährlicher Zinsauszahlung mehr als 372,50 € zu erhalten? &nbsp; &nbsp;
                           if (Eintrag29.value=="11248,64") {alert("Richtig"); document.getElementById("Pruef29").disabled= true;
                           }  
                            
-                          else if (Eintrag29.value!=="11248,64" && Eintrag29.value!=="") {alert("Leider falsch. Das richtige Ergebnis und der Link zur Lösung werden angezeigt. "); document.getElementById("Eintrag29").value="11248,64";            
+                          else if (Eintrag29.value!=="11248,64" && Eintrag29.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag29").value="11248,64";            
                           document.getElementById("Loesung29").style.visibility="visible";document.getElementById("Pruef29").disabled= true;}                               
                           else if (Eintrag29.value=="") {alert("Bitte eine Eingabe machen")}}
                          
@@ -488,7 +488,7 @@ Auf welchen Betrag ist sein Guthaben nach 5 Jahren angewachsen, wenn der Zinssat
                           if (Eintrag31.value=="765,77") {alert("Richtig"); document.getElementById("Pruef31").disabled= true;
                           }  
                            
-                          else if (Eintrag31.value!=="765,77" && Eintrag31.value!=="") {alert("Leider falsch. Das richtige Ergebnis und der Link zur Lösung werden angezeigt. "); document.getElementById("Eintrag31").value="765,77";            
+                          else if (Eintrag31.value!=="765,77" && Eintrag31.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag31").value="765,77";            
                           document.getElementById("Loesung31").style.visibility="visible";document.getElementById("Pruef31").disabled= true;}                               
                           else if (Eintrag31.value=="") {alert("Bitte eine Eingabe machen")}}
                          
@@ -519,7 +519,7 @@ Ihr Ergebnis: <input type="text" id="Eintrag33" maxlength="4" size="1" style= ba
                           if (Eintrag33.value=="2190") {alert("Richtig"); document.getElementById("Pruef33").disabled= true;
                           }  
                            
-                          else if (Eintrag33.value!=="2190" && Eintrag33.value!=="") {alert("Leider falsch. Das richtige Ergebnis und der Link zur Lösung werden angezeigt. "); document.getElementById("Eintrag33").value="2190";            
+                          else if (Eintrag33.value!=="2190" && Eintrag33.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag33").value="2190";            
                           document.getElementById("Loesung33").style.visibility="visible";document.getElementById("Pruef33").disabled= true;}                               
                           else if (Eintrag33.value=="") {alert("Bitte eine Eingabe machen")}}
                          
@@ -548,7 +548,7 @@ Wie hoch muss der Zinssatz sein?                                                
                           if (Eintrag35.value=="3,96") {alert("Richtig"); document.getElementById("Pruef35").disabled= true;
                           }  
                            
-                          else if (Eintrag35.value!=="3,96" && Eintrag35.value!=="") {alert("Leider falsch. Das richtige Ergebnis und der Link zur Lösung werden angezeigt. "); document.getElementById("Eintrag35").value="3,96";            
+                          else if (Eintrag35.value!=="3,96" && Eintrag35.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag35").value="3,96";            
                           document.getElementById("Loesung35").style.visibility="visible";document.getElementById("Pruef35").disabled= true;}                               
                           else if (Eintrag35.value=="") {alert("Bitte eine Eingabe machen")}}
                          
@@ -598,7 +598,7 @@ b) Tragen Sie im Tilgungsplan den fehlenden Betrag auf 2 Stellen nach dem Komma 
                           if (Eintrag37.value=="62234,99") {alert("Richtig"); document.getElementById("Pruef37").disabled= true;
                           }  
                            
-                          else if (Eintrag37.value!=="62234,99" && Eintrag37.value!=="") {alert("Leider falsch. Das richtige Ergebnis und der Link zur Lösung werden angezeigt. "); document.getElementById("Eintrag37").value="62234,99";            
+                          else if (Eintrag37.value!=="62234,99" && Eintrag37.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag37").value="62234,99";            
                           document.getElementById("Loesung37").style.visibility="visible";document.getElementById("Pruef37").disabled= true;}                               
                           else if (Eintrag37.value=="") {alert("Bitte eine Eingabe machen")}}
                          
