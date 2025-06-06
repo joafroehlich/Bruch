@@ -242,7 +242,7 @@ Wie viel muss ein Kunde bezahlen, wenn er sein Konto 15 Tage mit 3500 € überz
 und die Bank 13,5 % Überziehungszinsen verlangt? <br></strong>
     Ihr Ergebnis: <input type="text" id="Eintrag15" maxlength="5" size="1" style= background-color:yellow > €</input>
     <button id="Pruef15" onclick="Aufgabe15()">Prüfen</button>
-  <button id="Loesung15" onclick="window.open('https://www.matheaufgaben-loesen.de/Zins/Zins_Aufgabe15.pdf');" style="visibility:hidden">Lösung</button></p>
+  
 
                     <script>
                         function Aufgabe15() { 
@@ -250,8 +250,8 @@ und die Bank 13,5 % Überziehungszinsen verlangt? <br></strong>
                           if (Eintrag15.value=="19,69") {alert("Richtig"); document.getElementById("Pruef15").disabled= true;
                           }  
                            
-                          else if (Eintrag15.value!=="19,69" && Eintrag15.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag15").value="19,69";            
-                          document.getElementById("Loesung15").style.visibility="visible";document.getElementById("Pruef15").disabled= true;}                               
+                          else if (Eintrag15.value!=="19,69" && Eintrag15.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag15").value="19,69"; window.open('Zins_Aufgabe15.html');           
+                          document.getElementById("Pruef15").disabled= true;}                               
                           else if (Eintrag15.value=="") {alert("Bitte eine Eingabe machen")}}
                          
                       </script> 
@@ -261,7 +261,7 @@ und die Bank 13,5 % Überziehungszinsen verlangt? <br></strong>
         <p class="Aufgabe" style="font-weight:bold" >Aufgabe 16</p>
         <p class="Aufgabe" style="font-weight:bold">Für ein Darlehen bezahlt ein Bankkunde bei einem Zinssatz von 8 % im Halbjahr 1600 € Zinsen.<br>
 Wie hoch ist das Darlehen?   &nbsp; &nbsp;  
-        <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Zins/Zins_Aufgabe15.pdf');" >Lösung</button></p>
+        <button  onclick="window.open('Zins_Aufgabe16.html');"  >Lösung</button></p>
 
         <!--//Aufgabe 17-->
 
@@ -271,16 +271,15 @@ Als der Kunde das Geld abhebt, bekommt er 55 € Zinsen.<br>
 Wie viel Tage war das Geld angelegt?  </strong><br>
     Ihr Ergebnis: <input type="text" id="Eintrag17" maxlength="2" size="1" style= background-color:yellow > Tage</input>
     <button id="Pruef17" onclick="Aufgabe17()">Prüfen</button>
-  <button id="Loesung17" onclick="window.open('https://www.matheaufgaben-loesen.de/Zins/Zins_Aufgabe17.pdf');" style="visibility:hidden">Lösung</button></p>
-
+  
                     <script>
                         function Aufgabe17() { 
                                                 
                           if (Eintrag17.value=="80") {alert("Richtig"); document.getElementById("Pruef17").disabled= true;
                           }  
                            
-                          else if (Eintrag17.value!=="80" && Eintrag17.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag17").value="80";            
-                          document.getElementById("Loesung17").style.visibility="visible";document.getElementById("Pruef17").disabled= true;}                               
+                          else if (Eintrag17.value!=="80" && Eintrag17.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag17").value="80";window.open('Zins_Aufgabe17.html');            
+                          document.getElementById("Pruef17").disabled= true;}                               
                           else if (Eintrag17.value=="") {alert("Bitte eine Eingabe machen")}}
                          
                       </script>
@@ -291,7 +290,7 @@ Wie viel Tage war das Geld angelegt?  </strong><br>
         <p class = "Aufgabe" style="font-weight:bold;">Ein Bankkunde hat sein Konto 15 Tage lang um 2400 € überzogen.
 Die Bank verlangt für diesen Zeitraum 12,50 € Zinsen.<br>
 Wie hoch ist der Zinssatz? &nbsp; &nbsp;      
-   <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Zins/Zins_Aufgabe18.pdf');" >Lösung</button></p>  
+   <button  onclick="window.open('Zins_Aufgabe18.html');" >Lösung</button></p>  
         
 <!--//Aufgabe 19-->
 
@@ -300,7 +299,7 @@ Wie hoch ist der Zinssatz? &nbsp; &nbsp;
 Wie hoch war das Anfangskapital Ko?                                                                                     </strong><br>
     Ihr Ergebnis: <input type="text" id="Eintrag19" maxlength="4" size="1" style= background-color:yellow > %</input>
     <button id="Pruef19" onclick="Aufgabe19()">Prüfen</button>
-  <button id="Loesung19" onclick="window.open('https://www.matheaufgaben-loesen.de/Zins/Zins_Aufgabe19.pdf');" style="visibility:hidden">Lösung</button></p>
+  
 
                     <script>
                         function Aufgabe19() { 
@@ -308,8 +307,8 @@ Wie hoch war das Anfangskapital Ko?                                             
                           if (Eintrag19.value=="3000") {alert("Richtig"); document.getElementById("Pruef19").disabled= true;
                           }  
                            
-                          else if (Eintrag19.value!=="3000" && Eintrag19.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag19").value="3000";            
-                          document.getElementById("Loesung19").style.visibility="visible";document.getElementById("Pruef19").disabled= true;}                               
+                          else if (Eintrag19.value!=="3000" && Eintrag19.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag19").value="3000"; window.open('Zins_Aufgabe19.html');           
+                          document.getElementById("Pruef19").disabled= true;}                               
                           else if (Eintrag19.value=="") {alert("Bitte eine Eingabe machen")}}
                          
                       </script>
@@ -321,7 +320,7 @@ Wie hoch war das Anfangskapital Ko?                                             
 Die Auszahlung erfolgt nach 18 Jahren mit Zinseszinsen.<br>
 a) Welchen Betrag bekommt das Mädchen nach 18 Jahren? <br>   
 b) Nach welcher Zeit hat sich das Kapital verdoppelt?   &nbsp; &nbsp;  
-        <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Zins/Zins_Aufgabe20.pdf');" >Lösung</button></p>
+        <button  onclick="window.open('Zins_Aufgabe20.html');"  >Lösung</button></p>
                   
 <!--//Aufgabe 21-->
 
@@ -329,8 +328,7 @@ b) Nach welcher Zeit hat sich das Kapital verdoppelt?   &nbsp; &nbsp;
   <p class = "Aufgabe" ><strong>Für ihr Enkelkind legen die Großeltern 1000 € zu 6 % an.<br>
 a) Nach wie viel Jahren hat sich der Betrag verdoppelt, wenn das Enkelkind keine Zinsen abhebt?</strong><br>Ihr Ergebnis: <input type="text" id="Eintrag21" maxlength="3" size="1" style= background-color:yellow > Jahre</input>
    <button id="Pruef21" onclick="Aufgabe21()">Prüfen</button>
-  <button id="Loesung21" onclick="window.open('https://www.matheaufgaben-loesen.de/Zins/Zins_Aufgabe21.pdf');" style="visibility:hidden">Lösung</button><br>
-<strong>b) Nach wie viel Jahren hätte sich ein Kapital von 10 000 € bei 6 % verdoppelt?   </strong></p>
+   <strong>b) Nach wie viel Jahren hätte sich ein Kapital von 10 000 € bei 6 % verdoppelt?   </strong></p>
     
                     <script>
                         function Aufgabe21() { 
@@ -338,8 +336,8 @@ a) Nach wie viel Jahren hat sich der Betrag verdoppelt, wenn das Enkelkind keine
                           if (Eintrag21.value=="11,9") {alert("Richtig"); document.getElementById("Pruef21").disabled= true;
                           }  
                            
-                          else if (Eintrag21.value!=="11,9" && Eintrag21.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag21").value="11,9";            
-                          document.getElementById("Loesung21").style.visibility="visible";document.getElementById("Pruef21").disabled= true;}                               
+                          else if (Eintrag21.value!=="11,9" && Eintrag21.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag21").value="11,9";window.open('Zins_Aufgabe21.html');            
+                          document.getElementById("Pruef21").disabled= true;}                               
                           else if (Eintrag21.value=="") {alert("Bitte eine Eingabe machen")}}
                          
                       </script>
@@ -352,7 +350,7 @@ a) 1. Jahr Zinssatz 4 %, im 2. Jahr 6 %<br>
 b) 1. Jahr 3 %, im 2. Jahr 7 %<br>
 c) 1. Jahr 5 %, im 2. Jahr 5 %.<br>
 Wie hoch ist der maximal zu erzielende Betrag?    &nbsp; &nbsp;  
-        <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Zins/Zins_Aufgabe22.pdf');" >Lösung</button></p>
+        <button  onclick="window.open('Zins_Aufgabe22.html');" >Lösung</button></p>
 
 <!--//Aufgabe 23-->
 
@@ -362,8 +360,7 @@ Wie viel Zinsen hätte es bekommen,<br>
 a) bei doppelt so hohen Ersparnissen und doppelt so hohem Zinssatz? </strong><br> 
 Ihr Ergebnis: <input type="text" id="Eintrag23" maxlength="4" size="1" style= background-color:yellow > €</input>
     <button id="Pruef23" onclick="Aufgabe23()">Prüfen</button>
-  <button id="Loesung23" onclick="window.open('https://www.matheaufgaben-loesen.de/Zins/Zins_Aufgabe23.pdf');" style="visibility:hidden">Lösung</button><br>
-<strong>b) bei doppelt so hohen Ersparnissen und halb so hohem Zinssatz? <br>  
+  <strong>b) bei doppelt so hohen Ersparnissen und halb so hohem Zinssatz? <br>  
 c) für die Hälfte der Ersparnisse und halb so hohem Zinssatz?   </strong><br></p>
     
                     <script>
@@ -372,8 +369,8 @@ c) für die Hälfte der Ersparnisse und halb so hohem Zinssatz?   </strong><br><
                           if (Eintrag23.value=="400") {alert("Richtig"); document.getElementById("Pruef23").disabled= true;
                           }  
                            
-                          else if (Eintrag23.value!=="400" && Eintrag23.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag23").value="400";            
-                          document.getElementById("Loesung23").style.visibility="visible";document.getElementById("Pruef23").disabled= true;}                               
+                          else if (Eintrag23.value!=="400" && Eintrag23.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag23").value="400";window.open('Zins_Aufgabe23.html');            
+                          document.getElementById("Pruef23").disabled= true;}                               
                           else if (Eintrag23.value=="") {alert("Bitte eine Eingabe machen")}}
                          
                       </script>
@@ -384,7 +381,7 @@ c) für die Hälfte der Ersparnisse und halb so hohem Zinssatz?   </strong><br><
         <p class="Aufgabe" style="font-weight:bold">Für ein Bauvorhaben gibt eine Bank ein Darlehen von 80000 € zu einem Zinssatz von 4,5 %.<br>
 a) Wie hoch ist der Jahreszins ohne Tilgung?<br>  
 b) Wie viel muss der Kunde insgesamt zurückzahlen, wenn er jährlich 10% der Darlehenssumme tilgt?     &nbsp; &nbsp;  
-        <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Zins/Zins_Aufgabe24.pdf');" >Lösung</button></p>
+        <button  onclick="window.open('Zins_Aufgabe24.html');" >Lösung</button></p>
 
 <!--//Aufgabe 25-->
 
