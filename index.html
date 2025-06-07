@@ -448,16 +448,15 @@ und jährlicher Zinsauszahlung mehr als 372,50 € zu erhalten? &nbsp; &nbsp;
   <p class = "Aufgabe" ><strong>a) Auf welchen Betrag sind 10 000 € nach 3 Jahren bei einem Zinssatz von 4 % mit Zinseszins angewachsen?<br></strong>
     Ihr Ergebnis: <input type="text" id="Eintrag29" maxlength="8" size="4" style= background-color:yellow > €</input>
     <button id="Pruef29" onclick="Aufgabe29()">Prüfen</button>
-  <button id="Loesung29" onclick="window.open('https://www.matheaufgaben-loesen.de/Zins/Zins_Aufgabe29.pdf');" style="visibility:hidden">Lösung</button><br>
-<strong>b) Wie hoch sind die Zinsen insgesamt, bei jährlicher Abhebung?</strong> </p>
+  <strong>b) Wie hoch sind die Zinsen insgesamt, bei jährlicher Abhebung?</strong> </p>
     
                     <script>
                         function Aufgabe29() {                                                
                           if (Eintrag29.value=="11248,64") {alert("Richtig"); document.getElementById("Pruef29").disabled= true;
                           }  
                            
-                          else if (Eintrag29.value!=="11248,64" && Eintrag29.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag29").value="11248,64";            
-                          document.getElementById("Loesung29").style.visibility="visible";document.getElementById("Pruef29").disabled= true;}                               
+                          else if (Eintrag29.value!=="11248,64" && Eintrag29.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag29").value="11248,64"; window.open('Zins_Aufgabe29.html');           
+                          document.getElementById("Pruef29").disabled= true;}                               
                           else if (Eintrag29.value=="") {alert("Bitte eine Eingabe machen")}}
                          
                       </script>
@@ -468,7 +467,7 @@ und jährlicher Zinsauszahlung mehr als 372,50 € zu erhalten? &nbsp; &nbsp;
         <p class="Aufgabe" style="font-weight:bold">Zu Beginn eines Jahres eröffnet ein Kunde ein Konto und bezahlt 2750 € ein.
 Die Bank gewährt ihm einen Zinssatz von 5 %.<br>
 Wie hoch ist das Guthaben nach 4 Jahren, wenn er jedes Jahr zum Jahresende 100 € abhebt?&nbsp; &nbsp;       
-        <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Zins/Zins_Aufgabe30.pdf');" >Lösung</button></p>
+        <button  onclick="window.open('Zins_Aufgabe30.html');" >Lösung</button></p>
 
     <!--//Aufgabe 31-->
 
@@ -478,15 +477,15 @@ Auf welchen Betrag ist sein Guthaben nach 5 Jahren angewachsen, wenn der Zinssat
 5 % beträgt und er in der Zwischenzeit kein Geld abhebt? </strong><br>
     Ihr Ergebnis: <input type="text" id="Eintrag31" maxlength="6" size="2" style= background-color:yellow > €</input>
     <button id="Pruef31" onclick="Aufgabe31()">Prüfen</button>
-  <button id="Loesung31" onclick="window.open('https://www.matheaufgaben-loesen.de/Zins/Zins_Aufgabe31.pdf');" style="visibility:hidden">Lösung</button></p>
+  
 
                     <script>
                         function Aufgabe31() {                                                
                           if (Eintrag31.value=="765,77") {alert("Richtig"); document.getElementById("Pruef31").disabled= true;
                           }  
                            
-                          else if (Eintrag31.value!=="765,77" && Eintrag31.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag31").value="765,77";            
-                          document.getElementById("Loesung31").style.visibility="visible";document.getElementById("Pruef31").disabled= true;}                               
+                          else if (Eintrag31.value!=="765,77" && Eintrag31.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag31").value="765,77"; window.open('Zins_Aufgabe31.html');           
+                          document.getElementById("Pruef31").disabled= true;}                               
                           else if (Eintrag31.value=="") {alert("Bitte eine Eingabe machen")}}
                          
                       </script>
