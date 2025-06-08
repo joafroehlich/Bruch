@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name ="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zinsrechnung</title>
+  <title>Dreisatz</title>
   
 </head>
 <body style="background-color: #B9D1EA; margin-top: 1em; ">
@@ -22,85 +22,79 @@
     
 	
     <p class="Text1">Wie löse ich Matheaufgaben?</p>
-		<p class="Text1">Zinsrechnung</p>
+		<p class="Text1">Proportionale und antiproportionale <br> Zuordnungen (Dreisatz)</p>
     <p class="Text2" > <span style= "background-color:white;">Sie sehen eine gelbes Eingabefeld oder <br>den Schalter: Lösung.</span></p>
   	<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
-    
-  <!--//Aufgabe 1-->
+  
+<!--//Aufgabe 1-->
 
     <p class ="Aufgabe" style="font-weight:bold">Aufgabe 1</p>
-  <p class = "Aufgabe" ><strong>Wie viel Zinsen sind jährlich für ein Darlehen von 6800 €
-bei einem Zinssatz von 7,3 % zu zahlen?  </strong><br> 
+  <p class = "Aufgabe" ><strong>Für 60 Tage Aushilfsarbeit bekommt ein Schüler 546 €. <br> Wie viel bekommt er für 76 Tage? </strong><br> 
     Ihr Ergebnis: <input type="text" id="Eintrag1" maxlength="6" size="2" style= background-color:yellow > €</input> &nbsp; 
       <button id="Pruef1" onclick="Aufgabe1()">Prüfen</button>&nbsp;
+  
   
                      <script>
                         function Aufgabe1() { 
                                                 
-                          if (Eintrag1.value=="496,40") {alert("Richtig"); document.getElementById("Pruef1").disabled= true;
-                          }
+                          if (Eintrag1.value=="691,60") {alert("Richtig"); document.getElementById("Pruef1").disabled= true;
+                          }  
                            
-                          else if (Eintrag1.value!=="496,40" && Eintrag1.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag1").value="496,40"; window.open('Zins_Aufgabe1.html');           
-                          ;document.getElementById("Pruef1").disabled= true;}
+                          else if (Eintrag1.value!=="691,60" && Eintrag1.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag1").value="691,60"; window.open('Dreisatz_Aufgabe1.html')           
+                          document.getElementById("Pruef1").disabled= true;}
                                
                           else if (Eintrag1.value=="") {alert("Bitte eine Eingabe machen")}}
                          
                       </script>
 
-     <!--//Aufgabe 2-->
+<!--//Aufgabe 2-->
 
   <p class="Aufgabe" style="font-weight:bold" >Aufgabe 2</p>
-  <p class="Aufgabe" style="font-weight:bold">Ein Unternehmer muss einen Kredit zu 8,5 % aufnehmen. Nach einem Jahr zahlt er 1275 € Zinsen.<br>
-Wie hoch ist der Kredit?     
-  <button  onclick="window.open('Zins_Aufgabe2.html');" >Lösung</button></p>
-                 
-            
-     <!--//Aufgabe 3--> 
+  <p class="Aufgabe" style="font-weight:bold">Für Waren im Wert von 16 000 € muss der Empfänger 3 200 € Zoll bezahlen. <br>Wie viel Zoll kosten Waren von 7 000 €? &nbsp; &nbsp; 
+  <button  onclick="window.open('Dreisatz_Aufgabe2.html');" >Lösung</button></p>
+
+<!--//Aufgabe 3--> 
 
     <p class ="Aufgabe" style="font-weight:bold">Aufgabe 3</p>
-  <p class = "Aufgabe" ><strong>Für seine Hypothek muss ein Bauherr jährlich 12 600 € Zinsen bezahlen. Der Zinssatz beträgt 7,5 %.<br>
-Wie hoch ist die Hypothek? </strong><br>
-Ihr Ergebnis: <input type="text" id="Eintrag3" maxlength="6" size="2" style= background-color:yellow > €</input> &nbsp; 
+  <p class = "Aufgabe" ><strong>Ein Fuhrpark besteht aus 13 Fahrzeugen, die monatlich 6 175 l Benzin verbrauchen.<br>    
+Wie hoch ist der monatliche Verbrauch in l, wenn 2 Fahrzeuge dazu kommen? </strong> <br>
+Ihr Ergebnis: <input type="text" id="Eintrag3" maxlength="4" size="2" style= background-color:yellow > l</input> &nbsp; 
       <button id="Pruef3" onclick="Aufgabe3()">Prüfen</button>&nbsp;
-  
-  
+    
                      <script>c
                         function Aufgabe3() { 
                                                 
-                          if (Eintrag3.value=="168000") {alert("Richtig"); document.getElementById("Pruef3").disabled= true;
+                          if (Eintrag3.value=="7125") {alert("Richtig"); document.getElementById("Pruef3").disabled= true;
                           }  
                            
-                          else if (Eintrag3.value!=="168000" && Eintrag3.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag3").value="168000";window.open('Zins_Aufgabe3.html');             
+                          else if (Eintrag3.value!=="7125" && Eintrag3.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag3").value="7125";window.open('Dreisatz_Aufgabe3.html')            
                           document.getElementById("Pruef3").disabled= true;}
                                
                           else if (Eintrag3.value=="") {alert("Bitte eine Eingabe machen")}}
                          
                       </script>
 
-    <!--//Aufgabe 4-->
+
+   <!--//Aufgabe 4-->
 
   <p class="Aufgabe" style="font-weight:bold" >Aufgabe 4</p>
-  <p class="Aufgabe" style="font-weight:bold">Ein Hausbesitzer kann zur Zeit eine Restschuld von 20 000 € nicht tilgen.<br>
-Er zahlt dafür jährlich 7,5 % Zinsen.<br>
-Wie viel Zinsen hat er nach 2 Jahren gezahlt?    
-  <button  onclick="window.open('Zins_Aufgabe4.html');">Lösung</button></p>
-  
-          <!--//Aufgabe 5--> 
+  <p class="Aufgabe" style="font-weight:bold">28 Ordner kosten 156,80 €. <br>Wie viel kosten 34 Ordner?  &nbsp; &nbsp; 
+  <button  onclick="" >Lösung</button></p>
+
+      <!--//Aufgabe 5--> 
 
       <p class ="Aufgabe" style="font-weight:bold">Aufgabe 5</p>
-  <p class ="Aufgabe" ><strong>Eine Kundin will einen Kredit über 5000 € nach einem Jahr zurückzahlen.<br> 
-Welchen Betrag muss sie der Bank bei einem Zinssatz von 12,3 % überweisen.</strong><br> 
-    Ihr Ergebnis: <input type="text" id="Eintrag5" maxlength="4" size="1" style= background-color:yellow > €</input> 
+  <p class = "Aufgabe" ><strong>Ein Großhändler bezieht 805 kg einer Ware für insgesamt 4 830 €. <br>Wie viel kosten 245 kg?  </strong><br> 
+    Ihr Ergebnis: <input type="text" id="Eintrag5" maxlength="4" size="1" style= background-color:yellow ></input> €
      <button id="Pruef5" onclick="Aufgabe5()">Prüfen</button>
-  
-     
+       
      <script>
                         function Aufgabe5() { 
                                                 
-                          if (Eintrag5.value=="5615") {alert("Richtig"); document.getElementById("Pruef5").disabled= true;
+                          if (Eintrag5.value=="1470") {alert("Richtig"); document.getElementById("Pruef5").disabled= true;
                           }  
                            
-                          else if (Eintrag5.value!=="5615" && Eintrag5.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag5").value="5615";window.open('Zins_Aufgabe5.html');            
+                          else if (Eintrag5.value!=="1470" && Eintrag5.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag5").value="1470";window.open('Dreisatz_Aufgabe5.html');            
                           document.getElementById("Pruef5").disabled= true;}
                                
                           else if (Eintrag5.value=="") {alert("Bitte eine Eingabe machen")}}
@@ -110,441 +104,419 @@ Welchen Betrag muss sie der Bank bei einem Zinssatz von 12,3 % überweisen.</str
     <!--//Aufgabe 6-->
 
   <p class="Aufgabe" style="font-weight:bold" >Aufgabe 6</p>
-  <p class="Aufgabe" style="font-weight:bold">Zum Bau eines Hauses ist ein Kredit von 180 000 € nötig. Die Sparkasse gewährt einen Zinssatz von 6,8 %.<br>
-Wie hoch ist die Zinsbelastung im ersten Jahr?                                                                                                   
-    <button  onclick="window.open('Zins_Aufgabe6.html');" >Lösung</button></p>
-      
-   <!--//Aufgabe 7--> 
+  <p class="Aufgabe" style="font-weight:bold">Ein Vertreter erhält bei einem Umsatz von 109 200 € eine Prämie von 1 146,60 €.<br>   
+Wie hoch ist seine Prämie, wenn er den Umsatz um 8 400 € steigert?
+ &nbsp; &nbsp; <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe6.pdf');" >Lösung</button></p>
+                    
+<!--//Aufgabe 7--> 
 
   <p class ="Aufgabe" style="font-weight:bold">Aufgabe 7</p>
-  <p class = "Aufgabe" ><strong>2750 € sind nach einem Jahr einschließlich Zinsen auf 2857,25 € angewachsen.<br>
-Wie hoch ist der Zinssatz? <br>Tragen Sie das Ergebnis auf 1 Stelle nach dem Komma gerundet ein.</strong><br>
-Ihr Ergebnis:  <input type="text" id="Eintrag7" maxlength="3" size="1" style= background-color:yellow > %</input> &nbsp; 
+  <p class = "Aufgabe" ><strong>Für das Eindecken eines Daches von 408 m² braucht ein Dachdecker 10 200 Platten.<br> 
+Wie viele Platten benötigt er für ein 381 m² großes Dach? </strong><br>
+Ihr Ergebnis:  <input type="text" id="Eintrag7" maxlength="2" size="1" style= background-color:yellow ></input> &nbsp; 
     <button id="Pruef7" onclick="Aufgabe7()">Prüfen</button>&nbsp;
-    
+    <button id="Loesung7" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe7.pdf');" style="visibility:hidden">Lösung</button></p>
 
                     <script>
                         function Aufgabe7() { 
                                                 
-                          if (Eintrag7.value=="3,9") {alert("Richtig"); document.getElementById("Pruef7").disabled= true;
+                          if (Eintrag7.value=="12") {alert("Richtig"); document.getElementById("Pruef7").disabled= true;
                           }  
                            
-                          else if (Eintrag7.value!=="3,9" && Eintrag7.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag7").value="3,9";window.open('Zins_Aufgabe7.html');            
-                          document.getElementById("Pruef7").disabled= true;}
+                          else if (Eintrag7.value!=="12" && Eintrag7.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag7").value="12";            
+                          document.getElementById("Loesung7").style.visibility="visible";document.getElementById("Pruef7").disabled= true;}
                                
                           else if (Eintrag7.value=="") {alert("Bitte eine Eingabe machen")}}
                          
-                      </script>   
-        
-       <!--//Aufgabe 8-->   
+                      </script>
+
+<!--//Aufgabe 8-->   
              
       <p class="Aufgabe" style="font-weight:bold" >Aufgabe 8</p>
-      <p class="Aufgabe" style="font-weight:bold">Für ein Guthaben von 7500 € schreibt die Bank 412,50 € Jahreszinsen gut.<br>
-Wie hoch ist der Zinssatz?                                                                                     
-      <button  onclick="window.open('Zins_Aufgabe8.html');" >Lösung</button></p>
+      <p class="Aufgabe" style="font-weight:bold">Einen Auftrag sollen 24 Arbeiter in 9 Arbeitstagen erledigen. Wegen Krankheit fallen 6 Arbeiter aus.<br>   
+In wie viel Tagen ist der Auftrag jetzt erledigt?&nbsp; &nbsp; &nbsp; 
+      <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe8.pdf');" >Lösung</button></p>
+
 
  <!--//Aufgabe 9--> 
 
  <p class ="Aufgabe" style="font-weight:bold">Aufgabe 9</p>
-  <p class = "Aufgabe" ><strong>Eine Bank gewährt auf einen Betrag von 7350 € einen Zinssatz von 3,2 % bei einer Laufzeit von 4 Jahren.<br>
-a) Wie hoch sind die Gesamtzinsen, wenn sie erst nach 4 Jahren abgehoben werden?<br>  
-b) Wie hoch sind die Gesamtzinsen, wenn sie jedes Jahr abgehoben werden?</strong><br>
-Ihr Ergebnis: <input type="text" id="Eintrag9" maxlength="6" size="2" style= background-color:yellow > €</input>
+  <p class = "Aufgabe" ><strong>Aus 50 kg Rohkaffee erhält man 43,3 kg Röstkaffee.<br>
+Wie hoch ist der Röstverlust bei einer Tagesproduktion von 22 650 kg Röstkaffee?
+</strong><br>
+Ihr Ergebnis: <input type="text" id="Eintrag9" maxlength="6" size="2" style= background-color:yellow > kg</input>
     <button id="Pruef9" onclick="Aufgabe9()">Prüfen</button>
-  
+  <button id="Loesung9" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe9.pdf');" style="visibility:hidden">Lösung</button>
+<p class = "Aufgabe" ><strong>Tragen Sie das Ergebnis auf 3 Stellen nach dem Komma gerundet ein.
+Runden Sie auch Zwischenergebnisse auf 3 Stellen nach dem Komma.</strong></p>
 
-<script>
+                    <script>
                         function Aufgabe9() { 
                                                 
-                          if (Eintrag9.value=="986,93") {alert("Richtig"); document.getElementById("Pruef9").disabled= true;
+                          if (Eintrag9.value=="3504,7") {alert("Richtig"); document.getElementById("Pruef9").disabled= true;
                           }  
                            
-                          else if (Eintrag9.value!=="986,93" && Eintrag9.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag9").value="986,93";window.open('Zins_Aufgabe9.html');            
-                          document.getElementById("Pruef9").disabled= true;}
+                          else if (Eintrag9.value!=="3504,7" && Eintrag9.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag9").value="3504,7";            
+                          document.getElementById("Loesung9").style.visibility="visible";document.getElementById("Pruef9").disabled= true;}
                                
                           else if (Eintrag9.value=="") {alert("Bitte eine Eingabe machen")}}
                          
                       </script>
+
         <!--//Aufgabe 10-->   
              
-        <p class="Aufgabe" style="font-weight:bold" >Aufgabe 10
-Ein Handwerksbetrieb braucht für ein Jahr einen Kredit über 18 000 €. Es liegen 3 Angebote vor:</p>
-<pre><p class ="Aufgabe"><strong>A 15 000 € zu 4,5 %               3 000 € zu 6,35 %
-B 12 000 € zu 4,5 %               6 000 € zu 6,5 %
-C   8 500 € zu 4,9 %               9 500 € zu 5,1 %.
-Wie viel kostet das günstigste Angebot?</strong>    <button  onclick="window.open('Zins_Aufgabe10.html');" >Lösung</button></p></pre>
+        <p class="Aufgabe" style="font-weight:bold" >Aufgabe 10</p>
+        <p class="Aufgabe" style="font-weight:bold">Für einen Ballen Kleiderstoff von 32,4 m Länge zahlt ein Betrieb 436,80 €.<br>  
+Wie viel kostet ein 2,15 m langer Stoffballen?   &nbsp; &nbsp; &nbsp;  
+        <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe10.pdf');" >Lösung</button></p>
 
         <!--//Aufgabe 11-->
 
     <p class ="Aufgabe" style="font-weight:bold">Aufgabe 11</p>
-  <p class = "Aufgabe" ><strong>Eine Verkäuferin kauft sich einen PC. Zwei Drittel des Kaufpreises von 1989 € hat sie gespart.<br>
-Den Rest möchte sie für ein Jahr leihen. Ihr Freund bietet ihr eine vierteljährliche Rückzahlung von 180 € an.<br>
-Ihr Chef will am Ende des Jahres den geliehenen Betrag plus 55 € zurückhaben.<br>
-Wie hoch ist der Zinssatz des günstigeren Angebots? </strong><br>
-    Ihr Ergebnis: <input type="text" id="Eintrag11" maxlength="3" size="1" style= background-color:yellow > %</input>
+  <p class = "Aufgabe" ><strong>Ein Betrieb vermietet Rasenmäher. Zwei Tage kosten 15 €.<br>Wie viel kosten 3 Tage?   </strong><br>
+    Ihr Ergebnis: <input type="text" id="Eintrag11" maxlength="5" size="2" style= background-color:yellow > €</input>
     <button id="Pruef11" onclick="Aufgabe11()">Prüfen</button>
-  
+  <button id="Loesung11" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe11.pdf');" style="visibility:hidden">Lösung</button></p>
 
                     <script>
                         function Aufgabe11() { 
                                                 
-                          if (Eintrag11.value=="8,3") {alert("Richtig"); document.getElementById("Pruef11").disabled= true;
+                          if (Eintrag11.value=="22,50") {alert("Richtig"); document.getElementById("Pruef11").disabled= true;
                           }  
-                          else if (Eintrag11.value!=="8,3" && Eintrag11.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag11").value=" 8,3";window.open('Zins_Aufgabe11.html');            
-                          document.getElementById("Pruef11").disabled= true;}                               
+                           
+                          else if (Eintrag11.value!=="22,50" && Eintrag11.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag11").value=" 22,50";            
+                          document.getElementById("Loesung11").style.visibility="visible";document.getElementById("Pruef11").disabled= true;}                               
                           else if (Eintrag11.value=="") {alert("Bitte eine Eingabe machen")}}
                          
-                      </script>
+                      </script> 
                       
-      <!--//Aufgabe 12-->   
+   <!--//Aufgabe 12-->   
              
         <p class="Aufgabe" style="font-weight:bold" >Aufgabe 12</p>
-        <p class="Aufgabe" style="font-weight:bold">Ein Kunde leiht sich bei einer Bank 4800 € für 5 Monate zu einem Zinssatz von 5,5 %.<br> 
-Wie viel Zinsen muss er bezahlen?
-        <button  onclick="window.open('Zins_Aufgabe12.html');" >Lösung</button></p>
-                
-      <!--//Aufgabe 13-->
+        <p class="Aufgabe" style="font-weight:bold">Ein Betrieb muss für 38 421 kWh 5763,15 € bezahlen. <br>Wie hoch ist der Kostenanteil des Materiallagers,   
+wenn der alte Zählerstand 6 937 kWh, der neue 9 023 kWh beträgt?&nbsp; &nbsp;  
+        <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe12.pdf');" >Lösung</button></p>
+
+   <!--//Aufgabe 13-->
 
     <p class ="Aufgabe" style="font-weight:bold">Aufgabe 13</p>
-  <p class = "Aufgabe" ><strong>Eine Sparkasse verleiht 16 400 € für 70 Tage zu einem Zinssatz von 10,8 %.<br>
-Wie hoch sind die Zinsen? </strong><br>                                                                                                                                                                        </strong>
-                    Ihr Ergebnis: <input type="text" id="Eintrag13" maxlength="6" size="2" style= background-color:yellow > €</input>
+  <p class = "Aufgabe" ><strong>Drei Angestellte machen monatlich 4 320 Stichproben.<br>                           
+Wie viele Angestellte braucht man für 17 280 Stichproben pro Monat? </strong><br>
+    Ihr Ergebnis: <input type="text" id="Eintrag13" maxlength="2" size="1" style= background-color:yellow > </input>
     <button id="Pruef13" onclick="Aufgabe13()">Prüfen</button>
-  
-  </p>
-    
+  <button id="Loesung13" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe13.pdf');" style="visibility:hidden">Lösung</button></p>
 
                     <script>
                         function Aufgabe13() { 
                                                 
-                          if (Eintrag13.value=="344,40") {alert("Richtig"); document.getElementById("Pruef13").disabled= true;
+                          if (Eintrag13.value=="12") {alert("Richtig"); document.getElementById("Pruef13").disabled= true;
                           }  
                            
-                          else if (Eintrag13.value!=="344,40" && Eintrag13.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag13").value="344,40";window.open('Zins_Aufgabe13.html');            
-                          document.getElementById("Pruef13").disabled= true;}                               
+                          else if (Eintrag13.value!=="12" && Eintrag13.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag13").value="12";            
+                          document.getElementById("Loesung13").style.visibility="visible";document.getElementById("Pruef13").disabled= true;}                               
                           else if (Eintrag13.value=="") {alert("Bitte eine Eingabe machen")}}
                          
-                      </script> 
+                      </script>
                       
-        <!--//Aufgabe 14-->   
+  <!--//Aufgabe 14-->   
              
         <p class="Aufgabe" style="font-weight:bold" >Aufgabe 14</p>
-        <p class="Aufgabe" style="font-weight:bold">Eine Bank verzinst ein Kapital von 7200 € mit 3,5 %.<br>
-Wie viel Zinsen erhält man nach 2 Monaten und 20 Tagen?   
-        <button  onclick="window.open('Zins_Aufgabe14.html');"  >Lösung</button></p>
-     
-        <!--//Aufgabe 15-->
+        <p class="Aufgabe" style="font-weight:bold">Die Frachtkosten für eine Ladung von 855 t betragen 63 270 €.<br>
+Wie hoch sind die Kosten für eine Ladung von 210 t?&nbsp; &nbsp;  
+        <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe14.pdf');" >Lösung</button></p>
+        
+  <!--//Aufgabe 15-->
 
     <p class ="Aufgabe" style="font-weight:bold">Aufgabe 15</p>
-  <p class = "Aufgabe" ><strong>Wer ein Gehaltskonto bei einer Bank hat, darf dieses Konto auch überziehen, 
-er darf also mehr Geld abheben als auf dem Konto ist, allerdings muss er dafür Zinsen bezahlen.<br>
-Wie viel muss ein Kunde bezahlen, wenn er sein Konto 15 Tage mit 3500 € überzieht
-und die Bank 13,5 % Überziehungszinsen verlangt? <br></strong>
-    Ihr Ergebnis: <input type="text" id="Eintrag15" maxlength="5" size="1" style= background-color:yellow > €</input>
+  <p class = "Aufgabe" ><strong>14 Abfüllautomaten befüllen 2 100 Flaschen pro Tag. <br>               
+Wie viele Automaten braucht man für 3 000 Flaschen pro Tag? </strong><br>
+    Ihr Ergebnis: <input type="text" id="Eintrag15" maxlength="2" size="1" style= background-color:yellow ></input>
     <button id="Pruef15" onclick="Aufgabe15()">Prüfen</button>
-  
+  <button id="Loesung15" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe15.pdf');" style="visibility:hidden">Lösung</button></p>
 
                     <script>
                         function Aufgabe15() { 
                                                 
-                          if (Eintrag15.value=="19,69") {alert("Richtig"); document.getElementById("Pruef15").disabled= true;
+                          if (Eintrag15.value=="20") {alert("Richtig"); document.getElementById("Pruef15").disabled= true;
                           }  
                            
-                          else if (Eintrag15.value!=="19,69" && Eintrag15.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag15").value="19,69"; window.open('Zins_Aufgabe15.html');           
-                          document.getElementById("Pruef15").disabled= true;}                               
+                          else if (Eintrag15.value!=="20" && Eintrag15.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag15").value="20";            
+                          document.getElementById("Loesung15").style.visibility="visible";document.getElementById("Pruef15").disabled= true;}                               
                           else if (Eintrag15.value=="") {alert("Bitte eine Eingabe machen")}}
                          
-                      </script> 
-                      
-            <!--//Aufgabe 16-->   
+                      </script>      
+                    
+  <!--//Aufgabe 16-->   
              
         <p class="Aufgabe" style="font-weight:bold" >Aufgabe 16</p>
-        <p class="Aufgabe" style="font-weight:bold">Für ein Darlehen bezahlt ein Bankkunde bei einem Zinssatz von 8 % im Halbjahr 1600 € Zinsen.<br>
-Wie hoch ist das Darlehen?   &nbsp; &nbsp;  
-        <button  onclick="window.open('Zins_Aufgabe16.html');"  >Lösung</button></p>
-
-        <!--//Aufgabe 17-->
+        <p class="Aufgabe" style="font-weight:bold">Ein Schiff braucht bei einer Geschwindigkeit von 17 Knoten für eine Fahrt 10¾ Tage.<br>
+Wie lange braucht es bei einer Geschwindigkeit von 20 Knoten?&nbsp; &nbsp;  
+        <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe16.pdf');" >Lösung</button></p>
+                         
+<!--//Aufgabe 17-->
 
     <p class ="Aufgabe" style="font-weight:bold">Aufgabe 17</p>
-  <p class = "Aufgabe" ><strong>Eine Bank gewährt für ein Guthaben von 4125 € einen Zinssatz von 6%.
-Als der Kunde das Geld abhebt, bekommt er 55 € Zinsen.<br>
-Wie viel Tage war das Geld angelegt?  </strong><br>
-    Ihr Ergebnis: <input type="text" id="Eintrag17" maxlength="2" size="1" style= background-color:yellow > Tage</input>
+  <p class = "Aufgabe" ><strong>Um eine Schiffsladung Holz abzufahren, müssen 6 Lkw jeweils 16 mal täglich fahren.<br>  
+Wegen Bauarbeiten können sie nur zwölfmal pro Tag fahren.<br> 
+Wie viele Lkw braucht man zusätzlich, um den Termin einzuhalten?</strong><br>
+    Ihr Ergebnis: <input type="text" id="Eintrag17" maxlength="1" size="1" style= background-color:yellow ></input>
     <button id="Pruef17" onclick="Aufgabe17()">Prüfen</button>
-  
+  <button id="Loesung17" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe17.pdf');" style="visibility:hidden">Lösung</button></p>
+
                     <script>
                         function Aufgabe17() { 
                                                 
-                          if (Eintrag17.value=="80") {alert("Richtig"); document.getElementById("Pruef17").disabled= true;
+                          if (Eintrag17.value=="2") {alert("Richtig"); document.getElementById("Pruef17").disabled= true;
                           }  
                            
-                          else if (Eintrag17.value!=="80" && Eintrag17.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag17").value="80";window.open('Zins_Aufgabe17.html');            
-                          document.getElementById("Pruef17").disabled= true;}                               
+                          else if (Eintrag17.value!=="2" && Eintrag17.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag17").value="2";            
+                          document.getElementById("Loesung17").style.visibility="visible";document.getElementById("Pruef17").disabled= true;}                               
                           else if (Eintrag17.value=="") {alert("Bitte eine Eingabe machen")}}
                          
                       </script>
 
-      <!--//Aufgabe 18-->   
+    <!--//Aufgabe 18-->   
              
         <p class="Aufgabe" style="font-weight:bold" >Aufgabe 18</p>
-        <p class = "Aufgabe" style="font-weight:bold;">Ein Bankkunde hat sein Konto 15 Tage lang um 2400 € überzogen.
-Die Bank verlangt für diesen Zeitraum 12,50 € Zinsen.<br>
-Wie hoch ist der Zinssatz? &nbsp; &nbsp;      
-   <button  onclick="window.open('Zins_Aufgabe18.html');" >Lösung</button></p>  
-        
+        <p class="Aufgabe" style="font-weight:bold">Für eine Arbeit brauchen 9 Angestellte 14 Arbeitstage. <br>
+Wie lange brauchen 7 Angestellte für diese Arbeit?&nbsp; &nbsp;  
+        <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe18.pdf');" >Lösung</button></p>
+                                           
 <!--//Aufgabe 19-->
 
     <p class ="Aufgabe" style="font-weight:bold">Aufgabe 19</p>
-  <p class = "Aufgabe" ><strong>Nach 3 Jahren ist ein Kapital bei einem Zinssatz von 3,5 % auf 3326,15 € angewachsen.<br>
-Wie hoch war das Anfangskapital Ko?                                                                                     </strong><br>
-    Ihr Ergebnis: <input type="text" id="Eintrag19" maxlength="4" size="1" style= background-color:yellow > %</input>
+  <p class = "Aufgabe" ><strong>Ein Vorrat reicht noch 45 Tage, wenn täglich 150 kg davon verkauft werden.<br>   
+Wie lange reicht er, wenn täglich 270 kg verkauft werden?</strong><br>
+    Ihr Ergebnis: <input type="text" id="Eintrag19" maxlength="2" size="1" style= background-color:yellow > Tage</input>
     <button id="Pruef19" onclick="Aufgabe19()">Prüfen</button>
-  
+  <button id="Loesung19" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe19.pdf');" style="visibility:hidden">Lösung</button></p>
 
                     <script>
                         function Aufgabe19() { 
                                                 
-                          if (Eintrag19.value=="3000") {alert("Richtig"); document.getElementById("Pruef19").disabled= true;
+                          if (Eintrag19.value=="25") {alert("Richtig"); document.getElementById("Pruef19").disabled= true;
                           }  
                            
-                          else if (Eintrag19.value!=="3000" && Eintrag19.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag19").value="3000"; window.open('Zins_Aufgabe19.html');           
-                          document.getElementById("Pruef19").disabled= true;}                               
+                          else if (Eintrag19.value!=="25" && Eintrag19.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag19").value="25";            
+                          document.getElementById("Loesung19").style.visibility="visible";document.getElementById("Pruef19").disabled= true;}                               
                           else if (Eintrag19.value=="") {alert("Bitte eine Eingabe machen")}}
                          
                       </script>
-                      
-     <!--//Aufgabe 20-->   
+
+    <!--//Aufgabe 20-->   
              
         <p class="Aufgabe" style="font-weight:bold" >Aufgabe 20</p>
-        <p class="Aufgabe" style="font-weight:bold">Für ihre neugeborene Tochter legen deren Eltern 5000 € zu einem Zinssatz von 6,5 % an.
-Die Auszahlung erfolgt nach 18 Jahren mit Zinseszinsen.<br>
-a) Welchen Betrag bekommt das Mädchen nach 18 Jahren? <br>   
-b) Nach welcher Zeit hat sich das Kapital verdoppelt?   &nbsp; &nbsp;  
-        <button  onclick="window.open('Zins_Aufgabe20.html');"  >Lösung</button></p>
-                  
+        <p class="Aufgabe" style="font-weight:bold">Während einer Inventur nehmen 7 Verkäufer in 8 Stunden 600 Artikel auf. <br>
+Wie lange benötigen 9 Verkäufer für 6 300 Artikel?&nbsp; &nbsp;  
+        <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe20.pdf');" >Lösung</button></p>
+                                            
 <!--//Aufgabe 21-->
 
     <p class ="Aufgabe" style="font-weight:bold">Aufgabe 21</p>
-  <p class = "Aufgabe" ><strong>Für ihr Enkelkind legen die Großeltern 1000 € zu 6 % an.<br>
-a) Nach wie viel Jahren hat sich der Betrag verdoppelt, wenn das Enkelkind keine Zinsen abhebt?</strong><br>Ihr Ergebnis: <input type="text" id="Eintrag21" maxlength="3" size="1" style= background-color:yellow > Jahre</input>
-   <button id="Pruef21" onclick="Aufgabe21()">Prüfen</button>
-   <strong>b) Nach wie viel Jahren hätte sich ein Kapital von 10 000 € bei 6 % verdoppelt?   </strong></p>
-    
+  <p class = "Aufgabe" ><strong>Für einen Pudding für 4 Personen braucht man 0,5 l Milch. <br>       
+Wie viel Liter braucht man für einen Pudding für 10 Personen?</strong><br>
+    Ihr Ergebnis: <input type="text" id="Eintrag21" maxlength="4" size="1" style= background-color:yellow > l</input>
+    <button id="Pruef21" onclick="Aufgabe21()">Prüfen</button>
+  <button id="Loesung21" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe21.pdf');" style="visibility:hidden">Lösung</button></p>
+
                     <script>
                         function Aufgabe21() { 
                                                 
-                          if (Eintrag21.value=="11,9") {alert("Richtig"); document.getElementById("Pruef21").disabled= true;
+                          if (Eintrag21.value=="1,25") {alert("Richtig"); document.getElementById("Pruef21").disabled= true;
                           }  
                            
-                          else if (Eintrag21.value!=="11,9" && Eintrag21.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag21").value="11,9";window.open('Zins_Aufgabe21.html');            
-                          document.getElementById("Pruef21").disabled= true;}                               
+                          else if (Eintrag21.value!=="1,25" && Eintrag21.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag21").value="1,25";            
+                          document.getElementById("Loesung21").style.visibility="visible";document.getElementById("Pruef21").disabled= true;}                               
                           else if (Eintrag21.value=="") {alert("Bitte eine Eingabe machen")}}
                          
                       </script>
-                      
- <!--//Aufgabe 22-->   
+
+    <!--//Aufgabe 22-->   
              
         <p class="Aufgabe" style="font-weight:bold" >Aufgabe 22</p>
-        <p class="Aufgabe" style="font-weight:bold">Ein Lottogewinn von 1 000 000 € wird für 2 Jahre angelegt. Es liegen 3 Angebote vor:<br>
-a) 1. Jahr Zinssatz 4 %, im 2. Jahr 6 %<br>
-b) 1. Jahr 3 %, im 2. Jahr 7 %<br>
-c) 1. Jahr 5 %, im 2. Jahr 5 %.<br>
-Wie hoch ist der maximal zu erzielende Betrag?    &nbsp; &nbsp;  
-        <button  onclick="window.open('Zins_Aufgabe22.html');" >Lösung</button></p>
-
+        <p class="Aufgabe" style="font-weight:bold">300 l Öl reichen für 20 Lampen, die an 25 Tagen jeweils 6 Stunden brennen.<br>       
+Wie viel Öl benötigen 18 Lampen, die an 30 Tagen jeweils 5 Stunden brennen?&nbsp; &nbsp;  
+        <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe22.pdf');" >Lösung</button></p>
+                    
 <!--//Aufgabe 23-->
 
     <p class ="Aufgabe" style="font-weight:bold">Aufgabe 23</p>
-  <p class = "Aufgabe" ><strong>Ein Mädchen hat seine Ersparnisse für 1 Jahr fest angelegt. Es erhält am Ende des Jahres 100 € Zinsen.<br>
-Wie viel Zinsen hätte es bekommen,<br> 
-a) bei doppelt so hohen Ersparnissen und doppelt so hohem Zinssatz? </strong><br> 
-Ihr Ergebnis: <input type="text" id="Eintrag23" maxlength="4" size="1" style= background-color:yellow > €</input>
+  <p class = "Aufgabe" ><strong>25 Arbeiter stellen in 32 Tagen bei täglich 7 Stunden ein Sportfeld von 8 000 m² fertig.<br> 
+In wie vielen Tagen zu 8 Stunden schaffen 20 Arbeiter ein 12 000 m² Feld?</strong><br>
+    Ihr Ergebnis: <input type="text" id="Eintrag23" maxlength="2" size="1" style= background-color:yellow > Tage</input>
     <button id="Pruef23" onclick="Aufgabe23()">Prüfen</button>
-  <strong>b) bei doppelt so hohen Ersparnissen und halb so hohem Zinssatz? <br>  
-c) für die Hälfte der Ersparnisse und halb so hohem Zinssatz?   </strong><br></p>
-    
+  <button id="Loesung23" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe23.pdf');" style="visibility:hidden">Lösung</button></p>
+
                     <script>
                         function Aufgabe23() { 
                                                 
-                          if (Eintrag23.value=="400") {alert("Richtig"); document.getElementById("Pruef23").disabled= true;
+                          if (Eintrag23.value=="12") {alert("Richtig"); document.getElementById("Pruef23").disabled= true;
                           }  
                            
-                          else if (Eintrag23.value!=="400" && Eintrag23.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag23").value="400";window.open('Zins_Aufgabe23.html');            
-                          document.getElementById("Pruef23").disabled= true;}                               
+                          else if (Eintrag23.value!=="12" && Eintrag23.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag23").value="12";            
+                          document.getElementById("Loesung23").style.visibility="visible";document.getElementById("Pruef23").disabled= true;}                               
                           else if (Eintrag23.value=="") {alert("Bitte eine Eingabe machen")}}
                          
                       </script>
                       
-<!--//Aufgabe 24-->   
+   <!--//Aufgabe 24-->   
              
         <p class="Aufgabe" style="font-weight:bold" >Aufgabe 24</p>
-        <p class="Aufgabe" style="font-weight:bold">Für ein Bauvorhaben gibt eine Bank ein Darlehen von 80000 € zu einem Zinssatz von 4,5 %.<br>
-a) Wie hoch ist der Jahreszins ohne Tilgung?<br>  
-b) Wie viel muss der Kunde insgesamt zurückzahlen, wenn er jährlich 10% der Darlehenssumme tilgt?     &nbsp; &nbsp;  
-        <button  onclick="window.open('Zins_Aufgabe24.html');" >Lösung</button></p>
+        <p class="Aufgabe" style="font-weight:bold">Ein Geschäft verkauft in 30 Tagen 690 kg Ware. <br>Wie lange reichen 207 kg?   &nbsp; &nbsp;  
+        <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe24.pdf');" >Lösung</button></p>
 
-<!--//Aufgabe 25-->
+  <!--//Aufgabe 25-->
 
     <p class ="Aufgabe" style="font-weight:bold">Aufgabe 25</p>
-  <p class = "Aufgabe" ><strong>Freunde legen bei verschiedenen Banken den gleichen Betrag Ko an.
-Der eine erhält 4 %, der andere 4,5 %. Nach einem Jahr hat der eine 2,30 € mehr auf seinem Konto.<br>
-Welchen Betrag haben sie angelegt? </strong><br>
-    Ihr Ergebnis: <input type="text" id="Eintrag25" maxlength="3" size="1" style= background-color:yellow > €</input>
+  <p class = "Aufgabe" ><strong>Ein Computer 'korrigiert' 26 Prüfungsarbeiten mit je 15 Aufgaben in 22½ Minuten.<br>   
+Wie lange benötigt er für 120 Arbeiten mit je 24 Fragen?</strong><br>
+    Ihr Ergebnis: <input type="text" id="Eintrag25" maxlength="6" size="2" style= background-color:yellow > min</input>
     <button id="Pruef25" onclick="Aufgabe25()">Prüfen</button>
-  
+  <button id="Loesung25" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe25.pdf');" style="visibility:hidden">Lösung</button></p>
 
                     <script>
                         function Aufgabe25() { 
                                                 
-                          if (Eintrag25.value=="460") {alert("Richtig"); document.getElementById("Pruef25").disabled= true;
+                          if (Eintrag25.value=="166,08") {alert("Richtig"); document.getElementById("Pruef25").disabled= true;
                           }  
                            
-                          else if (Eintrag25.value!=="460" && Eintrag25.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag25").value="460";window.open('Zins_Aufgabe25.html');            
-                          document.getElementById("Pruef25").disabled= true;}                               
+                          else if (Eintrag25.value!=="166,08" && Eintrag25.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag25").value="166,08";            
+                          document.getElementById("Loesung25").style.visibility="visible";document.getElementById("Pruef25").disabled= true;}                               
                           else if (Eintrag25.value=="") {alert("Bitte eine Eingabe machen")}}
                          
                       </script>
                       
-  <!--//Aufgabe 26-->   
+    <!--//Aufgabe 26-->   
              
         <p class="Aufgabe" style="font-weight:bold" >Aufgabe 26</p>
-        <p class="Aufgabe" style="font-weight:bold">Eine Bank bietet ein Darlehen von 10 000 € zu 7,5 % Zinsen an.<br> 
-Das Darlehen muss nach einem Jahr mit einer Bearbeitungsgebühr von 300 € 
-zurückgezahlt werden. Eine andere verlangt 9,5 % ohne Bearbeitungsgebühr.<br>
-Wie teuer ist das günstigere Angebot?  &nbsp; &nbsp; 
-        <button  onclick="window.open('Zins_Aufgabe26.html');" >Lösung</button></p>
+        <p class="Aufgabe" style="font-weight:bold">Eine Baumaßnahme dauert 4 Tage, wenn 6 Arbeiter täglich 8 Stunden arbeiten.<br>
+Wie lange brauchen 8 Arbeiter bei 9 stündiger Arbeitszeit für diese Arbeit?     
+        <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe26.pdf');" >Lösung</button></p>
 
-  <!--//Aufgabe 27-->
+    <!--//Aufgabe 27-->
 
     <p class ="Aufgabe" style="font-weight:bold">Aufgabe 27</p>
-  <p class = "Aufgabe" ><strong>Ein Bankkunde braucht für die Dauer eines Jahres 20 000 €. Die Bank macht ihm 2 Angebote:<br>
-Entweder 96 % Auszahlung bei 6 % Zinsen oder 98 % Auszahlung bei 7,5 %.<br>
-Wie hoch sind die Kosten für das günstigere Angebot? </strong><br>
-    Ihr Ergebnis: <input type="text" id="Eintrag27" maxlength="4" size="1" style= background-color:yellow > €</input>
+  <p class = "Aufgabe" ><strong>Die Bahnfracht für eine Sendung im Gesamtgewicht von 2 630 kg kostet 360 €. <br>   
+Wie hoch sind die Kosten für 452 kg?</strong><br>
+    Ihr Ergebnis: <input type="text" id="Eintrag27" maxlength="5" size="2" style= background-color:yellow > €</input>
     <button id="Pruef27" onclick="Aufgabe27()">Prüfen</button>
-  
+  <button id="Loesung27" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe27.pdf');" style="visibility:hidden">Lösung</button></p>
 
                     <script>
                         function Aufgabe27() {                                                
-                          if (Eintrag27.value=="1900") {alert("Richtig"); document.getElementById("Pruef27").disabled= true;
+                          if (Eintrag27.value=="61,79") {alert("Richtig"); document.getElementById("Pruef27").disabled= true;
                           }  
                            
-                          else if (Eintrag27.value!=="1900" && Eintrag27.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag27").value="1900";window.open('Zins_Aufgabe27.html');            
-                          document.getElementById("Pruef27").disabled= true;}                               
+                          else if (Eintrag27.value!=="61,79" && Eintrag27.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag27").value="61,79";            
+                          document.getElementById("Loesung27").style.visibility="visible";document.getElementById("Pruef27").disabled= true;}                               
                           else if (Eintrag27.value=="") {alert("Bitte eine Eingabe machen")}}
                          
                       </script>
                       
-   <!--//Aufgabe 28--> 
+     <!--//Aufgabe 28-->   
              
         <p class="Aufgabe" style="font-weight:bold" >Aufgabe 28</p>
-        <p class="Aufgabe" style="font-weight:bold">Wie viel Jahre muss man 3 000 € verleihen, um bei einem Zinssatz von 5,25 %
-und jährlicher Zinsauszahlung mehr als 372,50 € zu erhalten? &nbsp; &nbsp;                                                                                                  
-        <button  onclick="window.open('Zins_Aufgabe28.html');" >Lösung</button></p>
+        <p class="Aufgabe" style="font-weight:bold">In einem Laden arbeiten 10 Angestellte 8 Stunden täglich, um die Inventur in 
+10 Tagen zu erledigen. <br>Nach 3 Tagen erkranken 3 Arbeitskräfte. <br>
+Wie lange dauert die Inventur noch, wenn die restlichen Angestellten täglich 2 Überstunden machen?       
+        <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe28.pdf');" >Lösung</button></p>
 
-   <!--//Aufgabe 29-->
+    <!--//Aufgabe 29-->
 
     <p class ="Aufgabe" style="font-weight:bold">Aufgabe 29</p>
-  <p class = "Aufgabe" ><strong>a) Auf welchen Betrag sind 10 000 € nach 3 Jahren bei einem Zinssatz von 4 % mit Zinseszins angewachsen?<br></strong>
-    Ihr Ergebnis: <input type="text" id="Eintrag29" maxlength="8" size="4" style= background-color:yellow > €</input>
+  <p class = "Aufgabe" ><strong>Ein 168-m³-Tank wird durch zwei Zuleitungen gefüllt, die 180 und 240 Liter je Minute liefern. <br>  
+Wie lange dauert das Füllen, wenn beide Leitungen in Betrieb sind?</strong> <br>
+    Ihr Ergebnis: <input type="text" id="Eintrag29" maxlength="3" size="1" style= background-color:yellow > min</input>
     <button id="Pruef29" onclick="Aufgabe29()">Prüfen</button>
-  <strong>b) Wie hoch sind die Zinsen insgesamt, bei jährlicher Abhebung?</strong> </p>
-    
+  <button id="Loesung29" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe29.pdf');" style="visibility:hidden">Lösung</button></p>
+
                     <script>
                         function Aufgabe29() {                                                
-                          if (Eintrag29.value=="11248,64") {alert("Richtig"); document.getElementById("Pruef29").disabled= true;
+                          if (Eintrag29.value=="400") {alert("Richtig"); document.getElementById("Pruef29").disabled= true;
                           }  
                            
-                          else if (Eintrag29.value!=="11248,64" && Eintrag29.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag29").value="11248,64"; window.open('Zins_Aufgabe29.html');           
-                          document.getElementById("Pruef29").disabled= true;}                               
+                          else if (Eintrag29.value!=="400" && Eintrag29.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag29").value="400";            
+                          document.getElementById("Loesung29").style.visibility="visible";document.getElementById("Pruef29").disabled= true;}                               
                           else if (Eintrag29.value=="") {alert("Bitte eine Eingabe machen")}}
                          
                       </script>
                       
-    <!--//Aufgabe 30-->   
+     <!--//Aufgabe 30-->   
              
         <p class="Aufgabe" style="font-weight:bold" >Aufgabe 30</p>
-        <p class="Aufgabe" style="font-weight:bold">Zu Beginn eines Jahres eröffnet ein Kunde ein Konto und bezahlt 2750 € ein.
-Die Bank gewährt ihm einen Zinssatz von 5 %.<br>
-Wie hoch ist das Guthaben nach 4 Jahren, wenn er jedes Jahr zum Jahresende 100 € abhebt?&nbsp; &nbsp;       
-        <button  onclick="window.open('Zins_Aufgabe30.html');" >Lösung</button></p>
+        <p class="Aufgabe" style="font-weight:bold">3 Arbeiter entladen in 5 Stunden 15 t Zement. In wie <br>viel Stunden  entladen 7 Arbeiter 21 t?      
+        <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe30.pdf');" >Lösung</button></p>
 
-    <!--//Aufgabe 31-->
+      <!--//Aufgabe 31-->
 
     <p class ="Aufgabe" style="font-weight:bold">Aufgabe 31</p>
-  <p class = "Aufgabe" ><strong>Nach Abschluss eines Sparvertrages zahlt ein Auszubildender 600 € ein.<br>
-Auf welchen Betrag ist sein Guthaben nach 5 Jahren angewachsen, wenn der Zinssatz 
-5 % beträgt und er in der Zwischenzeit kein Geld abhebt? </strong><br>
-    Ihr Ergebnis: <input type="text" id="Eintrag31" maxlength="6" size="2" style= background-color:yellow > €</input>
+  <p class = "Aufgabe" ><strong>Ein Auto braucht für eine Strecke 6 Stunden, wenn es mit 45 km/h fährt.  <br>                                
+In wie viel Stunden wird die Strecke bei einer Geschwindigkeit von 80 km/h zurückgelegt?</strong> <br>
+    Ihr Ergebnis: <input type="text" id="Eintrag31" maxlength="5" size="2" style= background-color:yellow > h</input>
     <button id="Pruef31" onclick="Aufgabe31()">Prüfen</button>
-  
+  <button id="Loesung31" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe31.pdf');" style="visibility:hidden">Lösung</button></p>
 
                     <script>
                         function Aufgabe31() {                                                
-                          if (Eintrag31.value=="765,77") {alert("Richtig"); document.getElementById("Pruef31").disabled= true;
+                          if (Eintrag31.value=="3,375") {alert("Richtig"); document.getElementById("Pruef31").disabled= true;
                           }  
                            
-                          else if (Eintrag31.value!=="765,77" && Eintrag31.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag31").value="765,77"; window.open('Zins_Aufgabe31.html');           
-                          document.getElementById("Pruef31").disabled= true;}                               
+                          else if (Eintrag31.value!=="3,375" && Eintrag31.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag31").value="3,375";            
+                          document.getElementById("Loesung31").style.visibility="visible";document.getElementById("Pruef31").disabled= true;}                               
                           else if (Eintrag31.value=="") {alert("Bitte eine Eingabe machen")}}
                          
                       </script>
                       
-            <!--//Aufgabe 32-->   
+          <!--//Aufgabe 32-->   
              
         <p class="Aufgabe" style="font-weight:bold" >Aufgabe 32</p>
-        <p class="Aufgabe" style="font-weight:bold">Eine Bank verzinst ein Guthaben von 10 000 € 3 Jahre lang mit 4,5 %. Danach senkt sie den Zinssatz auf 3,7 %.<br>
-a) Wie hoch ist das Guthaben nach 6 Jahren bei Zinseszins?<br>   
-b) Wie hoch hätte ein gleichbleibender Zinssatz sein müssen, um auf den gleichen Endbetrag zu kommen?&nbsp; &nbsp;   
-        <button  onclick="window.open('Zins_Aufgabe32.html');" >Lösung</button></p>
+        <p class="Aufgabe" style="font-weight:bold">Zwei Bagger heben einen Graben in 48 Stunden aus. <br>Wie viel Stunden benötigen fünf Bagger? 
+        <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe32.pdf');" >Lösung</button></p>
 
   <!--//Aufgabe 33-->
 
     <p class ="Aufgabe" style="font-weight:bold">Aufgabe 33</p>
-  <p class = "Aufgabe" ><strong>Ein Sparer hat vor 5 Jahren ein Anfangskapital eingezahlt, das mittlerweile bei festem Zinssatz und 
-Zinseszins auf 2600,74 € angewachsen ist. <br>In weiteren 5 Jahren beträgt das Guthaben 3086,03 €.<br>
-a) Welchen Betrag hat der Sparer angelegt?<br></strong>    
-Ihr Ergebnis: <input type="text" id="Eintrag33" maxlength="4" size="1" style= background-color:yellow > €</input>
+  <p class = "Aufgabe" ><strong>Der Lebensmittelvorrat einer Raumstation reicht für 3 Besatzungsmitglieder 32 Tage. <br>  
+Wie viel Tage reicht dieser Vorrat für 4 Besatzungsmitglieder?</strong> <br>
+    Ihr Ergebnis: <input type="text" id="Eintrag33" maxlength="2" size="1" style= background-color:yellow > Tage</input>
     <button id="Pruef33" onclick="Aufgabe33()">Prüfen</button>
-  <strong>b) Nach wie viel Jahren hat sich das Anfangskapital mehr als verdoppelt?    </strong> </p>
-    
+  <button id="Loesung33" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe33.pdf');" style="visibility:hidden">Lösung</button></p>
 
                     <script>
                         function Aufgabe33() {                                                
-                          if (Eintrag33.value=="2190") {alert("Richtig"); document.getElementById("Pruef33").disabled= true;
+                          if (Eintrag33.value=="24") {alert("Richtig"); document.getElementById("Pruef33").disabled= true;
                           }  
                            
-                          else if (Eintrag33.value!=="2190" && Eintrag33.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag33").value="2190"; window.open('Zins_Aufgabe33.html');           
-                          document.getElementById("Pruef33").disabled= true;}                               
+                          else if (Eintrag33.value!=="24" && Eintrag33.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag33").value="24";            
+                          document.getElementById("Loesung33").style.visibility="visible";document.getElementById("Pruef33").disabled= true;}                               
                           else if (Eintrag33.value=="") {alert("Bitte eine Eingabe machen")}}
                          
                       </script>
                       
-     <!--//Aufgabe 34-->   
+      <!--//Aufgabe 34-->   
              
         <p class="Aufgabe" style="font-weight:bold" >Aufgabe 34</p>
-        <p class="Aufgabe" style="font-weight:bold">Zwei Angebote liegen vor:<br>
-Bank 1: 1. Jahr 3 %, 2. Jahr 3,5 %, 3. Jahr 4 %.<br>
-Bank 2: 5 % Zinsen bei 3 jähriger Festlegung.<br>
-Ab welcher Kapitaleinlage beträgt der Unterschied 260 €, wenn das Geld nach 3 Jahren abgehoben wird?&nbsp; &nbsp;     
-        <button  onclick="window.open('Zins_Aufgabe34.html');" >Lösung</button></p>
+        <p class="Aufgabe" style="font-weight:bold">Ein Schüler teilt jede Woche 390 Prospekte aus und bekommt dafür 28,08 €. <br>
+a) Ein anderer verteilt für dieselbe Firma in einem anderen Stadtteil 360 Prospekte. Wie viel verdient er?<br>
+b) Ein weiterer verdient 18 € in der Woche. Wie viele Prospekte trägt er aus?     
+        <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe34.pdf');" >Lösung</button></p>
 
-  <!--//Aufgabe 35-->
+<!--//Aufgabe 35-->
 
     <p class ="Aufgabe" style="font-weight:bold">Aufgabe 35</p>
-  <p class = "Aufgabe" ><strong>Jemand will 3456 € so anlegen, dass er nach 9 Jahren 4900 € hat.<br>
-Wie hoch muss der Zinssatz sein?                                                       </strong> <br>
-    Ihr Ergebnis: <input type="text" id="Eintrag35" maxlength="4" size="1" style= background-color:yellow > %</input>
+  <p class = "Aufgabe" ><strong>Tee wird in 60 Tüten zu je 50 g verpackt. <br>                                                
+Wie viel Tüten zu je 125 g erhält man aus der gleichen Teemenge?</strong> <br>
+    Ihr Ergebnis: <input type="text" id="Eintrag35" maxlength="2" size="1" style= background-color:yellow > </input>
     <button id="Pruef35" onclick="Aufgabe35()">Prüfen</button>
-  
+  <button id="Loesung35" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe35.pdf');" style="visibility:hidden">Lösung</button></p>
 
                     <script>
                         function Aufgabe35() {                                                
-                          if (Eintrag35.value=="3,96") {alert("Richtig"); document.getElementById("Pruef35").disabled= true;
+                          if (Eintrag35.value=="24") {alert("Richtig"); document.getElementById("Pruef35").disabled= true;
                           }  
                            
-                          else if (Eintrag35.value!=="3,96" && Eintrag35.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag35").value="3,96";window.open('Zins_Aufgabe35.html');            
-                          document.getElementById("Pruef35").disabled= true;}                               
+                          else if (Eintrag35.value!=="24" && Eintrag35.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag35").value="24";            
+                          document.getElementById("Loesung35").style.visibility="visible";document.getElementById("Pruef35").disabled= true;}                               
                           else if (Eintrag35.value=="") {alert("Bitte eine Eingabe machen")}}
                          
                       </script>
@@ -552,49 +524,25 @@ Wie hoch muss der Zinssatz sein?                                                
      <!--//Aufgabe 36-->   
              
         <p class="Aufgabe" style="font-weight:bold" >Aufgabe 36</p>
-        <p class="Aufgabe" style="font-weight:bold">Wie hoch muss ein Kapital gewesen sein, das nach 5 Jahren bei einem 
-Zinssatz von 5 % auf 7657,67 € angewachsen ist?  &nbsp; &nbsp;  
-        <button  onclick="window.open('Zins_Aufgabe36.html');" >Lösung</button></p>
-                 
+        <p class="Aufgabe" style="font-weight:bold">Einen Wald können 15 Forstarbeiter in 24 Arbeitsstunden roden.<br> 
+Wie viel Stunden dauert die Arbeit, wenn nur 11 Arbeiter zur Verfügung stehen?   
+        <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe36.pdf');" >Lösung</button></p>
+
     <!--//Aufgabe 37-->
 
     <p class ="Aufgabe" style="font-weight:bold">Aufgabe 37</p>
-  <p class = "Aufgabe" ><strong>Zur Finanzierung eines Hauses sind 120 000 € nötig. <br>
-Die Bank bietet einen Jahreszinssatz von 5 %. Der Kunde möchte den Kredit in 20 Jahren zurückzahlen. <br>
-a) Wie viel muss der Kunde pro Jahr bezahlen? <br>   
-b) Tragen Sie im Tilgungsplan den fehlenden Betrag auf 2 Stellen nach dem Komma gerundet ein.</strong></p>  
-<pre><p style="font-family:monospace,monospace ;font-size:0.8em;"><strong>               Schulden in €          Zinsen in €        Tilgung in €             
- 1.Jahr         120 000                 6000                3629,11    
- 2.Jahr         116 370,89              5818,54             3810,57          
- 3.Jahr         112 560,32              5628,02             4001,09          
- 4.Jahr         108 559,23              5427,96             4201,15           
- 5.Jahr         104 358,08              5217,90             4411,21            
- 6.Jahr          99 946,87              4997,34             4631,77           
- 7.Jahr          95 315,10              4765,76             4863,35             
- 8.Jahr          90 451,75              4522,59             5106,52           
- 9.Jahr          85 345,23              4267,26             5361,85            
-10.Jahr          79 983,38              3999,17             5629,94           
-11.Jahr          74 353,44              3717,67             5911,44
-12.Jahr          68 442,00              3422,10             6207,01
-13.Jahr          <input type="text" id="Eintrag37" maxlength="8" size="4" style= background-color:yellow > </input>             3111,75             6517,36
-14.Jahr          55 717,63              2785,88             6843,23
-15.Jahr          48 874,40              2443,72             7185,39
-16.Jahr          41 689,01              2084,45             7544,66
-17.Jahr          34 144,35              1707,22             7921,89 
-18.Jahr          26 222,46              1311,12             8317,99 
-19.Jahr          17 904,47               895,22             8733,89
-20.Jahr           9 170,58               458,53             9170,5</strong></p></pre>
-  <p class ="Aufgabe">  Ihr Ergebnis: 
-  <button id="Pruef37" onclick="Aufgabe37()">Prüfen</button>
-  
+  <p class = "Aufgabe" ><strong>Eine Kiste mit 168 Weingläsern kostet 403,20 Euro. <br>Wie viel kosten drei Dutzend Weingläser?   </strong> <br>
+    Ihr Ergebnis: <input type="text" id="Eintrag37" maxlength="5" size="2" style= background-color:yellow > €</input>
+    <button id="Pruef37" onclick="Aufgabe37()">Prüfen</button>
+  <button id="Loesung37" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe37.pdf');" style="visibility:hidden">Lösung</button></p>
 
                     <script>
                         function Aufgabe37() {                                                
-                          if (Eintrag37.value=="62234,99") {alert("Richtig"); document.getElementById("Pruef37").disabled= true;
+                          if (Eintrag37.value=="86,40") {alert("Richtig"); document.getElementById("Pruef37").disabled= true;
                           }  
                            
-                          else if (Eintrag37.value!=="62234,99" && Eintrag37.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag37").value="62234,99"; window.open('Zins_Aufgabe37.html');           
-                          document.getElementById("Pruef37").disabled= true;}                               
+                          else if (Eintrag37.value!=="86,40" && Eintrag37.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag37").value="86,40";            
+                          document.getElementById("Loesung37").style.visibility="visible";document.getElementById("Pruef37").disabled= true;}                               
                           else if (Eintrag37.value=="") {alert("Bitte eine Eingabe machen")}}
                          
                       </script>
@@ -602,19 +550,147 @@ b) Tragen Sie im Tilgungsplan den fehlenden Betrag auf 2 Stellen nach dem Komma 
       <!--//Aufgabe 38-->   
              
         <p class="Aufgabe" style="font-weight:bold" >Aufgabe 38</p>
-        <p class="Aufgabe" style="font-weight:bold">Eine Bausparkasse bietet ihren Kunden eine Geldanlage zu folgenden Zinskonditionen an:<br>
-1. Jahr 2,25 %, 2. Jahr 2,5 %, 3. Jahr 2,75 %, 4. Jahr 3,25 %, 5. Jahr 4 %, 6. Jahr 5 %.<br>
-a) Auf welchen Betrag ist ein Anfangskapital von 20 000 € nach 6 Jahren angewachsen?<br>   
-b) Ein Kunde hat nach 3 Jahren einen Betrag von 13 461,05 € auf seinem Konto.<br> 
-Wie viel Geld hat er angelegt? &nbsp; &nbsp;                                                                                     
-        <button  onclick="window.open('Zins_Aufgabe38.html');" >Lösung</button></p>
+        <p class="Aufgabe" style="font-weight:bold">Eine Treppenhausbeleuchtung mit 8 Glühlampen zu je 40 Watt verursacht 
+monatlich Stromkosten in Höhe von 2,36 Euro. <br>
+Wie hoch sind die Kosten, wenn 10 Glühlampen zu je 60 Watt installiert werden?     
+        <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe38.pdf');" >Lösung</button></p>
+
+    <!--//Aufgabe 39-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 39</p>
+  <p class = "Aufgabe" ><strong>2 Pumpen füllen in 6,5 Stunden den 1300 t fassenden Tank eines Schiffes. <br>
+In wie viel Stunden füllen 3 Pumpen einen 2100 t fassenden Tank? </strong> <br>
+    Ihr Ergebnis: <input type="text" id="Eintrag39" maxlength="1" size="1" style= background-color:yellow > h</input>
+    <button id="Pruef39" onclick="Aufgabe39()">Prüfen</button>
+  <button id="Loesung39" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe39.pdf');" style="visibility:hidden">Lösung</button></p>
+
+                    <script>
+                        function Aufgabe39() {                                                
+                          if (Eintrag39.value=="7") {alert("Richtig"); document.getElementById("Pruef39").disabled= true;
+                          }  
+                           
+                          else if (Eintrag39.value!=="7" && Eintrag39.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag39").value="7";            
+                          document.getElementById("Loesung39").style.visibility="visible";document.getElementById("Pruef39").disabled= true;}                               
+                          else if (Eintrag39.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+      <!--//Aufgabe 40-->   
+             
+        <p class="Aufgabe" style="font-weight:bold" >Aufgabe 40</p>
+        <p class="Aufgabe" style="font-weight:bold">24 Arbeiter bauen in 30 Arbeitstagen 120 Maschinen zusammen. 
+Wie viele Arbeiter braucht man, um 100 Maschinen in 40 Arbeitstagen zusammenzubauen?     
+        <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe40.pdf');" >Lösung</button></p>
+
+      <!--//Aufgabe 41-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 41</p>
+  <p class = "Aufgabe" ><strong>3 Gesellen streichen in 22 Stunden eine Wand von 264 m². <br>
+Wie viel Stunden brauchen sie für 816 m² , wenn noch ein Kollege dazukommt und hilft? </strong> <br>
+    Ihr Ergebnis: <input type="text" id="Eintrag41" maxlength="2" size="1" style= background-color:yellow > h</input>
+    <button id="Pruef41" onclick="Aufgabe41()">Prüfen</button>
+  <button id="Loesung41" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe41.pdf');" style="visibility:hidden">Lösung</button></p>
+
+                    <script>
+                        function Aufgabe41() {                                                
+                          if (Eintrag41.value=="51") {alert("Richtig"); document.getElementById("Pruef41").disabled= true;
+                          }  
+                           
+                          else if (Eintrag41.value!=="51" && Eintrag41.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag41").value="51";            
+                          document.getElementById("Loesung41").style.visibility="visible";document.getElementById("Pruef41").disabled= true;}                               
+                          else if (Eintrag41.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+      <!--//Aufgabe 42-->   
+             
+        <p class="Aufgabe" style="font-weight:bold" >Aufgabe 42</p>
+        <p class="Aufgabe" style="font-weight:bold">6 Männer wollen eine Arbeit in 15 Stunden ausführen.<br> 
+Kurz vor Beginn der Arbeit wird einer von ihnen krank.<br> 
+Wie viele Stunden benötigen nun die übrigen für die Arbeit?    
+        <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe42.pdf');" >Lösung</button></p>
+
+      <!--//Aufgabe 43-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 43</p>
+  <p class = "Aufgabe" ><strong>Ein Kindererholungsheim ist für 180 Kinder eingerichtet und 
+für 20 Tage mit Lebensmitteln versorgt. <br>
+Wie viel Tage reicht der Vorrat, wenn 30 Plätze frei bleiben?    </strong> <br>
+    Ihr Ergebnis: <input type="text" id="Eintrag43" maxlength="2" size="1" style= background-color:yellow > Tage</input>
+    <button id="Pruef43" onclick="Aufgabe43()">Prüfen</button>
+  <button id="Loesung43" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe43.pdf');" style="visibility:hidden">Lösung</button></p>
+
+                    <script>
+                        function Aufgabe43() {                                                
+                          if (Eintrag43.value=="24") {alert("Richtig"); document.getElementById("Pruef43").disabled= true;
+                          }  
+                           
+                          else if (Eintrag43.value!=="24" && Eintrag43.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag43").value="24";            
+                          document.getElementById("Loesung43").style.visibility="visible";document.getElementById("Pruef43").disabled= true;}                               
+                          else if (Eintrag43.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+     <!--//Aufgabe 44-->   
+             
+        <p class="Aufgabe" style="font-weight:bold" >Aufgabe 44</p>
+        <p class="Aufgabe" style="font-weight:bold">5 Archäologen benötigen bei einer Exkursion für 4 Tage 100 Liter Wasser.<br> 
+Wie viel Liter müssen 8 Archäologen für 10 Tage mitnehmen?                   <br> 
+        <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe44.pdf');" >Lösung</button></p>
+
+    <!--//Aufgabe 45-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 45</p>
+  <p class = "Aufgabe" ><strong>25 kg Kartoffeln reichen für eine Familie mit 3 Personen 50 Tage lang.<br> 
+  a) Wie viele kg Kartoffeln muss sie für 270 Tage einkaufen, wenn eine Person hinzugekommen ist?<br></strong>
+Ihr Ergebnis: <input type="text" id="Eintrag45" maxlength="3" size="1" style= background-color:yellow > kg</input>
+    <button id="Pruef45" onclick="Aufgabe45()">Prüfen</button>
+  <button id="Loesung45" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe45.pdf');" style="visibility:hidden">Lösung</button><br>
+  <strong>b) Wie viel Tage wird sie mit 40 kg auskommen, wenn eine Person hinzugekommen ist? 
+  </strong> <br></p>
 
     
-                          
-                 
-            <button type="button" id ="mehr" onclick="window.open('https://www.matheaufgaben-loesen.de/html/body_zinsrechnung.html'); window.close('index.html');">zurück...</button>
-          
+                    <script>
+                        function Aufgabe45() {                                                
+                          if (Eintrag45.value=="180") {alert("Richtig"); document.getElementById("Pruef45").disabled= true;
+                          }  
+                           
+                          else if (Eintrag45.value!=="180" && Eintrag45.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag45").value="180";            
+                          document.getElementById("Loesung45").style.visibility="visible";document.getElementById("Pruef45").disabled= true;}                               
+                          else if (Eintrag45.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+    <!--//Aufgabe 46-->   
+             
+        <p class="Aufgabe" style="font-weight:bold" >Aufgabe 46</p>
+        <p class="Aufgabe" style="font-weight:bold">2 Wasserpumpen fördern in 24 Stunden 4800 Liter Wasser. <br>
+Wie viel Liter fördern 5 Pumpen in 10 Stunden?                           
+        <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe46.pdf');" >Lösung</button></p>
 
+   <!--//Aufgabe 47-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 47</p>
+  <p class = "Aufgabe" ><strong>6 Maschinen reinigen 2400 Flaschen in 5 Stunden.<br> 
+Wie viele Flaschen reinigen 8 Maschinen in 6 Stunden?  <br></strong>
+Ihr Ergebnis: <input type="text" id="Eintrag47" maxlength="4" size="1" style= background-color:yellow > kg</input>
+    <button id="Pruef47" onclick="Aufgabe47()">Prüfen</button>
+  <button id="Loesung47" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Dreisatz_Aufgabe47.pdf');" style="visibility:hidden">Lösung</button><br></p>
+
+    
+                    <script>
+                        function Aufgabe47() {                                                
+                          if (Eintrag47.value=="3840") {alert("Richtig"); document.getElementById("Pruef47").disabled= true;
+                          }  
+                           
+                          else if (Eintrag47.value!=="3840" && Eintrag47.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag47").value="3840";            
+                          document.getElementById("Loesung47").style.visibility="visible";document.getElementById("Pruef47").disabled= true;}                               
+                          else if (Eintrag47.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>     
+                 
+           <button class ="Aufgabe" onclick="window.open('https://www.matheaufgaben-loesen.de/html/dreisatz.html'); window.close('index.html');">zurück...</button>
+          
           <script>
             document.body.addEventListener("input", function(inputEvent) {
               const eingabeFeld = inputEvent.target;
@@ -623,7 +699,6 @@ Wie viel Geld hat er angelegt? &nbsp; &nbsp;
               }
             })
           </script>
-                                         
 
 </body>
 
