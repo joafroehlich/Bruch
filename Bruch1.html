@@ -14,14 +14,11 @@
     <style> 
          
         .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em;}
-        
-        .ueb1 {display: flex;flex-direction:row;justify-content:start;align-items:center;}
-        .ueb2 {display: flex;flex-direction:column;justify-content:start;align-items:center;}
         .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
-        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        .Text3 { font-size: 0.8em; font-family: Verdana,Sans-serif;margin:0.5em; }
         
-        .Aufgabe { font-size: 0.8em;  font-family: Verdana,Sans-serif;margin:0.5em;}
-        button {background-color:white;font-size:1em; font-family: Verdana, Sans-serif; }
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        button {background-color:white; font-family: Verdana, Sans-serif; }
         input {background-color:yellow; }
     </style>
     
@@ -31,21 +28,19 @@
   
     <p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld oder den <br>Schalter: Lösung.</span></p>
 		<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
-  </div>
+  
 
-  <div class="ueb1">
     <p class="Text3"><span style= "background-color:white;">Zerlegen Sie die Zahl in Primfaktoren, <br>ordnen Sie die Faktoren der
                      Größe nach. <br>Verwenden Sie beim Eintragen keine Leerzeichen.<br>
-                     <span style="color:red; font-weight:bold;">864     Musterlösung: 2*2*2*2*2*3*3*3</span></span>
-	 <p class="Text2" style="text-align:center;"> &nbsp; &nbsp; <a href="https://de.wikibooks.org/wiki/Primzahlen:_Tabelle_der_Primzahlen_(2_-_100.000)">  Zu den Primzahlen.</a></p>
-  </div>
+                     <span style="color:red; font-weight:bold;">864     Musterlösung: 2*2*2*2*2*3*3*3</span></span></p>
+	 <p class="Text2" ><a href="https://de.wikibooks.org/wiki/Primzahlen:_Tabelle_der_Primzahlen_(2_-_100.000)">  Zu den Primzahlen.</a></p>
+  
 
    <!--//Aufgabe 1-->
 
-    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 1</p>
-  <p class = "Aufgabe" ><strong>1 840   &nbsp; &nbsp; </strong> Ihr Ergebnis:
-    <input type="text" id="Eintrag1" maxlength="12" size="10" style= background-color:yellow ></input>
-    <button id="Pruef1" onclick="Aufgabe1()">Prüfen</button>
+    <pre><p class ="Aufgabe" ><strong>Aufgabe 1
+
+1 840  </strong> Ihr Ergebnis: <input type="text" id="Eintrag1" maxlength="12" size="10" style= background-color:yellow ></input> <button id="Pruef1" onclick="Aufgabe1()">Prüfen</button></p></pre>
     
                      <script>
                         function Aufgabe1() { 
@@ -62,16 +57,15 @@
 
 <!--//Aufgabe 2-->
 
-  <p class="Aufgabe" style="font-weight:bold" >Aufgabe 2</p>
-  <p class="Aufgabe" style="font-weight:bold">2 535 &nbsp; &nbsp; &nbsp; &nbsp;
-  <button  onclick="window.open('Bruch_Aufgabe2.html');" >Lösung</button></p>
+  <pre><p class="Aufgabe" ><strong>Aufgabe 2
+
+2 535 </strong>  <button  onclick="window.open('Bruch_Aufgabe2.html');">Lösung</button></p></pre>
 
 <!--//Aufgabe 3-->
 
-  <p class ="Aufgabe" style="font-weight:bold">Aufgabe 3</p>
-  <p class = "Aufgabe" ><strong>3 232   &nbsp; &nbsp; </strong> Ihr Ergebnis:
-    <input type="text" id="Eintrag3" maxlength="13" size="10" style= background-color:yellow ></input>
-    <button id="Pruef3" onclick="Aufgabe3()">Prüfen</button>
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 3
+
+3 232  </strong> Ihr Ergebnis:  <input type="text" id="Eintrag3" maxlength="13" size="10" style= background-color:yellow ></input> <button id="Pruef3" onclick="Aufgabe3()">Prüfen</button></p></pre>
                         
                       <script>
                         function Aufgabe3() { 
@@ -88,9 +82,9 @@
 
   <!--//Aufgabe 4-->
 
-  <p class="Aufgabe" style="font-weight:bold" >Aufgabe 4</p>
-  <p class="Aufgabe" style="font-weight:bold">10 448 &nbsp; &nbsp; &nbsp; 
-  <button  onclick="window.open('Bruch_Aufgabe4.html');" >Lösung</button></p>
+  <pre><p class="Aufgabe" ><strong>Aufgabe 4
+
+10 448 </strong> <button  onclick="window.open('Bruch_Aufgabe4.html');" >Lösung</button></p></pre>
 
   <!--//Aufgabe 5-->
    
@@ -114,16 +108,15 @@
 
   <!--//Aufgabe 6-->
 
-   <p class="Aufgabe" style="font-weight:bold" >Aufgabe 6</p>
-  <p class="Aufgabe" style="font-weight:bold">144 875 &nbsp; &nbsp; &nbsp; 
-  <button  onclick="window.open('Bruch_Aufgabe6.html');" >Lösung</button></p>
+   <pre><p class="Aufgabe" ><strong>Aufgabe 6
+
+144 875 </strong> <button  onclick="window.open('Bruch_Aufgabe6.html');" >Lösung</button></p></pre>
   
   <!--//Aufgabe 7-->
   
-  <p class ="Aufgabe" style="font-weight:bold">Aufgabe 7</p>
-  <p class = "Aufgabe" ><strong>55 832   &nbsp; &nbsp;</strong> Ihr Ergebnis:
-    <input type="text" id="Eintrag7" maxlength="11" size="8" style= background-color:yellow ></input>
-    <button id="Pruef7" onclick="Aufgabe7()">Prüfen</button>
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 7
+
+55 832  </strong> Ihr Ergebnis: <input type="text" id="Eintrag7" maxlength="11" size="8" style= background-color:yellow ></input> <button id="Pruef7" onclick="Aufgabe7()">Prüfen</button></p></pre>
   
 
                     <script>
@@ -141,16 +134,15 @@
                       
   <!--//Aufgabe 8-->
 
-   <p class="Aufgabe" style="font-weight:bold" >Aufgabe 8</p>
-  <p class="Aufgabe" style="font-weight:bold">5 986 890 &nbsp; &nbsp; &nbsp; 
-  <button  onclick="window.open('Bruch_Aufgabe8.html');" >Lösung</button></p>
+   <pre><p class="Aufgabe" ><strong>Aufgabe 8
+
+5 986 890 </strong> <button  onclick="window.open('Bruch_Aufgabe8.html');" >Lösung</button></p></pre>
 
   <!--//Aufgabe 9-->
   
-  <p class ="Aufgabe" style="font-weight:bold">Aufgabe 9</p>
-  <p class = "Aufgabe" ><strong>453 277   &nbsp; &nbsp;</strong> Ihr Ergebnis:
-    <input type="text" id="Eintrag9" maxlength="9" size="7" style= background-color:yellow ></input>
-    <button id="Pruef9" onclick="Aufgabe9()">Prüfen</button>
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 9
+
+453 277  </strong> Ihr Ergebnis: <input type="text" id="Eintrag9" maxlength="9" size="7" style= background-color:yellow ></input> <button id="Pruef9" onclick="Aufgabe9()">Prüfen</button></p></pre>
   
                     <script>
                         function Aufgabe9() { 
@@ -163,16 +155,17 @@
                                
                           else if (Eintrag9.value=="") {alert("Bitte eine Eingabe machen")}}
                          
-                      </script><br><br>
+                      </script><br>
                       
-  <p class="Aufgabe" > <span style= "background-color:white;">Das kleinste, gemeinsame Vielfache kgV<br>und der größte gemeinsame Teiler ggT</span></p><br> 
+  <p class="Aufgabe" > <span style= "background-color:white;">Das kleinste, gemeinsame Vielfache kgV<br>und der größte gemeinsame Teiler ggT</span></p> 
 
   <!--//Aufgabe 10-->
   
-  <p class ="Aufgabe" style="font-weight:bold">Aufgabe 10</p>
-  <p class = "Aufgabe" ><strong>Bestimmen Sie das kgV von 2, 3, 4, 5, 6, 10, 12   </strong><br> Ihr Ergebnis:
-    <input type="text" id="Eintrag10" maxlength="2" size="1" style= background-color:yellow ></input>
-    <button id="Pruef10" onclick="Aufgabe10()">Prüfen</button>
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 10
+
+Bestimmen Sie das kgV von 2, 3, 4, 5, 6, 10, 12   </strong>
+
+Ihr Ergebnis: <input type="text" id="Eintrag10" maxlength="2" size="1" style= background-color:yellow ></input> <button id="Pruef10" onclick="Aufgabe10()">Prüfen</button></p></pre>
   
                     <script>
                         function Aufgabe10() { 
@@ -188,16 +181,19 @@
 
     <!--//Aufgabe 11-->
 
-    <p class="Aufgabe" style="font-weight:bold" >Aufgabe 11</p>
-        <p class="Aufgabe" style="font-weight:bold">Bestimmen Sie das kgV von 37, 61, 71, 74    &nbsp; &nbsp; &nbsp; 
-        <button  onclick="window.open('Bruch_Aufgabe11.html');" >Lösung</button></p>
+    <pre><p class="Aufgabe" ><strong>Aufgabe 11
+
+Bestimmen Sie das kgV von 37, 61, 71, 74  </strong> 
+
+<button  onclick="window.open('Bruch_Aufgabe11.html');" >Lösung</button></p></pre>
         
     <!--//Aufgabe 12-->
 
-    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 12</p>
-  <p class = "Aufgabe" ><strong>Bestimmen Sie das kgV von 48, 56, 126, 156, 189, 273, 546 </strong><br> Ihr Ergebnis:
-    <input type="text" id="Eintrag12" maxlength="5" size="2" style= background-color:yellow ></input>
-    <button id="Pruef12" onclick="Aufgabe12()">Prüfen</button>
+    <pre><p class ="Aufgabe" >Auf<strong>Aufgabe 12
+
+Bestimmen Sie das kgV von 48, 56, 126, 156, 189, 273, 546 </strong>
+
+Ihr Ergebnis: <input type="text" id="Eintrag12" maxlength="5" size="2" style= background-color:yellow ></input> <button id="Pruef12" onclick="Aufgabe12()">Prüfen</button></p></pre>
   
                     <script>
                         function Aufgabe12() { 
@@ -213,16 +209,19 @@
 
     <!--//Aufgabe 13-->
 
-    <p class="Aufgabe" style="font-weight:bold" >Aufgabe 13</p>
-        <p class="Aufgabe" style="font-weight:bold">Bestimmen Sie das kgV von 6, 81, 125, 135, 225, 675    &nbsp; &nbsp; &nbsp; 
-        <button  onclick="window.open('Bruch_Aufgabe13.html');" >Lösung</button></p>
+    <pre><p class="Aufgabe" ><strong>Aufgabe 13
+
+Bestimmen Sie das kgV von 6, 81, 125, 135, 225, 675  </strong>  
+
+<button  onclick="window.open('Bruch_Aufgabe13.html');" >Lösung</button></p></pre>
 
     <!--//Aufgabe 14-->
 
-    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 14</p>
-  <p class = "Aufgabe" ><strong>Bestimmen Sie das kgV von 729, 6 561, 19 683 </strong><br> Ihr Ergebnis:
-    <input type="text" id="Eintrag14" maxlength="5" size="2" style= background-color:yellow ></input>
-    <button id="Pruef14" onclick="Aufgabe14()">Prüfen</button>
+    <pre><p class ="Aufgabe" ><strong>Aufgabe 14
+
+Bestimmen Sie das kgV von 729, 6 561, 19 683 </strong>
+
+Ihr Ergebnis: <input type="text" id="Eintrag14" maxlength="5" size="2" style= background-color:yellow ></input> <button id="Pruef14" onclick="Aufgabe14()">Prüfen</button></p></pre>
   
                     <script>
                         function Aufgabe14() { 
@@ -238,16 +237,19 @@
 
     <!--//Aufgabe 15-->
 
-    <p class="Aufgabe" style="font-weight:bold" >Aufgabe 15</p>
-        <p class="Aufgabe" style="font-weight:bold">Bestimmen Sie das kgV von 83, 483, 967    &nbsp; &nbsp; &nbsp; 
-        <button  onclick="window.open('Bruch_Aufgabe15.html');" >Lösung</button></p>
+    <pre><p class="Aufgabe" ><strong>Aufgabe 15
+
+Bestimmen Sie das kgV von 83, 483, 967  </strong>
+
+<buttton  onclick="window.open('Bruch_Aufgabe15.html');" >Lösung</button></p></pre>
 
         <!--//Aufgabe 16-->
 
-    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 16</p>
-  <p class = "Aufgabe" ><strong>Bestimmen Sie das kgV von 90, 210, 31, 378 </strong><br> Ihr Ergebnis:
-    <input type="text" id="Eintrag16" maxlength="4" size="2" style= background-color:yellow ></input>
-    <button id="Pruef16" onclick="Aufgabe16()">Prüfen</button>
+    <pre><p class ="Aufgabe" ><strong>Aufgabe 16
+
+Bestimmen Sie das kgV von 90, 210, 31, 378 </strong>
+
+Ihr Ergebnis: <input type="text" id="Eintrag16" maxlength="4" size="2" style= background-color:yellow ></input> <button id="Pruef16" onclick="Aufgabe16()">Prüfen</button></p></pre>
   
                     <script>
                         function Aufgabe16() { 
@@ -263,16 +265,19 @@
                       
     <!--//Aufgabe 17-->
 
-    <p class="Aufgabe" style="font-weight:bold" >Aufgabe 17</p>
-        <p class="Aufgabe" style="font-weight:bold">Bestimmen Sie das kgV von 77, 97, 119, 143, 221, 539, 2 431    &nbsp; &nbsp; &nbsp; 
-        <button  onclick="window.open('Bruch_Aufgabe17.html');" >Lösung</button></p>
+    <pre><p class="Aufgabe" ><strong>Aufgabe 17
+
+Bestimmen Sie das kgV von 77, 97, 119, 143, 221, 539, 2 431  </strong>
+
+<button  onclick="window.open('Bruch_Aufgabe17.html');" >Lösung</button></p></pre>
 
     <!--//Aufgabe 18-->
 
-    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 18</p>
-  <p class = "Aufgabe" ><strong>Bestimmen Sie das kgV von 24, 64, 81, 96, 243, 384, 1 296, 3 888 </strong><br> Ihr Ergebnis:
-    <input type="text" id="Eintrag18" maxlength="5" size="2" style= background-color:yellow ></input>
-    <button id="Pruef18" onclick="Aufgabe18()">Prüfen</button>
+    <pre><p class ="Aufgabe" ><strong>Aufgabe 18
+
+Bestimmen Sie das kgV von 24, 64, 81, 96, 243, 384, 1 296, 3 888 </strong>
+
+Ihr Ergebnis: <input type="text" id="Eintrag18" maxlength="5" size="2" style= background-color:yellow ></input> <button id="Pruef18" onclick="Aufgabe18()">Prüfen</button></p></pre>
   
                     <script>
                         function Aufgabe18() { 
@@ -288,16 +293,19 @@
 
     <!--//Aufgabe 19-->
 
-    <p class="Aufgabe" style="font-weight:bold" >Aufgabe 19</p>
-        <p class="Aufgabe" style="font-weight:bold">Bestimmen Sie das kgV von 15, 42, 60, 105    &nbsp; &nbsp; &nbsp; 
-        <button  onclick="window.open('Bruch_Aufgabe19.html');" >Lösung</button></p>
+    <pre><p class="Aufgabe" ><strong>Aufgabe 19
+
+Bestimmen Sie das kgV von 15, 42, 60, 105  </strong>
+
+<button  onclick="window.open('Bruch_Aufgabe19.html');" >Lösung</button></p></pre>
 
     <!--//Aufgabe 20-->
 
-    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 20</p>
-  <p class = "Aufgabe" ><strong>Bestimmen Sie den ggT von 27, 39, 57, 66, 72, 87 </strong><br> Ihr Ergebnis:
-    <input type="text" id="Eintrag20" maxlength="1" size="1" style= background-color:yellow ></input>
-    <button id="Pruef20" onclick="Aufgabe20()">Prüfen</button>
+    <pre><p class ="Aufgabe" ><strong>Aufgabe 20
+
+Bestimmen Sie den ggT von 27, 39, 57, 66, 72, 87 </strong>
+
+Ihr Ergebnis: <input type="text" id="Eintrag20" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef20" onclick="Aufgabe20()">Prüfen</button> </p></pre>
   
                     <script>
                         function Aufgabe20() { 
@@ -313,16 +321,20 @@
 
     <!--//Aufgabe 21-->
 
-    <p class="Aufgabe" style="font-weight:bold" >Aufgabe 21</p>
-        <p class="Aufgabe" style="font-weight:bold">Bestimmen Sie den ggT von 91, 364, 1 365, 3 822, 18 018    &nbsp; &nbsp; &nbsp; 
-        <button  onclick="window.open('Bruch_Aufgabe21.html');" >Lösung</button></p>
+    <pre><p class="Aufgabe" ><strong>Aufgabe 21
+
+Bestimmen Sie den ggT von 91, 364, 1 365, 3 822, 18 018  </strong>
+
+<button  onclick="window.open('Bruch_Aufgabe21.html');" >Lösung</button></p></pre>
 
     <!--//Aufgabe 22-->
 
-    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 22</p>
-  <p class = "Aufgabe" ><strong>Bestimmen Sie den ggT von 440. 565, 1 232, 6 641, 30 030 </strong><br>Geben Sie 'kein' ein, wenn es keinen ggT gibt.<br> Ihr Ergebnis:
-    <input type="text" id="Eintrag22" maxlength="4" size="1" style= background-color:yellow ></input>
-    <button id="Pruef22" onclick="Aufgabe22()">Prüfen</button>
+    <pre><p class ="Aufgabe" ><strong>Aufgabe 22
+
+Bestimmen Sie den ggT von 440. 565, 1 232, 6 641, 30 030 </strong>
+Geben Sie 'kein' ein, wenn es keinen ggT gibt.
+  
+Ihr Ergebnis: <input type="text" id="Eintrag22" maxlength="4" size="1" style= background-color:yellow ></input> <button id="Pruef22" onclick="Aufgabe22()">Prüfen</button> </p></pre>
   
                     <script>
                         function Aufgabe22() { 
@@ -338,16 +350,19 @@
 
 <!--//Aufgabe 23-->
 
-    <p class="Aufgabe" style="font-weight:bold" >Aufgabe 23</p>
-        <p class="Aufgabe" style="font-weight:bold">Bestimmen Sie den ggT von 630, 1 512, 2 772, 4 662, 65 520    &nbsp; &nbsp; &nbsp; 
-        <button  onclick="window.open('Bruch_Aufgabe23.html');" >Lösung</button></p>
+    <pre><p class="Aufgabe" ><strong>Aufgabe 23
+
+Bestimmen Sie den ggT von 630, 1 512, 2 772, 4 662, 65 520   </strong>
+
+<button  onclick="window.open('Bruch_Aufgabe23.html');" >Lösung</button></p></pre>
 
 <!--//Aufgabe 24-->
 
-    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 24</p>
-  <p class = "Aufgabe" ><strong>Bestimmen Sie den ggT von 180, 504, 3 132, 12 780</strong><br> Ihr Ergebnis:
-    <input type="text" id="Eintrag24" maxlength="2" size="1" style= background-color:yellow ></input>
-    <button id="Pruef24" onclick="Aufgabe24()">Prüfen</button>
+    <pre><p class ="Aufgabe" ><strong>Aufgabe 24
+
+Bestimmen Sie den ggT von 180, 504, 3 132, 12 780</strong>
+
+Ihr Ergebnis: <input type="text" id="Eintrag24" maxlength="2" size="1" style= background-color:yellow ></input> <button id="Pruef24" onclick="Aufgabe24()">Prüfen</button> </p></pre>
   
                     <script>
                         function Aufgabe24() { 
