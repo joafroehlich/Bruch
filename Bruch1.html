@@ -17,30 +17,50 @@
         .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
         .Text3 { font-size: 0.8em; font-family: Verdana,Sans-serif;margin:0.5em; }
         
-        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
-        button { font-family: Verdana, Sans-serif; }
+        body { margin: 0; font-family: Verdana,Sans-serif; font-size: 1.05rem; line-height: 1.2; background: #fff; }  
+       main { max-width: 40rem; margin: 0 auto; padding: 1rem; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
+.check input { font-size: 1.05rem; padding: 0.2rem; width: 8rem; }
+.check button { font-size: 1.05rem; padding: 0.2rem 0.6rem; } 
+.br-mobil {
+            display: none;}
+.br-desk {
+            display: block;} 
+
+@media screen and (max-width: 576px) {
+
+            .br-mobil {
+                display: block;}
+
+            .br-desk {
+                display: none;}  
+                
+                }
         input {background-color:yellow; }
     </style>
     
-	
+	<main>
+
     <p class="Text1">Wie löse ich Matheaufgaben?</p>
 		<p class="Text1">Bruchrechnen</p>
   
-    <p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld oder den <br>Schalter: Lösung.</span></p>
-		<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
+    <p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld oder den Schalter: Lösung.</span></p>
+		<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es oder starten Sie eine Lösung.</span></p>
   
 
-    <p class="Text3"><span style= "background-color:white;">Zerlegen Sie die Zahl in Primfaktoren, <br>ordnen Sie die Faktoren der
-                     Größe nach. <br>Verwenden Sie beim Eintragen keine Leerzeichen.<br>
-                     <span style="color:red; font-weight:bold;">864     Musterlösung: 2*2*2*2*2*3*3*3</span></span></p>
+    <p class="Text2"><span style= "background-color:white;">Zerlegen Sie die Zahl in Primfaktoren, ordnen Sie die Faktoren der
+                     Größe nach. Verwenden Sie beim Eintragen keine Leerzeichen.</p>
+    <p class="Text2"><span style="color:red; font-weight:bold;">  864     Musterlösung: 2*2*2*2*2*3*3*3</span></span></p>
 	 <p class="Text2" ><a href="https://de.wikibooks.org/wiki/Primzahlen:_Tabelle_der_Primzahlen_(2_-_100.000)">  Zu den Primzahlen.</a></p>
   
+<div class="check">
 
    <!--//Aufgabe 1-->
 
-    <pre><b><p class ="Aufgabe" >Aufgabe 1
+    <h2>Aufgabe 1</h2>
 
-1 840    <input type="text" id="Eintrag1" maxlength="12" size="10" style= background-color:yellow ></input> <button id="Pruef1" onclick="Aufgabe1()">Prüfen</button></p></pre>
+<p>1 840</p>    <input type="text" id="Eintrag1" maxlength="12" size="10" style= background-color:yellow ></input> <button id="Pruef1" onclick="Aufgabe1()">Prüfen</button></p>
     
                      <script>
                         function Aufgabe1() { 
@@ -57,15 +77,19 @@
 
 <!--//Aufgabe 2-->
 
-  <pre><p class="Aufgabe" >Aufgabe 2
+  <h2>Aufgabe 2</h2>
 
-2 535   <button  onclick="window.open('Bruch_Aufgabe2.html');">Lösung</button></p></pre>
+<p>2 535 </p>
+
+  <button  onclick="window.open('Bruch_Aufgabe2.html');">Lösung</button></p>
 
 <!--//Aufgabe 3-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 3
+  <h2>Aufgabe 3</h2>
 
-3 232     <input type="text" id="Eintrag3" maxlength="13" size="10" style= background-color:yellow ></input> <button id="Pruef3" onclick="Aufgabe3()">Prüfen</button></p></pre>
+<p>3 232 </p>
+
+     <input type="text" id="Eintrag3" maxlength="13" size="10" style= background-color:yellow ></input> <button id="Pruef3" onclick="Aufgabe3()">Prüfen</button></p>
                         
                       <script>
                         function Aufgabe3() { 
@@ -82,16 +106,19 @@
 
   <!--//Aufgabe 4-->
 
-  <pre><p class="Aufgabe" >Aufgabe 4
+  <h2>Aufgabe 4</h2>
 
-10 448  <button  onclick="window.open('Bruch_Aufgabe4.html');" >Lösung</button></p></pre>
+<p>10 448 </p>
+
+  <button  onclick="window.open('Bruch_Aufgabe4.html');" >Lösung</button></p>
 
   <!--//Aufgabe 5-->
    
-  <p class ="Aufgabe" style="font-weight:bold">Aufgabe 5</p>
-  <p class = "Aufgabe" >48 357   &nbsp; &nbsp; 
-    <input type="text" id="Eintrag5" maxlength="13" size="10" style= background-color:yellow ></input>
-    <button id="Pruef5" onclick="Aufgabe5()">Prüfen</button>
+  <h2>Aufgabe 5</h2>
+
+<p>48 357 </p>
+  
+<input type="text" id="Eintrag5" maxlength="13" size="10" style= background-color:yellow ></input> <button id="Pruef5" onclick="Aufgabe5()">Prüfen</button>
        
      <script>
                         function Aufgabe5() { 
