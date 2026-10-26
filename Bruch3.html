@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bruchrechnen</title>
 
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>   
 </head>
 
 <body style="background-color: white; margin-top: 1em; ">
@@ -12,31 +15,81 @@
 
     <style> 
 
-    .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em;}
+            .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em;}
         .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
         .Text3 { font-size: 0.8em; font-family: Verdana,Sans-serif;margin:0.5em; }
         
-        .Aufgabe { font-size: 0.9em;  font-family: monospace,monospace;margin:0.5em;}
-        button {font-size:0.8em; font-family: Verdana, Sans-serif; }
+        body { margin: 0; font-family: Verdana,Sans-serif; font-size: 1.05rem; line-height: 1.2; background: #fff; }  
+       main { max-width: 40rem; margin: 0 auto; padding: 1rem; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
+.check input { font-size: 1.05rem; padding: 0.2rem; width: 3rem; }
+.check button { font-size: 1.05rem; padding: 0.2rem 0.6rem; } 
+.br-mobil {
+            display: none;}
+.br-desk {
+            display: block;} 
+.mobile-break {
+            display:none;}
+.mobile-plus {
+            display: none;}  
+.mobile-minus {
+            display: none;} 
+.mobile-gleich {
+            display: none;}                                   
+         
+@media screen and (max-width: 576px) {
+
+            .mobile-break {
+                 display: block;
+                 content: "";   
+                 height: 0.8em;  } 
+   
+            .mobile-plus {
+                 display: inline-block; }
+
+            .mobile-minus {
+                 display: inline-block; } 
+
+            .mobile-gleich {
+                 display: inline-block; }                                    
+
+            .br-mobil {
+                display: block;}
+
+            .br-desk {
+                display: none;}
+
+            .desktop-plus {
+                display: none; }
+
+            .desktop-minus {
+                display: none; }
+
+             .desktop-gleich {
+                display: none; }                          
+                }
+          
+
         input {background-color:yellow; }
     </style>
+
+    <main>
 
     <p class="Text1">Wie löse ich Matheaufgaben?</p>
 		<p class="Text1">Bruchrechnen</p>
   
     <p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld oder den <br>Schalter: Lösung.</span></p>
 		<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
-  
-
-    <p class="Aufgabe" > <span style= "background-color:white;">Multiplikation und Division</span></p><br> 
+    
  
+    <div class="check">
+
     <!--//Aufgabe 42-->
 
-    <pre><b><p class ="Aufgabe" >Aufgabe 42
+    <h2>Aufgabe 42</h2><p>
 
- 3                                  
---- * 12 = <input type="text" id="Eintrag42" maxlength="1" style = width:10px></input> <button id="Pruef42" onclick="Aufgabe42()">Prüfen</button>  
- 4</p></pre>
+<math mathsize="1em"><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>&#xd7;</mo><mn>12</mn><mo>=</mo></math> <input type="text" id="Eintrag42" ></input> <button id="Pruef42" onclick="Aufgabe42()">Prüfen</button>  </p>
    
                     <script>
                         function Aufgabe42() { 
@@ -168,7 +221,7 @@
     <pre><p class="Aufgabe" >Aufgabe 51
 
  3      5     2     7     
---- * ---- * --- * ----  <button  onclick="window.open('Bruch_Aufgabe51.html');" >Lösung</button>            
+--- * ---- * --- * ----  <button  onclick="window.open('Bruch_Aufgabe51.html');" >Lösung</button>
  8     14     3     15  </p></pre> 
 
 <!--//Aufgabe 52-->
@@ -176,8 +229,8 @@
     <pre><p class ="Aufgabe" >Aufgabe 52
 
      18     37       58       2
-5 * ---- * ----- * ----- = 2 ----      
-     29     25      111       <input type="text" id="Eintrag52" maxlength="1" style = width:10px></input>    
+5 * ---- * ----- * ----- = 2 ----
+     29     25      111       <input type="text" id="Eintrag52" maxlength="1" style = width:10px></input>
     
 <button id="Pruef52" onclick="Aufgabe52()">Prüfen</button>     </p></pre>
    
@@ -197,7 +250,7 @@
     <pre><p class="Aufgabe" >Aufgabe 53
 
  425     110     182  
------ * ----- * -----  <button  onclick="window.open('Bruch_Aufgabe53.html');" >Lösung</button>            
+----- * ----- * -----  <button  onclick="window.open('Bruch_Aufgabe53.html');" >Lösung</button>
  252     221     165    </p></pre>
  
  <!--//Aufgabe 54-->
@@ -216,7 +269,7 @@
                           if (Eintrag54.value=="1") {alert("Richtig"); document.getElementById("Pruef54").disabled= true;
                           }  
                            
-                          else if (Eintrag54.value!=="1" && Eintrag54.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag54").value="5"; window.open('Bruch_Aufgabe54.html');                                 
+                          else if (Eintrag54.value!=="1" && Eintrag54.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag54").value="1"; window.open('Bruch_Aufgabe54.html');                                 
                           document.getElementById("Pruef54").disabled= true;}                               
                           else if (Eintrag54.value=="") {alert("Bitte eine Eingabe machen")}}
                       </script> 
@@ -236,7 +289,7 @@
     <pre><p class ="Aufgabe" >Aufgabe 56
 
    179     169       13      125   
-2 ----- * ----- * 2 ----- * ------ = <input type="text" id="Eintrag56" maxlength="1" style = width:10px></input>   
+2 ----- * ----- * 2 ----- * ------ = <input type="text" id="Eintrag56" maxlength="1" style = width:10px></input>
    455     385       165     273  
   
 <button id="Pruef56" onclick="Aufgabe56()">Prüfen</button>  </p></pre>
@@ -369,7 +422,7 @@ Bilden Sie den Kehrwert von:
     <pre><p class="Aufgabe" >Aufgabe 65
 
     16         4
-12 ----- : 3 -----  <button  onclick="window.open('Bruch_Aufgabe65.html');" >Lösung</button>                
+12 ----- : 3 -----  <button  onclick="window.open('Bruch_Aufgabe65.html');" >Lösung</button>
     17        17 </p></pre>
 
 <!--//Aufgabe 66-->
@@ -397,7 +450,7 @@ Bilden Sie den Kehrwert von:
     <pre><p class="Aufgabe" >Aufgabe 67
 
       27        55
-207 ----- : 55 -----  <button  onclick="window.open('Bruch_Aufgabe67.html');">Lösung</button>                
+207 ----- : 55 -----  <button  onclick="window.open('Bruch_Aufgabe67.html');">Lösung</button>
      184        69   </p></pre>
         
 <!--//Aufgabe 68-->
@@ -431,7 +484,7 @@ Bilden Sie den Kehrwert von:
      1 ---- * 10 --- + 42 --- : 6
         12        2        8
 -------------------------------------  
-     1       3        17         1        
+     1       3        17         1
 66 ---- : 3 ---- - 3 ----- * 1 -----  
      4       4        20         14 
     
