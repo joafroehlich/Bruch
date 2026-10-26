@@ -31,20 +31,28 @@ h2 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
 .br-desk {
             display: block;} 
 .mobile-break {
-            display:none;}            
-
+            display:none;}
+.mobile-plus {
+            display: none;}            
+         
 @media screen and (max-width: 576px) {
 
             .mobile-break {
                  display: block;
                  content: "";   
-                 height: 0.8em;         }  
+                 height: 0.8em;  } 
+   
+            .mobile-plus {
+                 display: inline-block; } 
+
             .br-mobil {
                 display: block;}
 
             .br-desk {
                 display: none;}  
-                
+            .desktop-plus {
+                display: none; /* Blendet das Plus am Zeilenende aus */
+                              }              
                 }
           
 
@@ -263,7 +271,7 @@ h2 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
 
        <h2>Aufgabe 39</h2><p>
 
-<math mathsize="1em"><mtext>461</mtext><mfrac><mtext>29</mtext><mtext>30</mtext></mfrac><mo>+</mo><mn>141</mn><mfrac><mtext>31</mtext><mtext>45</mtext></mfrac><mo>+</mo><mn>703</mn><mfrac><mn>17</mn><mn>72</mn></mfrac><mo>+</mo><mn>355</mn><mfrac><mn>19</mn><mn>40</mn></mfrac><mo>+</mo><mo class="mobile-break"></mo><mn>298</mn><mfrac><mn>53</mn><mn>60</mn></mfrac></math><p>
+<math mathsize="1em"><mtext>461</mtext><mfrac><mtext>29</mtext><mtext>30</mtext></mfrac><mo>+</mo><mn>141</mn><mfrac><mtext>31</mtext><mtext>45</mtext></mfrac><mo>+</mo><mn>703</mn><mfrac><mn>17</mn><mn>72</mn></mfrac><mo>+</mo><mn>355</mn><mfrac><mn>19</mn><mn>40</mn></mfrac><mo>+</mo><mo class="mobile-plus">+</mo><mo class="mobile-break"></mo><mn>298</mn><mfrac><mn>53</mn><mn>60</mn></mfrac></math><p>
 
 <button  onclick="window.open('Bruch_Aufgabe39.html');" >Lösung</button>  </p></pre> 
 
